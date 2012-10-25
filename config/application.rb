@@ -58,5 +58,13 @@ module EtModelCom
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework :rspec
+      g.assets false
+      g.helpers false
+      g.view_specs false
+    end
   end
 end
