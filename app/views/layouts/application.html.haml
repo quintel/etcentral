@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %title= t("meta.title")
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+
+  %body
+    = yield
+
+    = render "layouts/ga" if Rails.env.production?
