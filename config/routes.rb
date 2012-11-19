@@ -5,5 +5,6 @@ EtModelCom::Application.routes.draw do
     match '/disclaimer'                   => 'pages#disclaimer'
     match '/privacy_statement'            => 'pages#privacy_statement'
 
+      match "/404", :to => "pages#404"
 
 end
