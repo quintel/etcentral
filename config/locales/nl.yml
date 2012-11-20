@@ -1,6 +1,8 @@
 nl:
   meta:
     title: "Energietransitiemodel - Je eigen onafhankelijke, volledige en op feiten gebaseerde energiescenario."
+    name: "Energy Transition Model"
+
 
     ago: geleden
   date:
@@ -70,3 +72,11 @@ nl:
       date_only: "%d-%m-%Y"
     am: "'s ochtends"
     pm: "'s middags"
+
+  header:
+    about_qi: "Over Quintel Intelligence"
+    disclaimer: "Disclaimer"
+    information: "Informatie"
+    press_releases: "In het nieuws"
+    privacy_statement: "Privacy statement"
+    publications: "Publicaties"

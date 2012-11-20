@@ -1,6 +1,7 @@
 en:
   meta:
     title: "Energy Transition Model - Your free, independent, comprehensive, fact-based scenario builder."
+    name: "Energy Transition Model"
 
     ago: ago
   date:
@@ -67,3 +68,11 @@ en:
       date_only: "%Y-%m-%d"
     am: "am"
     pm: "pm"
+
+  header:
+    about_qi: "About Quintel Intelligence"
+    disclaimer: "Disclaimer"
+    information: "Information"
+    press_releases: "Press releases"
+    privacy_statement: "Privacy statement"
+    publications: "Publications"

@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery_plugins
+//= require common_interface
 //= require_tree .

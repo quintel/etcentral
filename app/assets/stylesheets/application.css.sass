@@ -3,7 +3,11 @@
 @import compass/css3/images
 @import compass/css3/box-shadow
 
+
 @import pages
+@import header
+@import header_menu
+@import home
 
 html
   background: image-url("root/titles.png")
@@ -84,6 +88,36 @@ header
         background: image-url("icons/areas/gb.png") left center no-repeat
       a.nl
         background: image-url("icons/areas/nl.png") left center no-repeat
+
+  .sub-nav
+    float: right
+    list-style: none
+    margin: 14px 0 0 0
+    padding: 0
+    overflow: hidden
+    li
+      float: left
+      font-size: 13px
+      font-weight: normal
+      padding: 0
+      margin: 0 0 0 -2px
+      a
+        display: block
+        color: #dbe9f3
+        text-decoration: none
+        font-weight: bold
+        text-shadow: 0 1px 0 #2d6aac
+        margin-right: 5px
+        &:hover
+          color: white
+      &.expandable a
+        background: url("/assets/header/toggle_down.png") right 6px no-repeat
+        padding-right: 18px
+        &:hover
+          background-position: right -44px
+        &.menu-open
+          background-position: right -94px
+          color: white
 
 #main
   width: 960px
