@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  layout 'static_page', only: [:about, :disclaimer, :privacy_statement]
+  
   def index
   end
 
@@ -7,5 +9,5 @@ class PagesController < ApplicationController
     def press_releases
       @releases = PressRelease.order("release_date desc")
     end
-    
+
 end

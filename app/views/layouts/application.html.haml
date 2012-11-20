@@ -8,6 +8,8 @@
     = render 'layouts/header'
 
   %body
-    = yield
+    #wrapper
+      #content
+        = content_for?(:content) ? yield(:content) : yield
 
     = render "layouts/ga" if Rails.env.production?
