@@ -13,4 +13,14 @@
 
 ActiveRecord::Schema.define(:version => 0) do
 
+  create_table "press_releases", :force => true do |t|
+    t.string   "medium"
+    t.string   "release_type"
+    t.datetime "release_date"
+    t.string   "link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+  end
+
 end
