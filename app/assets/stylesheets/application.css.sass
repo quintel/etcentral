@@ -5,6 +5,7 @@
 
 @import header
 @import header_menu
+@import footer
 @import pages
 
 
@@ -19,8 +20,7 @@ body
   text-rendering: optimizelegibility
   line-height: 1.7em
   font-weight: 200
-  background: image-url("root/sky_and_sea.png") center 305px repeat-x
-  margin: 0 0 0 0
+
 
   strong
     font-weight: 400
@@ -41,7 +41,8 @@ body
   min-height: 100%
   min-width: 980px
   overflow: hidden
-
+  background: image-url("root/sky_and_sea.png") center 220px repeat-x
+  margin: 0 0 0 0
 
 #wattnu_en, #wattnu_nl
   position: absolute
@@ -234,19 +235,7 @@ header
       .options
         background: image-url("root/options.png") left center no-repeat
 
-footer
-  color: #fff
-  text-align: center
-  margin-top: 100px
-  padding: 50px 0
-  border-top: 1px solid #333
-  background: image-url("root/dark_titles.png")
 
-  @include box-shadow(0 0 5px rgba(10, 10, 10, 0.5))
-
-  p
-    width: 960px
-    margin:  0 auto
 
 footer, header
   a, a:visited

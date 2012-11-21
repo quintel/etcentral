@@ -42,18 +42,21 @@
 
     .clear
 
-  %footer
-    %p= raw t 'landing_page.footer.quintel'
 
-  :javascript
-    $(".screenshot, .product").hover(function(){
-      var this_id = $(this).attr('id');
-      $("#products #" + this_id).addClass('active-product');
-      $("#screenshots #" + this_id).addClass('active-screenshot');
-    },
-    function(){
-      var this_id = $(this).attr('id');
-      $("#products #" + this_id).removeClass('active-product');
-      $("#screenshots #" + this_id).removeClass('active-screenshot');
-    }
-    );
+
+      :javascript
+        $(".screenshot, .product").hover(function(){
+          var this_id = $(this).attr('id');
+          $("#products #" + this_id).addClass('active-product');
+          $("#screenshots #" + this_id).addClass('active-screenshot');
+        },
+        function(){
+          var this_id = $(this).attr('id');
+          $("#products #" + this_id).removeClass('active-product');
+          $("#screenshots #" + this_id).removeClass('active-screenshot');
+        }
+        );
+
+
+
+
