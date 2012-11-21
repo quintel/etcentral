@@ -9,7 +9,7 @@
     %nav#language
       - other_locale = english? ? "nl" : "en"
       = link_to (t 'landing_page.other_language'), { locale: other_locale }, { class: other_locale }
-
-    %img(src="/assets/header/logo400@2x.png" width="400" height="49" alt="#{ t(:'meta.name') }")
+    %a.root_link{ href: root_path }
+      %img(src="/assets/header/logo400@2x.png" width="400" height="49" alt="#{ t(:'meta.name') }")
 
     = render 'layouts/header_menus'
