@@ -3,11 +3,11 @@
 @import compass/css3/images
 @import compass/css3/box-shadow
 
-
-@import pages
 @import header
 @import header_menu
-@import home
+@import pages
+
+
 
 html
   background: image-url("root/titles.png")
@@ -15,9 +15,9 @@ html
   padding: 0 0 0 0
 
 body
-  font-family: Gill Sans, Lucida Grande, Verdana, Arial, Helvetica, sans-serif
+  font: 13px/20px "Lucida Grande",Verdana,Arial,Helvetica,sans-serif
   text-rendering: optimizelegibility
-  line-height: 1.7em
+  line-height: 1.6em
   font-weight: 200
 
 
@@ -84,6 +84,9 @@ header
       z-index: 21
       a
         padding-left: 20px
+        color: #DBE9F3
+        font-weight: bold
+        text-shadow: 0 1px 0 #2D6AAC
       a.en
         background: image-url("icons/areas/gb.png") left center no-repeat
       a.nl
@@ -97,7 +100,6 @@ header
     overflow: hidden
     li
       float: left
-      font-size: 13px
       font-weight: normal
       padding: 0
       margin: 0 0 0 -2px
@@ -248,7 +250,7 @@ footer
 
 footer, header
   a, a:visited
-    color: white
+    color: #63A0C9    //color: white
     font-weight: inherit
     text-decoration: underline
   a:hover

@@ -1,8 +1,4 @@
 $ ->
-  # TODO: check if this is still needed, was added for an old bug - PZ
-  if _.include(['iPad', 'iPhone', 'iPod'], navigator.platform)
-    $("#footer").css("position", "static")
-
   if $.browser.msie
     # A 1px increase fixes some bad aliasing when resizing the image down
     # to non-HiDPI resolutions.
@@ -36,12 +32,5 @@ $ ->
       success: -> window.location.reload()
 
 
-  # Tooltips
-  $("a.tooltip").qtip
-    content: -> $(this).attr('title')
-    position:
-      my: 'bottom right'
-      at: 'top center'
-    style:
-      classes: "ui-tooltip-tipsy"
+
 
