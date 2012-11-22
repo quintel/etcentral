@@ -1,0 +1,15 @@
+%h1= raw t 'about.head'
+= simple_format t 'about.intro'
+%ul
+  - t('about.level').each_line do |level|
+    %li= level
+= simple_format t 'about.description'
+
+%img{src: "/assets/layout/john2.jpg", class: 'image'}
+
+%p
+  Dr. Ir. C. John Kerkhoven <br />
+  Managing Director, Quintel Intelligence <br />
+  E: <a href='mailto:&#106;&#111;&#104;&#110;&#046;&#107;&#101;&#114;&#107;&#104;&#111;&#118;&#101;&#110;&#064;&#113;&#117;&#105;&#110;&#116;&#101;&#108;&#046;&#099;&#111;&#109;'>&#106;&#111;&#104;&#110;&#046;&#107;&#101;&#114;&#107;&#104;&#111;&#118;&#101;&#110;&#064;&#113;&#117;&#105;&#110;&#116;&#101;&#108;&#046;&#099;&#111;&#109;</a><br/>
+  M: +31 653291 843
+  

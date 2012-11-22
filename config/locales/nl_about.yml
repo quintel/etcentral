@@ -1,0 +1,26 @@
+nl:
+  about:
+    head: 'Over Quintel Intelligence'
+    intro: |
+      Quintel Intelligence is een instelling voor energieonderzoek die overheden,
+      bedrijven en instellingen wereldwijd ondersteunt in het bepalen en doorrekenen
+      van hun energiestrategie.
+      
+      Wij doen dit op basis van ons op feiten gebaseerde, complete en
+      onafhankelijke Energietransitiemodel. Dit model is in staat om een
+      energiestrategie door te rekenen op het niveau van: 
+
+    level: |
+      Landen:
+      Regio’s in landen:
+      Steden:
+      Havens/industriegebieden:
+      Bedrijven:
+
+    description: |
+      Het landenmodel wordt gesponsord door overheden en gerenommeerde bedrijven. Zo
+      kunnen beleidsmakers, burgers en studenten zich vrijblijvend verdiepen in de
+      keuzes, samenhang en complexiteit van allerlei energiethema’s. Voorbeelden
+      zijn thema’s als energiekosten, CO2 uitstoot,  energievoorziening,
+      energieafhankelijkheid en de mate waarin bepaalde strategieën enbeleidsdoelen
+      haalbaar zijn.

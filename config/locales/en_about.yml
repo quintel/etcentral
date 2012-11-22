@@ -1,0 +1,26 @@
+en:
+  about:
+    head: 'About Quintel Intelligence'
+    intro: |
+      Quintel Intelligence is an energy research firm that assists governments,
+      companies and institutions around the world in determining and quantifying
+      their energy strategies.
+      
+      We do this using our independent, fact-based and comprehensive Energy
+      Transition Model. This model can quantify the impact of an energy strategy at
+      the level of:
+
+    level: |
+      Countries:
+      Country regions:
+      Cities:
+      Ports / Industrial zones:
+      Companies:
+
+    description: |
+      At the country level the Energy Transition Model is sponsored by
+      governments and renowned companies. This makes it possible for policy
+      makers, citizens and students to explore the options, interdependence and
+      complexity of various energy themes free of charge. Themes include energy
+      costs, CO2 emissions, energy supply, energy dependence and the extent to
+      which strategies are feasible and policy targets can be met.
