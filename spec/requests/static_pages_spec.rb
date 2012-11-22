@@ -12,13 +12,13 @@ describe "StaticPages" do
       visit root_path
     end
 
-    it "contains products Light, Professional, Energy Mixer" do
-      expect(page).to have_content('Light')
-      expect(page).to have_content('Professional')
-      expect(page).to have_content('Energy Mixer')
+    %w[Light Professional Mixer].each do |version|
+      it "contains a reference to #{version}" do
+        expect(page).to have_content(version)
+      end
     end
 
-    it "displays an information menu " do
+    it "contains an information menu " do
       expect(page).to have_content('Disclaimer')
       expect(page).to have_content('About Quintel')
       expect(page).to have_content('Press releases')
