@@ -1,10 +1,10 @@
 EtModelCom::Application.routes.draw do
-  root to: 'pages#index'
 
-  match '/about'                         => 'pages#about'
-  match '/disclaimer'                   => 'pages#disclaimer'
-  match '/privacy_statement'        => 'pages#privacy_statement'
-  match '/press_releases'             => 'pages#press_releases'
-  match "/404", :to => "pages#404"
+  match '/:key/' => 'pages#show', as: :page
+
+  match '/404', to: 'pages#404'
+  match '/500', to: 'pages#500'
+
+  root to: 'pages#root'
 
 end

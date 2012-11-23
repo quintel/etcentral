@@ -1,13 +1,9 @@
 class PagesController < ApplicationController
-  layout 'static_page', only: [:about, :disclaimer, :privacy_statement]
-  
-  def index
+
+  def show
+    file_path = \
+      "#{Rails.root}/db/static_pages/#{params[:key]}.#{session[:locale]}.html"
+    @content = File.open(file_path, 'r').read
   end
-
-  public
-
-    def press_releases
-      @releases = PressRelease.order("release_date desc")
-    end
 
 end

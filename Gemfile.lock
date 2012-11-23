@@ -158,6 +158,8 @@ GEM
       activesupport (= 3.2.9)
       bundler (~> 1.0)
       railties (= 3.2.9)
+    rails-footnotes (3.7.9)
+      rails (>= 3.0.0)
     railties (3.2.9)
       actionpack (= 3.2.9)
       activesupport (= 3.2.9)
@@ -252,6 +254,7 @@ DEPENDENCIES
   pry-debugger
   pry-rails
   rails (= 3.2.9)
+  rails-footnotes (>= 3.7.5.rc4)
   rspec-rails (~> 2.11.0)
   sass-rails (~> 3.2.3)
   shoulda-matchers
