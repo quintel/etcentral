@@ -14,5 +14,8 @@
 /log/*.log
 /tmp
 
+# MACOSX files
+.DS_Store
+
 config/database.yml
 .sass-cache/*
