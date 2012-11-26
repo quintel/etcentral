@@ -6,9 +6,9 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
+gem 's3'
 gem 'airbrake', '~> 3.1.2'
-gem 'rails-footnotes', '>= 3.7.5.rc4', group: :development
+gem 'rails-footnotes', '>= 3.7.5.rc4', :group => :development
 
 # Gems used only for assets and not required
 # in production environments by default.
