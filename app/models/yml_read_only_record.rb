@@ -8,7 +8,7 @@ class YmlReadOnlyRecord
   end
 
   def self.all
-    self.load_collective_file || self.load_directory
+     self.load_directory
   end
 
   def self.yml_store
@@ -16,23 +16,17 @@ class YmlReadOnlyRecord
   end
 
   def self.find(key)
-    self.all.select{|p|p.key == key}.first
+    self.all.select{|p|p.title =~ /#{key}/}.first
   end
 
   #######
   private
   #######
 
-  def self.load_collective_file
-    file = "#{Rails.root}/config/#{yml_store}.yml"
-    return false unless File.exist? file
-    YAML.load_file(file).map {|i| self.new i }
-  end
-
   def self.load_directory
     items = []
     Dir.glob("#{Rails.root}/config/#{yml_store}/*.yml") do |yml_file|
-      items << self.new( YAML.load_file yml_file )
+      items << self.new( YAML.load_file yml_file ) unless yml_file.nil?
     end
     items
   end

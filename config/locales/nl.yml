@@ -11,6 +11,7 @@ nl:
       short: "%e %b"
       long: "%e %B %Y"
       only_day: "%e"
+      date_only: "%d-%m-%Y"
 
     day_names:
       - zondag

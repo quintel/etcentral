@@ -1,5 +1,6 @@
 EtModelCom::Application.routes.draw do
 
+  match '/press_releases' => 'pages#press_releases'
   match '/:key/' => 'pages#show', as: :page
 
   match '/404', to: 'pages#404'

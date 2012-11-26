@@ -6,7 +6,7 @@ class PressRelease < YmlReadOnlyRecord
   end
 
   def link
-    "public/media/" + details[:link]
+    "public/media/" + details[:link] unless details.nil?
   end
 
 
@@ -14,6 +14,8 @@ class PressRelease < YmlReadOnlyRecord
   private
 
     def details
-      YAML.load_file("#{Rails.root}/config/pressreleases/#{self.key}.yml") rescue {}
+      YAML.load_file("#{Rails.root}/config/pressreleases/#{self.key}.yml") 
+      rescue Errno::ENOENT
+        puts 'No file found'
     end
 end
