@@ -81,3 +81,11 @@ en:
   information:
     in_the_news: "Press releases about the Energy Transition Model"
     overview: "An overview of recently published articles related to the energy transition model (in Dutch)"
+
+  partners:
+    general: "Partners that support the ETM financially, in kind and by sharing knowledge"
+    knowledge: "Partners that support the ETM in kind and share knowledge"
+    education: "Partners that aid us in developing educational material"
+    partners_of_the_energy_transition_model: "Partners of the Energy Transition Model"
+    click_here_to_go_to_the_website_of: "Partner. Click to go to the website of "
+    back_to_overview: "Back to overview"
