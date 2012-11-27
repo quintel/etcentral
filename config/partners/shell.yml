@@ -7,7 +7,5 @@ subheader: Shell is a global company.
 place: right
 long_name: Shell
 partner_type: general
-description: |
-  two lines
-  description
-short_description: very short desscription
+short_content_en: very short desscription
+short_content_nl: kleine

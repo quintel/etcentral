@@ -15,4 +15,7 @@ module ApplicationHelper
     end
   end
 
+
+  # TO-DO make helper for language link request.env['PATH_INFO'] or request.request_uri
+
 end

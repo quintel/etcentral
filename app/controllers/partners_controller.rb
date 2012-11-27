@@ -5,11 +5,11 @@ class PartnersController < ApplicationController
   end
 
   def index
-    @all_partners = Partner.all.uniq.sort_by{Kernel.rand}
+    @all_partners = Partner.all.uniq.sort_by { Kernel.rand }
     @partner_types = ['general']
     @partner_types << 'knowledge' if @all_partners.map(&:partner_type).include?('knowledge')
     @partner_types << 'education' if @all_partners.map(&:partner_type).include?('education')
     @active_partner_type = params[:partner_type] || 'general'
-    @partners = @all_partners.select{|p|p.partner_type == @active_partner_type}
+    @partners = @all_partners.select { |p| p.partner_type == @active_partner_type }
   end
 end

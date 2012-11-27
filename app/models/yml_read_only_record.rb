@@ -16,7 +16,7 @@ class YmlReadOnlyRecord
   end
 
   def self.find(key)
-    self.all.select{|p|p.key =~ key}.first
+    self.all.select { |p| p.key =~ key }.first
   end
 
 
