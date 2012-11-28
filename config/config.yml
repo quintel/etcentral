@@ -31,6 +31,10 @@ development: &DEV
 
     # set to true if you want a "production server" warning in the admin section
     live_server: false
+
+    # AWS
+    access_key_id: AKIAIE3JK6ZGXJE7MUXQ
+    secret_access_key: 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
 production: &PRODUCTION
     <<: *DEV
 test:

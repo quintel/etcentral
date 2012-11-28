@@ -6,7 +6,7 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-gem 's3'
+gem 'aws-sdk'
 gem 'airbrake', '~> 3.1.2'
 gem 'rails-footnotes', '>= 3.7.5.rc4', :group => :development
 

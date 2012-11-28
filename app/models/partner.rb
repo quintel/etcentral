@@ -1,8 +1,3 @@
-# short content
-# link to the website
-# logo
-
-
 # == Schema Information
 #
 # Table name: partners
@@ -22,7 +17,7 @@
 #
 
 class Partner < YmlReadOnlyRecord
-  attr_accessor :name, :url, :country, :time, :repeat_any_other, :subheader, :place, :long_name, :partner_type, :short_description, :short_content_en, :short_content_nl
+  attr_accessor :name, :url, :country, :time, :repeat_any_other, :subheader, :place, :long_name, :partner_type, :short_content_en, :short_content_nl
 
   ##
   # TODO: Handle the case when a partner has strange characters in the name.
@@ -47,7 +42,7 @@ class Partner < YmlReadOnlyRecord
   end
 
   def t(attr_name)
-    lang = I18n.locale.to_s.split('-').first
+    lang = I18n.locale.to_s.split('-').first 
     send("#{attr_name}_#{lang}").andand.html_safe
   end
 

@@ -18,4 +18,6 @@
 .DS_Store
 
 config/database.yml
+config/aws.yml
+config/config.yml
 .sass-cache/*

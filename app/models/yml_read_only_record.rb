@@ -20,7 +20,6 @@ class YmlReadOnlyRecord
   end
 
 
-
   #######
   private
   #######
