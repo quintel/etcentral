@@ -9,8 +9,10 @@ class PagesController < ApplicationController
   end
 
   def press_release
-    @release = PressRelease.find_by_id(params[:id])
-    redirect_to root_path if @release.nil?
+    release = PressRelease.find_by_id(params[:id])
+    file_url = FOG_BUCKET.files.get(release.file_name) 
+    redirect_to file_url.url(Time.now + 20.minutes) unless file_url.nil?
+    redirect_to press_releases_path if release.nil? or file_url.nil?
   end
 
   def partners
@@ -21,5 +23,6 @@ class PagesController < ApplicationController
     @active_partner_type = params[:partner_type] || 'general'
     @partners = @all_partners.select { |p|p.partner_type == @active_partner_type }
   end
+
 
 end

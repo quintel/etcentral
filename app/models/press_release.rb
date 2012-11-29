@@ -1,5 +1,6 @@
 class PressRelease < YmlReadOnlyRecord
-  attr_accessor :id, :medium, :release_type, :release_date, :link, :title, :key
+  attr_accessor :id, :medium, :release_type, :release_date, :file_name, 
+                :title
 
   def <=>(other_press_release)
     self.release_date <=> other_press_release.release_date
