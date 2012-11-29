@@ -2,25 +2,20 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'mysql2'
-gem 'aws-sdk'
 gem 'airbrake', '~> 3.1.2'
-gem 'rails-footnotes', '>= 3.7.5.rc4', :group => :development
-
-# Gems used only for assets and not required
-# in production environments by default.
-
+gem 'jquery-rails'
+gem 'haml'
 
 group :development, :test do
+  gem 'capistrano'
   gem 'thin'
   gem 'pry-rails'
   gem 'pry-debugger'
   gem 'rspec-rails', "~> 2.11.0"
   gem 'watchr'
   gem 'jasminerice'
+  gem 'rails-footnotes', '>= 3.7.5.rc4'
 end
 
 group :test do
@@ -30,9 +25,9 @@ group :test do
   gem 'capybara-webkit'
   gem 'launchy'
 end
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+
 group :assets do
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', '0.11.0beta8'
   gem 'libv8', '~> 3.11.8'
   gem 'sass-rails', '~> 3.2.3'
@@ -43,22 +38,6 @@ group :assets do
   gem 'oily_png' # Faster sprite compilation.
 end
 
-gem 'jquery-rails'
-gem 'haml'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
 group :production do
   gem 'unicorn'
 end
-
-# Deploy with Capistrano
-gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
