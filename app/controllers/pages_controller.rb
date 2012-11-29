@@ -10,9 +10,12 @@ class PagesController < ApplicationController
 
   def press_release
     release = PressRelease.find_by_id(params[:id])
-    file_url = FOG_BUCKET.files.get(release.file_name) 
+    file_url = FOG_BUCKET.files.get(release.file_name)
+    if file_url.nil?
+      redirect_to press_releases_path
+    else
     redirect_to file_url.url(Time.now + 20.minutes) unless file_url.nil?
-    redirect_to press_releases_path if release.nil? or file_url.nil?
+    end
   end
 
   def partners

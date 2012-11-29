@@ -12,4 +12,6 @@ EtModelCom::Application.routes.draw do
 
   root to: 'pages#root'
 
+  match '*_path', to: 'pages#root'
+
 end

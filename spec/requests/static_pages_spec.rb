@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "StaticPages" do
+describe "Pages" do
   it "displays the index page" do
     get "/"
     expect(response).to be_success
