@@ -6,6 +6,7 @@ gem 'mysql2'
 gem 'airbrake', '~> 3.1.2'
 gem 'jquery-rails'
 gem 'haml'
+gem 'fog'
 
 group :development, :test do
   gem 'capistrano'
