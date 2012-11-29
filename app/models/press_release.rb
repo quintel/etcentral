@@ -14,11 +14,10 @@ class PressRelease < YmlReadOnlyRecord
   #######
 
   def details
-    YAML.load_file("#{Rails.root}/config/pressreleases/#{self.key}.yml") 
+    YAML.load_file("#{Rails.root}/config/press_releases/#{self.key}.yml") 
     rescue Errno::ENOENT
+      # TODO: Dangerous! don't leave this error unnoticed!
       puts 'No file found'
   end
 
 end
-
-#add press_release_path(id)
