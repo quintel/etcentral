@@ -35,6 +35,7 @@ development: &DEV
     # AWS
     access_key_id: AKIAIE3JK6ZGXJE7MUXQ
     secret_access_key: 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
+    bucket: qi.press.releases
 production: &PRODUCTION
     <<: *DEV
 test:
