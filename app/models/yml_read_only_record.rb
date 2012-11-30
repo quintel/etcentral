@@ -12,7 +12,7 @@ class YmlReadOnlyRecord
   end
 
   def self.yml_store
-    self.name.downcase.pluralize
+    self.name.underscore.pluralize
   end
 
   def self.find(key)

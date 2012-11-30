@@ -10,15 +10,5 @@ class PressRelease < YmlReadOnlyRecord
     self.all.select { |press| press.id === id.to_i }.first
   end
 
-  #######
-  private
-  #######
-
-  def details
-    YAML.load_file("#{Rails.root}/config/press_releases/#{self.key}.yml") 
-    rescue Errno::ENOENT
-      # TODO: Dangerous! don't leave this error unnoticed!
-      puts 'No file found'
-  end
 
 end
