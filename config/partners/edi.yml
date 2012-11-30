@@ -1,11 +1,7 @@
-name: EDI
+key: EDI
 url: http://www.energydelta.org/
 country: The Netherlands
-time: 2010
-repeat_any_other: false
-subheader: Leading energy research insitute.
-place: right
-long_name: Energy Delta Institute
-partner_type: education
-short_content_en: short english content
-short_content_nl: kleine nederlandse content
+name: Energy Delta Institute
+type: education
+description_en: short english content
+description_nl: kleine nederlandse content

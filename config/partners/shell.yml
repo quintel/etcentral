@@ -1,11 +1,7 @@
-name: Shell
+key: Shell
 url: http://www.shell.com
 country: US
-time: 2011
-repeat_any_other: false
-subheader: Shell is a global company.
-place: right
-long_name: Shell
-partner_type: general
-short_content_en: very short desscription
-short_content_nl: kleine
+name: Shell
+type: general
+description_en: very short desscription
+description_nl: kleine

@@ -1,13 +1,11 @@
 EtModelCom::Application.routes.draw do
 
-  get "partners/index"
-
-  get "partners/show"
+  match "partners/" => 'partners#index'
 
   match '/press_release/:id' => 'pages#press_release', as: :press_release
+  
+  # TODO remove and use domain-based helper
   match '/press_releases' => 'pages#press_releases', key: 'press_releases'
-
-  match '/partners' => 'pages#partners'
 
   match '/:key/' => 'pages#show', as: :page
 
@@ -16,6 +14,6 @@ EtModelCom::Application.routes.draw do
 
   root to: 'pages#root'
 
-  match '*_path', to: 'pages#root'
+  #match '*_path', to: 'pages#root'
 
 end

@@ -1,4 +1,4 @@
-header#top
+header
   padding: 11px 0 8px
   background-color: #66A2CA
   border-top: 1px solid #89b2d3
@@ -9,6 +9,7 @@ header#top
   position: relative
 
   #header_inside
+    width: 55%
     margin: 0 auto
     padding: 0 10px
     height: 54px
@@ -27,10 +28,13 @@ header#top
     nav#language
       position: absolute
       right: 210px
-      top: 27px
+      top: 16px
       z-index: 21
       a
         padding-left: 20px
+        color: #DBE9F3
+        font-weight: bold
+        text-shadow: 0 1px 0 #2D6AAC
       a.en
         background: url("/assets/icons/gb.png") left center no-repeat
       a.nl
@@ -87,19 +91,7 @@ header#top
         &.menu-open
           background-position: right -94px
           color: white
-  .scenario_info
-    font-size: 11px
-    font-weight: normal
-    &:before
-      content: "("
-      color: #aacfea
-      margin-right: -0.1em
-    &:after
-      content: ")"
-      color: #aacfea
-      margin-left: -0.2em
-    img
-      margin-bottom: -1px
+
 
   .header_logo
     overflow: hidden
