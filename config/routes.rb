@@ -1,5 +1,9 @@
 EtModelCom::Application.routes.draw do
 
+  get "partners/index"
+
+  get "partners/show"
+
   match '/press_release/:id' => 'pages#press_release', as: :press_release
   match '/press_releases' => 'pages#press_releases', key: 'press_releases'
 

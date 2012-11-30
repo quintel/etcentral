@@ -60,7 +60,6 @@ module EtModelCom
     config.assets.version = '1.0'
 
     config.generators do |g|
-      g.template_engine :haml
       g.test_framework :rspec
       g.assets false
       g.helpers false
