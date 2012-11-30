@@ -1,7 +1,7 @@
 EtModelCom::Application.routes.draw do
 
   match '/press_releases' => 'press_releases#index'
-  match '/press_release/:id' => 'press_releases#show', as: :press_release
+  match '/press_release/:id' => 'press_releases#show'
   
   match "partners/" => 'partners#index'
 
@@ -12,6 +12,5 @@ EtModelCom::Application.routes.draw do
 
   root to: 'pages#root'
 
-  #match '*_path', to: 'pages#root'
 
 end

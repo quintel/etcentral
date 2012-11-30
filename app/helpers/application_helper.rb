@@ -6,13 +6,13 @@ module ApplicationHelper
 
   def information_links
     links = []
-    links.push text: t("header.about_qi") ,           url: 'about'
-    links.push text: t("header.press_releases") ,     url: 'press_releases'
-    links.push text: t("header.privacy_statement") ,  url: 'privacy_statement'
-    links.push text: t("header.disclaimer") ,         url: 'disclaimer'
-    links.push text: t("header.partners") ,           url: 'partners'
+    links.push text: I18n.t("header.about_qi") ,           url: 'about'
+    links.push text: I18n.t("header.press_releases") ,     url: 'press_releases'
+    links.push text: I18n.t("header.privacy_statement") ,  url: 'privacy_statement'
+    links.push text: I18n.t("header.disclaimer") ,         url: 'disclaimer'
+    links.push text: I18n.t("header.partners") ,           url: 'partners'
     unless APP_CONFIG[:standalone]
-      links.push text: t("header.publications") ,     url: "http://refman.et-model.com", target: "_blank"
+      links.push text: I18n.t("header.publications") ,     url: "http://refman.et-model.com", target: "_blank"
     end
   end
 

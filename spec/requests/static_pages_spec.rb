@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe "Pages" do
+describe Page do
   it "displays the index page" do
-    get "/"
+    get press_releases_path
     expect(response).to be_success
   end
 
   describe "Index page" do
     before(:each) do
-      subject { page }
+      #subject { page }
       visit root_path
     end
 
