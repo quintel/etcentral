@@ -1,13 +1,10 @@
-- if @types.size > 1
-  %h1= t("partners.partners_of_the_energy_transition_model")
-  %nav#partners_tabs
-    %ul
-      - @types.each do |type|
-        %li{:class => (type == @active_partner_type ? 'active' : '')}
-          = link_to t("partners.#{type}"), :type => type
-  .clear
-- else
-  %h1= t("partners.partners_of_the_energy_transition_model")
+%h1= t("partners.partners_of_the_energy_transition_model")
+%nav#partners_tabs
+  %ul
+    - Partner::TYPES.each do |type|
+      %li{:class => (type == @current_type ? 'active' : '')}
+        = link_to t("partners.#{type}"), :type => type
+.clear
 
 #partners
   - @partners.each do |p|
@@ -19,8 +16,5 @@
 
   - @partners.each do |p|
     .content{:id => "partner_#{p.key}_description"}
-      - if p.description
-        = p.description
-      - else
-        = t("partners.click_here_to_go_to_the_website_of") + "#{p.name_or_long_name}."
+      = p.description
   .clear

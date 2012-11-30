@@ -8,7 +8,7 @@ class YmlReadOnlyRecord
   end
 
   def self.all
-     self.load_directory
+    self.load_directory
   end
 
   def self.yml_store
