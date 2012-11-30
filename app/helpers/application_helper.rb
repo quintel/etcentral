@@ -14,8 +14,8 @@ module ApplicationHelper
     unless APP_CONFIG[:standalone]
       links.push text: I18n.t("header.publications") ,     url: "http://refman.et-model.com", target: "_blank"
     end
+    links
   end
-
 
   # TO-DO make helper for language link request.env['PATH_INFO'] or request.request_uri
 

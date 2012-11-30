@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe ApplicationHelper do
   describe "information_links" do
     it "should not be empty" do
