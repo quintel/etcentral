@@ -1,3 +1,10 @@
+.arrow-up
+  width: 0
+  height: 0
+  border-left: 20px solid transparent
+  border-right: 20px solid transparent
+  border-bottom: 20px solid white
+
 .topnav
   font-size: 11px
   line-height: 23px
@@ -22,20 +29,22 @@ a.information
   position: absolute
   @include border-radius(5px)
   display: none
-  background-color: #ffffff
-  width: 210px
   z-index: 2002
-  border: 1px solid #dfe8f3
   text-align: left
-  padding: 12px
   top:  44px
   margin-top: 5px
   margin-right:  0px
   *margin-right:  -1px
   font-size: 13px
   overflow: hidden
+  .arrow
+    margin-left: 150px
 
   li
+    border-left: 1px solid #dfe8f3
+    border-right: 1px solid #dfe8f3
+    background-color: #ffffff
+
     list-style-type: none
     margin: 0px
     padding: 0px
@@ -44,11 +53,17 @@ a.information
     display: block
     width: 190px
     a
+      padding: 3px 12px
       display: block
       width: 100%
       text-decoration: none
     a:hover
       text-decoration: underline
+  li:first-of-type
+    border-top: 1px solid #dfe8f3
+  li:last-of-type
+    border-bottom: 1px solid #dfe8f3
+
 
 #information_menu
   right:  10px
