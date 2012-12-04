@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+menu_items = %w[Disclaimer About\ Quintel Press\ releases Privacy\ statement Partners]
+
 describe Page do
   it "displays the index page" do
     get press_releases_path
@@ -8,7 +10,6 @@ describe Page do
 
   describe "Index page" do
     before(:each) do
-      #subject { page }
       visit root_path
     end
 
@@ -18,36 +19,31 @@ describe Page do
       end
     end
 
-    it "contains an information menu " do
-      expect(page).to have_content('Disclaimer')
-      expect(page).to have_content('About Quintel')
-      expect(page).to have_content('Press releases')
-      expect(page).to have_content('Privacy statement')
+    describe "Information menu " do
+
+      before(:each) do
+        click_link 'Information'
+      end
+
+      it "shows the information menu when you click on it", js: true do
+        expect(page.find('#information_menu')['style']).to eq("display: block; ")
+      end
+
+      menu_items.each do |item|
+        it "contains a link to the #{item} page", js: true do
+          expect(page).to have_link(item)
+        end
+      end
+
+      context "user clicks some link in the information menu" do
+        menu_items.each do |item|
+          it "User clicked #{item} and followed the link", js: true do
+          click_link item
+          expect(page).to have_selector('h1', content: item)
+          end
+        end
+      end
     end
-  end
-
-  it "displays Disclaimer page" do
-    visit root_path
-    click_link 'Disclaimer'
-    expect(page).to have_selector('h1', text: 'Disclaimer')
-  end
-
-  it "displays About page" do
-    visit root_path
-    click_link 'About Quintel Intelligence'
-    expect(page).to have_selector('h1', text: 'About Quintel Intelligence')
-  end
-
-  xit "displays Press releases page" do
-    visit root_path
-    click_link 'Press releases'
-    expect(page).to have_selector('h1', text: 'Press releases about the Energy Transition Model')
-  end
-
-  xit "displays Publications page" do
-    visit root_path
-    save_and_open_page
-    expect(page).to have_link('Publications', href: 'http://refman.et-model.com/')
   end
 
 end

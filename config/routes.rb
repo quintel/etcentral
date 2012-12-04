@@ -1,7 +1,6 @@
 EtModelCom::Application.routes.draw do
 
-  match '/press_releases' => 'press_releases#index'
-  match '/press_release/:id' => 'press_releases#show'
+  resources :press_releases, only: [:index, :show]
   
   match "partners/" => 'partners#index'
 
