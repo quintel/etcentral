@@ -1,6 +1,7 @@
 require 'spec_helper'
 
-menu_items = %w[Disclaimer About\ Quintel Press\ releases Privacy\ statement Partners]
+menu_items = %w[Disclaimer About\ Quintel Press\ releases Privacy\ statement 
+  Partners]
 
 describe Page do
   it "displays the index page" do
