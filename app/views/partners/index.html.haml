@@ -12,9 +12,6 @@
       %a.partner_link{:rel => "partner_#{p.key}", :href => p.url,
         :target => '_blank' }
         .header= image_tag "partners/#{p.key.downcase}.png"
-  .clear
-
-  - @partners.each do |p|
     .content{:id => "partner_#{p.key}_description"}
       = p.description
   .clear

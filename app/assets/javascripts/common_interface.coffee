@@ -17,20 +17,6 @@ $ ->
       $(".information").removeClass("menu-open")
       $("#information_menu").hide()
 
-  # Menu items
-  #
-
-  $("#disable_peak_load_tracking").live 'click', -> disable_peak_load_tracking()
-
-  # locale select box
-  $("select#locale").change ->
-    $.ajax
-      url: "/set_locale"
-      method: "PUT"
-      data:
-        locale: $(this).val()
-      success: -> window.location.reload()
-
 
 
 

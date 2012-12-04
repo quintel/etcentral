@@ -1,5 +1,5 @@
 development: &DEV
-    airbrake_api_key: '3ea5a72aad48a32d7bb486bc71ad4fd5'
+    #airbrake_api_key: ''
 
     # base url for api requests. This is used when CORS is enabled
     # (which is the default) or when the rails application runs a
