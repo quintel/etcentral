@@ -11,7 +11,7 @@ class PressReleasesController < ApplicationController
     if file_url.nil?
       redirect_to press_releases_path
     else
-      redirect_to file_url.url(Time.now + 20.minutes) unless file_url.nil?
+      redirect_to file_url.url(Time.now + 20.minutes) unless file_url.nil? #WHAT?
     end
   end
 
