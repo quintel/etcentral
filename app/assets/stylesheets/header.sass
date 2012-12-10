@@ -7,6 +7,7 @@ header
   @include box-shadow(0 1px 2px rgba(10, 10, 10, 0.25))
   min-width: 960px
   position: relative
+  height: 70px
 
   nav
     a
@@ -19,3 +20,47 @@ header
       background: url("/assets/icons/gb.png") left center no-repeat
     a.nl
       background: url("/assets/icons/nl.png") left center no-repeat
+  #top
+    height: 50px
+    top: 10px
+    position: absolute
+    left: 500px
+    right: 220px
+    li
+      background: #8bbe4e
+      display: inline-block
+      margin: 2px 2px
+      padding: 4px 6px
+      a, a:link, a:visited
+        color: #fff
+        text-decoration: none
+      &.active
+        background: #be4e8b
+        margin-bottom: -1px
+        a, a:link, a:visited
+          color: #555
+          font-weight: bold
+
+  .root_link img
+    left: 60px
+    top: 20px
+    float: left
+    position: absolute
+    width: 400px
+
+  #wattnu_en, #wattnu_nl
+    position: absolute
+    right: 0
+    top: -1px
+    height: 190px
+    width: 210px
+    display: block
+    text-indent: -9999px
+    z-index: 11
+    cursor: pointer
+
+  #wattnu_en
+    background: image-url("root/wattnu_en.png") top right no-repeat
+
+  #wattnu_nl
+    background: image-url("root/wattnu_nl.png") top right no-repeat
