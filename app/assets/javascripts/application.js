@@ -12,5 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require partners
-//= require bootstrap
+//= require_tree .

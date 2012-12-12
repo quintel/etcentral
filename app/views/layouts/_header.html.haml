@@ -1,21 +1,12 @@
 %header
-  %div{ class: 'row' }
-    %nav{ class: 'navbar' }
-      %div{ class: 'navbar-inner' }
-        %div{ class: 'container' }
-          %a{ class: 'btn btn-navbar', 'data-toggle' => "collapse", 'data-target' => ".nav-collapse" }
-            %span{ class: "icon-bar" }
-            %span{ class: "icon-bar" }
-            %span{ class: "icon-bar" }
-          %div{ class: "container" }
-            = link_to 'ETM', root_path, class: 'brand'
+  %a{href: "http://wattnu.nl", target:"_new", id: "wattnu_#{I18n.locale}"}
+    = t 'landing_page.go_to_wattnu'
 
-          %div{ class: 'nav-collapse collapse' }
-            %ul{ class: 'nav' }
-              - other_locale = english? ? "nl" : "en"
-              %li= link_to (t 'landing_page.other_language'), "http://energytransitionmodel.com/" + (params[:key] || '') , { class: other_locale }
-              - information_links.each do |link|
-                %li= link_to link[:text], link[:url], :target => link[:target], :class => link[:class]
-    %a{href: "http://wattnu.nl", target:"_new", id: "wattnu_#{I18n.locale}"}
-      = t 'landing_page.go_to_wattnu'
+  %a.root_link{ href: root_path }
+    %img(src="/assets/header/logo400@2x.png" width="400" height="49" alt="#{ t(:'meta.name') }")
+  %nav#top
+    - other_locale = english? ? "nl" : "en"
+    = link_to (t 'landing_page.other_language'), "http://energytransitionmodel.com/" + (params[:key] || '') , { class: other_locale }
 
+    - information_links.each do |link|
+      =link_to link[:text], link[:url], :target => link[:target], :class => link[:class]

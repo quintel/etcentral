@@ -1,30 +1,21 @@
-@import 'bootstrap'
-@import 'bootstrap-responsive'
 header
-  a
-  color: white
-  margin-left: 10px
-  a.en, a.nl
-    padding-left: 20px
-    margin-right: 20px
-  a.en
-    background: url("/assets/icons/gb.png") left center no-repeat
-  a.nl
-    background: url("/assets/icons/nl.png") left center no-repeat
+  padding: 11px 0 8px
+  background-color: #66A2CA
+  border-top: 1px solid #89b2d3
+  border-bottom: 1px solid #416d96
+  @include background(linear-gradient(top, #77add6, #4e8bbe))
+  @include box-shadow(0 1px 2px rgba(10, 10, 10, 0.25))
+  min-width: 960px
+  position: relative
 
-  #wattnu_en, #wattnu_nl
-    position: absolute
-    right: 0
-    top: -1px
-    height: 190px
-    width: 210px
-    display: block
-    text-indent: -9999px
-    z-index: 11
-    cursor: pointer
-
-  #wattnu_en
-    background: image-url("root/wattnu_en.png") top right no-repeat
-
-  #wattnu_nl
-    background: image-url("root/wattnu_nl.png") top right no-repeat
+  nav
+    a
+      color: white
+      margin-left: 10px
+    a.en, a.nl
+      padding-left: 20px
+      margin-right: 20px
+    a.en
+      background: url("/assets/icons/gb.png") left center no-repeat
+    a.nl
+      background: url("/assets/icons/nl.png") left center no-repeat
