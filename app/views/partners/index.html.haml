@@ -1,17 +1,18 @@
-%h1= t("partners.partners_of_the_energy_transition_model")
-%nav#partners_tabs
-  %ul
-    - Partner::TYPES.each do |type|
-      %li{:class => (type == @current_type ? 'active' : '')}
-        = link_to t("partners.#{type}"), :type => type
-.clear
-
-#partners
-  - @partners.each do |p|
-    .partner_container
-      %a.partner_link{:rel => "partner_#{p.key}", :href => p.url,
-        :target => '_blank' }
-        .header= image_tag "partners/#{p.key.downcase}.png"
-    .content{:id => "partner_#{p.key}_description"}
-      = p.description
+.partners_page
+  %h1= t("partners.partners_of_the_energy_transition_model")
+  %nav#partners_tabs
+    %ul
+      - Partner::TYPES.each do |type|
+        %li{:class => (type == @current_type ? 'active' : '')}
+          = link_to t("partners.#{type}"), :type => type
   .clear
+
+  #partners
+    - @partners.each do |p|
+      .partner_container
+        %a.partner_link{:rel => "partner_#{p.key}", :href => p.url,
+          :target => '_blank' }
+          .header= image_tag "partners/#{p.key.downcase}.png"
+      .content{:id => "partner_#{p.key}_description"}
+        = p.description
+    .clear
