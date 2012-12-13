@@ -19,7 +19,7 @@ header
 
   nav
     position: absolute
-  nav.lang
+  nav#lang
     overflow: hidden
     right: 0
     a
@@ -39,12 +39,14 @@ header
     top: 29px
     z-index: 15
 
+    a.information_menu
+      right: 0
     .menu
       list-style-type: none
       margin: 35px 0
       padding: 0
       li
-        display: inline
+        display: block
         a
           text-decoration: none
 
