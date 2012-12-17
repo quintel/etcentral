@@ -1,22 +1,32 @@
 $ ->
-  if $.browser.msie
-    # A 1px increase fixes some bad aliasing when resizing the image down
-    # to non-HiDPI resolutions.
-    $('#header_inside img[src$="@2x.png"]').attr(width: '401')
 
+class @AppInterface
+  constructor: ->
+    @setup_menus()
 
-  # information menu
-  #
-  $("a.information").click (e) ->
-    e.preventDefault()
-    $("#information_menu").toggle()
-    $(".information").toggleClass("menu-open")
-  # close when the user clicks outside the popup
-  $(document).mouseup (e) ->
-    if $(e.target).parents("#information_menu").length == 0
-      $(".information").removeClass("menu-open")
-      $("#information_menu").hide()
+  setup_menus: =>
+    # Expand menus
+    #
+    $("a.menu_toggler").click (e) =>
+      e.preventDefault()
+      $t = $(e.target)
+      is_open = $t.hasClass('menu-open')
+      @close_all_menus()
+      if !is_open
+        $t.addClass('menu-open')
+        $t.parent().find('.header_menu').show()
 
+    # Close menus when clicking outside them
+    #
+    $('body').mouseup (e) =>
+      $t = $(e.target)
+      if $t.closest(".header_menu").length == 0 &&
+         !$t.is('a.menu_toggler')
+        @close_all_menus()
 
+  close_all_menus: ->
+    $('a.menu_toggler').removeClass('menu-open')
+    $('.header_menu').hide()
 
-
+$ ->
+  window.Interface = new AppInterface()

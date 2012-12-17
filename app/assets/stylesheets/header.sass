@@ -19,33 +19,76 @@ header
 
   nav
     position: absolute
-  nav#lang
-    overflow: hidden
-    right: 0
-    top: 15px
     a
       color: white
       margin-left: 10px
-      .en, .nl
-      padding-left: 20px
-      margin-right: 20px
-      .en
-      background: url("/assets/icons/gb.png") left center no-repeat
-      .nl
-      background: url("/assets/icons/nl.png") left center no-repeat
-
+      .information
+        position: relative
+        margin-left: 1px
+  nav#lang
+    right: 0
+    top: 15px
+    a.en, a.nl
+    padding-left: 20px
+    margin-right: 20px
+    a.en
+    background: url("/assets/icons/gb.png") left center no-repeat
+    a.nl
+    background: url("/assets/icons/nl.png") left center no-repeat
   nav#top
     top: 15px
-    z-index: 15
+    z-index: 25
     right: 40px
-
+    width: 200px
     a.information_menu
       right: 0
-    .menu
-      list-style-type: none
-      margin: 35px 0
-      padding: 0
-      li
-        display: block
-        a
-          text-decoration: none
+      color: white
+    a.menu_toggler
+      background: url('header/toggle_down.png') right 3px no-repeat
+      padding-right: 18px
+      &:hover
+        background-position: right -48px
+      &.menu-open
+        background-position: right -97px
+        color: white
+      @include hidpi
+        background-size: 12px 139px
+        background-position: right -69px
+        &:hover
+          background-position: right -94px
+        &.menu-open
+          background-position: right -119px
+    .header_menu
+      @include border-radius(2px)
+      background-color: #fff
+      border: 1px solid #dfe8f3
+      display: none
+      font-size: 13px
+      line-height: 23px
+      margin-right: 0px
+      margin-top: 5px
+      padding: 12px
+      position: absolute
+      text-align: left
+      top: 26px
+      left: -10px
+      width: 210px
+      z-index: 100
+      color: #666
+      ul
+        padding: 0px
+        li
+          list-style-type: none
+          margin: 0px
+          padding: 0px
+          clear: both
+          float: left
+          display: block
+          width: 190px
+          a
+            text-decoration: none
+            display: block
+            width: 100%
+            color: #4287BB
+            &:hover
+              text-decoration: underline

@@ -6,7 +6,8 @@
       - other_locale = english? ? "nl" : "en"
       = link_to (t 'landing_page.other_language'), "http://energytransitionmodel.com/" + (params[:key] || '') , { class: other_locale }
     %nav#top
-      = link_to 'Information', '#', class: 'information_menu'
-      %ul.menu
-        - information_links.each do |link|
-          %li=link_to link[:text], link[:url], :target => link[:target], :class => link[:class]
+      = link_to t('header.information'), '#', class: 'menu_toggler information'
+      #information_menu.header_menu
+        %ul
+          - information_links.each do |link|
+            %li=link_to link[:text], link[:url], :target => link[:target], :class => link[:class]
