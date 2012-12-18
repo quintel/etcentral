@@ -17,8 +17,14 @@ header
       top: -2px
       z-index: 17
 
+  #menu
+    float: right
+    padding: 0
+    margin: 14px 0 0 0
+
   nav
-    position: absolute
+    position: relative
+    float: left
     a
       color: white
       margin-left: 10px
@@ -27,8 +33,7 @@ header
         margin-left: 1px
 
   nav#lang
-    right: -10px
-    top: 15px
+    position: absolute
     padding-left: 17px
     z-index: 31
     a.en, a.nl
@@ -40,21 +45,23 @@ header
     background: url("/assets/icons/nl.png") left center no-repeat
 
   nav#top
-    top: 15px
     z-index: 25
     right: 65px
     width: 130px
-    padding-right: 70px
     a.information_menu
       right: 0
       color: white
     a.menu_toggler
-      background: url('header/toggle_down.png') right 3px no-repeat
-      padding-right: 18px
+      position: absolute
+      right: 100px
+      top: 0px
+      background: url('header/toggle_down.png') right 5px no-repeat
+      padding-right: 25px
+      margin-right: 15px
       &:hover
-        background-position: right -48px
+        background-position: right -45px
       &.menu-open
-        background-position: right -97px
+        background-position: right -95px
         color: white
       @include hidpi
         background-size: 12px 139px
@@ -77,7 +84,7 @@ header
       position: absolute
       text-align: left
       top: 26px
-      left: -10px
+      right: 31px
       width: 210px
       z-index: 100
       color: #666
@@ -88,7 +95,7 @@ header
         position: absolute
         top: -20px
         width: 0
-        left: 95px
+        left: 135px
         border: 10px solid transparent
         border-bottom-color: #fff
 

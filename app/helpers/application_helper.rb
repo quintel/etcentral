@@ -17,4 +17,12 @@ module ApplicationHelper
     links
   end
 
+  def lang_link
+    if english?
+      'http://energietransitiemodel.nl/'
+    else
+      'http://energytransitionmodel.com/'
+    end
+  end
+
 end
