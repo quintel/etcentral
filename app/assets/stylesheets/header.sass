@@ -6,7 +6,6 @@ header
   @include background(linear-gradient(top, #77add6, #4e8bbe))
   @include box-shadow(0 1px 2px rgba(10, 10, 10, 0.25))
   min-width: 960px
-  position: relative
   height: 45px
   .header_inside
     position: relative
@@ -15,46 +14,31 @@ header
     .root_link
       position: absolute
       top: -2px
-      z-index: 17
-
-  #menu
-    float: right
-    padding: 0
-    margin: 14px 0 0 0
 
   nav
-    position: relative
-    float: left
+    float: right
+    li
+      a
+        color: #4287BB
     a
       color: white
       margin-left: 10px
-      .information
-        position: relative
-        margin-left: 1px
-
-  nav#lang
-    position: absolute
-    padding-left: 17px
-    z-index: 31
-    a.en, a.nl
-    padding-left: 20px
-    margin-right: 20px
-    a.en
-    background: url("/assets/icons/gb.png") left center no-repeat
-    a.nl
-    background: url("/assets/icons/nl.png") left center no-repeat
+    .en, .nl
+      padding-left: 20px
+      margin-right: 20px
+    .en
+      background: url("/assets/icons/gb.png") left center no-repeat
+    .nl
+      background: url("/assets/icons/nl.png") left center no-repeat
 
   nav#top
-    z-index: 25
-    right: 65px
-    width: 130px
-    a.information_menu
-      right: 0
-      color: white
+    position: absolute
+    width: 50px
+    right: 100px
+    top: 11px
     a.menu_toggler
       position: absolute
       right: 100px
-      top: 0px
       background: url('header/toggle_down.png') right 5px no-repeat
       padding-right: 25px
       margin-right: 15px
@@ -62,7 +46,6 @@ header
         background-position: right -45px
       &.menu-open
         background-position: right -95px
-        color: white
       @include hidpi
         background-size: 12px 139px
         background-position: right -69px
@@ -76,43 +59,21 @@ header
       background-color: #fff
       border: 1px solid #dfe8f3
       display: none
-      font-size: 13px
-      line-height: 23px
-      margin-right: 0px
       margin-top: 5px
       padding: 12px
       position: absolute
-      text-align: left
       top: 26px
       right: 31px
       width: 210px
       z-index: 100
-      color: #666
 
-      .arrow
-        z-index: 31
-        height: 0
-        position: absolute
-        top: -20px
-        width: 0
-        left: 135px
-        border: 10px solid transparent
-        border-bottom-color: #fff
-
-      ul
-        padding: 0px
-        li
-          list-style-type: none
-          margin: 0px
-          padding: 0px
-          clear: both
-          float: left
-          display: block
-          width: 190px
-          a
-            text-decoration: none
-            display: block
-            width: 100%
-            color: #4287BB
-            &:hover
-              text-decoration: underline
+    ul#arrow:after
+      content: ' '
+      height: 0
+      position: absolute
+      width: 0
+      border: 10px solid transparent
+      border-bottom-color: white
+      bottom: 100%
+      left: 145px
+      margin-left: -10px

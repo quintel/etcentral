@@ -1,15 +1,14 @@
 %header
-  %div.header_inside
-    %a.root_link{ href: root_path }
-      %img(src="/assets/header/logo400@2x.png" width="400" height="49" alt="#{ t(:'meta.name') }")
-    %div#menu
-      %nav#top
-        %a.menu_toggler.information{href: '#'}= t('header.information')
-        #information_menu.header_menu
-          .arrow
-          %ul
-            - information_links.each do |link|
-              %li=link_to link[:text], link[:url], :target => link[:target], :class => link[:class]
-      %nav#lang
-        - other_locale = english? ? "nl" : "en"
-        = link_to (t 'landing_page.other_language'), lang_link , { class: other_locale }
+  .header_inside
+    %a.root_link{href: root_path}
+      %img{src:"/assets/header/logo400@2x.png", width:"400", height:"49", alt:"#{ t('meta.name') }"}
+
+    %nav#top
+
+      %a.menu_toggler{href: '#'}
+        = t('header.information')
+      %ul.header_menu#arrow
+        - information_links.each do |link|
+          %li= link_to link[:text], link[:url], target: link[:target], class: link[:class]
+      - other_locale = english? ? "nl" : "en"
+      %a{href: lang_link , class: "#{other_locale}" }= t('landing_page.other_language')
