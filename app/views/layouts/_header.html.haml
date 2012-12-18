@@ -4,11 +4,12 @@
       %img{src:"/assets/header/logo400@2x.png", width:"400", height:"49", alt:"#{ t('meta.name') }"}
 
     %nav#top
-
-      %a.menu_toggler{href: '#'}
-        = t('header.information')
-      %ul.header_menu#arrow
-        - information_links.each do |link|
-          %li= link_to link[:text], link[:url], target: link[:target], class: link[:class]
+      .button_group
+        %a.menu_toggler{href: '#'}
+          = t('header.information')
+        %ul.header_menu#arrow
+          - information_links.each do |link|
+            %li= link_to link[:text], link[:url], target: link[:target], class: link[:class]
       - other_locale = english? ? "nl" : "en"
-      %a{href: lang_link , class: "#{other_locale}" }= t('landing_page.other_language')
+      %a{href: lang_link , class: "#{other_locale}" }
+        = t('landing_page.other_language')
