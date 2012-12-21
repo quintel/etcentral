@@ -17,11 +17,24 @@ module ApplicationHelper
     links
   end
 
-  def lang_link
-    if english?
-      'http://energietransitiemodel.nl/'
+  # Returns the domain link for the locale.
+  # If called without param it will return the domain link for the current
+  # locale.
+  #
+  # Example:
+  #   lang_link
+  #   => 'energytransitionmodel' #if current locale equals :en
+  #
+  #   lang_link(:en)
+  #   => 'energytransitionmodel'
+  #
+  #   lang_link(:nl)
+  #   => 'energietransitionmodel'
+  def lang_link(locale = I18n.locale)
+    if locale == :en
+      'energytransitionmodel.com'
     else
-      'http://energytransitionmodel.com/'
+      'energietransitiemodel.nl'
     end
   end
 
