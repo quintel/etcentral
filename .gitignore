@@ -23,3 +23,12 @@ config/config.yml
 .sass-cache/*
 .tags
 .tags_sorted_by_file
+
+# ignore precompiled assets
+/public/assets/*
+
+# ignore bundle binstubs
+/bin
+
+# ignore .vagrant
+/.vagrant
