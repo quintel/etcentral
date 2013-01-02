@@ -8,11 +8,13 @@ class PressReleasesController < ApplicationController
     release = PressRelease.find_by_key(params[:id])
     file_url = FOG_BUCKET.files.get(release.file_name)
 
-    if file_url.nil?
+    begin
+      redirect_to file_url.url(Time.now + 20.minutes)
+    rescue NoMethodError => e
+      logger.error("File not found. Error: #{e}. File: #{release.file_name}")
       redirect_to press_releases_path
-    else
-      redirect_to file_url.url(Time.now + 20.minutes) unless file_url.nil?
     end
+
   end
 
 end
