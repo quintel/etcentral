@@ -33,9 +33,6 @@ end
 
 
 before_fork do |server, worker|
-  if defined?(ActiveRecord::Base)
-    ActiveRecord::Base.connection.disconnect!
-  end
 
   if defined?(Resque)
     Resque.redis.quit
@@ -46,9 +43,6 @@ end
 
 
 after_fork do |server, worker|
-  if defined?(ActiveRecord::Base)
-    ActiveRecord::Base.establish_connection
-  end
 
   if defined?(Resque)
     Resque.redis           = 'localhost:6379'

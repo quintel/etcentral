@@ -22,9 +22,6 @@ stderr_path '/u/apps/et-model.com/shared/log/unicorn.log'
 stdout_path '/u/apps/et-model.com/shared/log/unicorn.log'
 
 before_fork do |server, worker|
-  # This option works in together with preload_app true setting. What is does
-  # is prevent the master process from holding the database connection
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!
 
   # When doing a "hot" restart of the Unicorn master, the old master hangs
   # around until it is explicitly killed (so that it can be used if the new
@@ -42,8 +39,6 @@ before_fork do |server, worker|
 end
 
 after_fork do |server, worker|
-  # Here we are establishing the connection after forking worker processes
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
   # keep track of children pids
   child_pid = server.config[:pid].sub('.pid', ".#{worker.nr}.pid")
   system("echo #{Process.pid} > #{child_pid}")
