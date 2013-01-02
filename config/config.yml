@@ -1,16 +1,16 @@
 development: &DEV
-    airbrake_api_key: '1234'
+  airbrake_api_key: '1234'
 
-    # google analytics key
-    ga_tracker_code: 123456
+  # google analytics key
+  ga_tracker_code: 123456
 
-    # AWS
-    access_key_id: AKIAIE3JK6ZGXJE7MUXQ
-    secret_access_key: 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
-    bucket: pdfs.static.quintel.com
+  # AWS
+  access_key_id: AKIAIE3JK6ZGXJE7MUXQ
+  secret_access_key: 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
+  bucket: pdfs.static.quintel.com
 
 production:
-    <<: *DEV
+  <<: *DEV
 
 test:
-    <<: *DEV
+  <<: *DEV
