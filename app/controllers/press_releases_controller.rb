@@ -5,7 +5,7 @@ class PressReleasesController < ApplicationController
   end
 
   def show
-    release = PressRelease.find_by_id(params[:id])
+    release = PressRelease.find_by_key(params[:id])
     file_url = FOG_BUCKET.files.get(release.file_name)
 
     if file_url.nil?
