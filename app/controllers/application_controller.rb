@@ -8,8 +8,7 @@ class ApplicationController < ActionController::Base
   #######
 
   def set_locale
-    session[:locale] = get_locale_from_url || I18n.default_locale
-    I18n.locale = session[:locale]
+    I18n.locale = get_locale_from_url || I18n.default_locale
   end
 
   # Private: returns Symbol locale from url hostname, or nil when it
