@@ -1,3 +1,5 @@
+require 'airbrake/capistrano'
+
 set :application, "et-model.com"
 set :server_type, 'production'
 set :deploy_to, "/u/apps/et-model.com"
@@ -16,6 +18,5 @@ set :domain, "et-model.com"
 set :rails_env, "production"
 set :application_key, "etmodel"
 
-set :airbrake_key, "<airbrake_key>"
+set :airbrake_key, "2f733ace74fc44f4cda0f16fb7f3c39e"
 server domain, :web, :app, :primary => true
-
