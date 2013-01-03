@@ -11,8 +11,7 @@ class PressReleasesController < ApplicationController
     begin
       redirect_to file_url.url(Time.now + 20.minutes)
     rescue NoMethodError => e
-      logger.error("File not found. Error: #{e}. File: #{release.file_name}")
-      redirect_to press_releases_path
+      raise ActionController::RoutingError.new('File not found')
     end
 
   end
