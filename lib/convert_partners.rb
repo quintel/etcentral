@@ -3,7 +3,7 @@
 # example, ruby convert.rb partners.json
 # to unload data from rails:
 # > p = Partner.group(:name)
-# > File.open('partners.json', 'w') {|f| f.write(a.to_json(include: :description))}
+# > File.open('partners.json', 'w') {|f| f.write(p.to_json(include: :description))}
 
 require 'json'
 require 'yaml'
