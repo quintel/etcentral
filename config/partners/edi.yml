@@ -1,7 +1,15 @@
-key: edi
-url: http://www.energydelta.org/
-country: The Netherlands
-name: Energy Delta Institute
 type: education
-description_en: short english content
-description_nl: kleine nederlandse content
+key: edi
+url: http://www.energydelta.org
+description_en: Energy Delta Institute (EDI) is an international energy business school,
+  with a primary focus on natural gas. EDI's main objective is to contribute to the
+  professional development of current and future energy managers.  EDI organizes training
+  programmes and network events with a focus on the economic, management, legal and
+  geopolitical aspects of the energy business.
+country: nl
+description_nl: Energy Delta Institute (EDI) is een internationale energie business
+  school, met een primaire focus op aardgas. Energy Delta Institute belangrijkste
+  doel is bij te dragen aan de professionele ontwikkeling van huidige en toekomstige
+  energie managers. Er worden trainingprogramma's en netwerkevenementen georganiseerd
+  met een focus op de economische, management, juridische en geopolitieke aspecten
+  van de energie.
