@@ -26,7 +26,7 @@ press_releases = []
 content.each  do |press|
   press_releases << PressRelease.new(
     press['press_release']['title'],
-    press['press_release']['medium'].tr(' ', '_'),
+    press['press_release']['medium'],
     if press['press_release']['release_type'].empty?
       'undefined'
     else
@@ -44,7 +44,6 @@ end
 
 press_releases.each do |press|
   contents = "#{press.to_yaml.lines.to_a[1..-1].join}"
-  p press.key if press.release_type == ''
   File.open("press_releases/#{press.key}.yml", 'w') { |f| f.write(contents)}
 end
 puts "Saved #{press_releases.length} press releases."
