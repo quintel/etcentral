@@ -5,5 +5,5 @@
 
   - @releases.each do |release|
     %h4= release.medium
-    %small= localize release.release_date, :format => :date_only
+    %small= localize Date.parse(release.release_date), :format => :date_only
     = link_to release.title, press_release_path(release.key)
