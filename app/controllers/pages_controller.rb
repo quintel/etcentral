@@ -1,7 +1,10 @@
 class PagesController < ApplicationController
 
   def show
-    @page = Page.load(params[:key], I18n.locale)
+    unless @page = Page.find(params[:id], :nl)
+      raise ActionController::RoutingError.new("Page '#{ params[:id] }' not found")
+    end
+
   end
 
 end

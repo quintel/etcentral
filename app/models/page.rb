@@ -1,19 +1,41 @@
 class Page
 
-  attr_accessor :key, :locale
+  attr_reader :key, :lang, :path
 
-  def initialize(key, locale)
-    @key    = key
-    @locale = locale
+  def initialize(key, lang)
+    @key  = key
+    @lang = :nl
   end
 
-  def html
-    File.open("#{Rails.root}/db/static_pages/#{key}.#{locale}.html", 'r').read
+  def html_content
+    renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    renderer.render(content).html_safe
   end
 
-  # Public Class methdod
-  # Returns instance of Page
-  def self.load(key, locale)
-    Page.new(key, locale)
+  #######
+  private
+  #######
+
+  def content
+    File.read(self.class.path(key, lang))
   end
+
+  #----- Class methods -----------------------
+
+  class << self
+
+    def find(key, lang)
+      new(key, lang) if exists?(key, lang)
+    end
+
+    def exists?(key, lang)
+      File.exists?(path(key, lang))
+    end
+
+    def path(key, lang)
+      "#{ Rails.root }/config/pages/#{ lang }/#{ key }.markdown"
+    end
+
+  end
+
 end

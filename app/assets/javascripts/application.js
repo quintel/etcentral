@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require common_interface
-//= require partners
-//= require root
+//= require bootstrap
+//= require_tree .

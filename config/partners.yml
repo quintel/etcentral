@@ -1,0 +1,128 @@
+-
+  name: GasTerra
+  key:  gasterra
+  kind: company
+-
+  name: Shell
+  key:  shell
+  kind: company
+-
+  name: Alliander
+  key:  alliander
+  kind: company
+-
+  name: AT Kearney
+  key:  atkearney
+  kind: company
+-
+  name: CE Delft
+  key:  cedelft
+  kind: institute
+-
+  name: Clingendael
+  key:  clingendael
+  kind: institute
+-
+  name: Delta
+  key:  delta
+  kind: company
+-
+  name: ECN
+  key:  ecn
+  kind: institute
+-
+  name: EDI
+  key:  edi
+  kind: institute
+-
+  name: Eneco
+  key:  eneco
+  kind: company
+-
+  name: Enery Valley
+  key:  energyvalley
+  kind: institute
+-
+  name: Enexis
+  key:  enexis
+  kind: company
+-
+  name: InterProvinciaal Overleg (IPO)
+  key:  ipo
+  kind: government
+-
+  name: Jouw Energie van Morgen
+  key:  jouwenergievanmorgen
+  kind: institute
+-
+  name: NDV KEMA
+  key:  kema
+  kind: institute
+-
+  name: Milieu Centraal
+  key:  milieucentraal
+  kind: institute
+-
+  name: Netbeheer Nederland
+  key:  netbeheer
+  kind: company
+-
+  name: Nyenrode
+  key:  nyenrode
+  kind: institute
+-
+  name: Philips
+  key:  philips
+  kind: company
+-
+  name: Stichting Natuur en Milieu
+  key:  snm
+  kind: institute
+-
+  name: StedIn
+  key:  stedin
+  kind: company
+-
+  name: TenneT
+  key:  tennet
+  kind: company
+-
+  name: Uneto VNI
+  key:  unetovni
+  kind: company
+-
+  name: Vopak
+  key:  vopak
+  kind: company
+-
+  name: Visser & Smit Hanab
+  key:  vshanab
+  kind: company
+-
+  name: Brandenburg
+  key:  brandenburg
+  kind: government
+-
+  name: Ministerie van Economische Zaken, Landbouw en Innovatie
+  key:  mineleni
+  kind: government
+-
+  name: Gemeente Amsterdam
+  key:  amsterdam
+  kind: government
+-
+  name: Gemeente Groningen
+  key:  amsterdam
+  kind: government
+-
+  name: Gemeente Ameland
+  key:  amsterdam
+  kind: government
+-
+  name: EnergieNederland
+  key:  energienederland
+  kind: company
+-
+  name: Urgenda
+  key:  urgenda
+  kind: insitute

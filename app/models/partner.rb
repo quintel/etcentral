@@ -1,26 +1,29 @@
 class Partner < YmlReadOnlyRecord
-  attr_accessor :key, :name, :url, :country, :type,
-                :description_en, :description_nl
 
-  TYPES = %w[general knowledge education]
+  attr_accessor :name, :key, :kind
 
-  def key_or_name
-    name ? name : key
+  def self.companies
+    self.all.select(&:is_company?)
   end
 
-  def logo
-    "/assets/partners/#{key}.png"
+  def self.institutes
+    self.all.select(&:is_institute?)
   end
 
-  def description
-    I18n.locale == :nl ? description_nl : description_en
+  def self.governments
+    self.all.select(&:is_government?)
   end
 
-  # Class methods ------------------------------------------------------------
+  def is_company?
+    self.kind == 'company'
+  end
 
-  def self.all(type = nil)
-    partners = super()
-    partners.select { |p| p.type == type }.shuffle if type
+  def is_government?
+    self.kind == 'government'
+  end
+
+  def is_institute?
+    self.kind == 'institute'
   end
 
 end

@@ -1,9 +1,0 @@
-.information_page
-  %h1= t("information.in_the_news")
-
-  %h3= t("information.overview")
-
-  - @releases.each do |release|
-    %h4= release.medium
-    %small= localize Date.parse(release.release_date), :format => :date_only
-    = link_to release.title, press_release_path(release.key)

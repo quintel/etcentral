@@ -1,22 +1,30 @@
-require 'airbrake/capistrano'
+set :application, "etmodel.com"
+set :repository,  "git@github.com:quintel/etmodel.com.git"
 
-set :application, "et-model.com"
-set :server_type, 'production'
-set :deploy_to, "/u/apps/et-model.com"
 set :scm, :git
-set :repository,  "git@github.com:quintel/et-model.com.git"
-set :user, 'ubuntu'
-set :deploy_via, :remote_cache
+
+role :web, "et-model.com" # Your HTTP server, Apache/etc
+role :app, "et-model.com" # This may be the same as your `Web` server
+
+set :user, "ubuntu"
+
+set :bundle_flags, '--deployment --quiet --binstubs --shebang ruby-local-exec'
+
 # Some files that will need proper permissions set
 set :chmod755, "app config db lib public vendor script script/* public/disp*"
 ssh_options[:forward_agent] = true
 set :use_sudo, false
-set :bundle_flags, '--deployment --quiet --binstubs --shebang ruby-local-exec'
 
-set :branch, "production"
-set :domain, "et-model.com"
-set :rails_env, "production"
-set :application_key, "etmodel"
+after "deploy:restart", "deploy:cleanup"
 
-set :airbrake_key, "2f733ace74fc44f4cda0f16fb7f3c39e"
-server domain, :web, :app, :primary => true
+# if you're still using the script/reaper helper you will need
+# these http://github.com/rails/irs_process_scripts
+
+# If you are using Passenger mod_rails uncomment this:
+# namespace :deploy do
+#   task :start do ; end
+#   task :stop do ; end
+#   task :restart, :roles => :app, :except => { :no_release => true } do
+#     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+#   end
+# end

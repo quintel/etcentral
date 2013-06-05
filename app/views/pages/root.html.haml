@@ -1,22 +1,15 @@
-= render 'layouts/watt_nu'
+%section#main
 
-#root
+  %h1= raw t 'landing_page.title'
+  %p=  raw t 'landing_page.explanation'
 
-  %section#main
+  .row#products
 
-    %h1= raw t 'landing_page.title'
-    %p=  raw t 'landing_page.explanation'
-
-    %aside#screenshots
-
-      %a.screenshot#etflex.etflex_link{href:"#{product_link(:etflex)}/lang/#{I18n.locale}", target: '_blank'}
-      %a.screenshot#etmodel.etmodel_link{href:"#{product_link(:pro)}", target: '_blank'}
-      %a.screenshot#mixer.mixer_link{href: "#{product_link(:mixer)}?locale=#{I18n.locale}", target: '_blank'}
-
-    %section#products
-
-      %article.product#etflex
-        %a.etflex_link{href:"#{product_link(:etflex)}/lang/#{I18n.locale}", target: '_blank'}
+    %article.span4
+      .product#etflex
+        %a.etflex_link{href:"#{product_link(:etflex)}", target: '_blank'}
+          .img-holder
+            = image_tag 'pages/root/screen.png'
           %h2= raw t 'landing_page.etflex.title'
           %ul.specs
             %li.time{title:"time required"}=         "~ 5 #{t 'landing_page.minutes'}"
@@ -24,8 +17,11 @@
             %li=                                     "#{t 'landing_page.free'}!"
           %p= raw t 'landing_page.etflex.explanation'
 
-      %article.product#etmodel
+    %article.span4
+      .product#etmodel
         %a.etmodel_link{href:"#{product_link(:pro)}", target: '_blank'}
+          .img-holder
+            = image_tag 'pages/root/screen.png'
           %h2= raw t 'landing_page.etmodel.title'
           %ul.specs
             %li.time{title:"time required"}=        "> 30 #{t 'landing_page.minutes'}"
@@ -33,8 +29,11 @@
             %li=                                    "#{t 'landing_page.free'}!"
           %p= raw t 'landing_page.etmodel.explanation'
 
-      %article.product#mixer
+    %article.span4
+      .product#mixer
         %a.mixer_link{href: "#{product_link(:mixer)}?locale=#{I18n.locale}", target: '_blank'}
+          .img-holder
+            = image_tag 'pages/root/screen.png'
           %h2= raw t 'landing_page.mixer.title'
           %ul.specs
             %li.time{title:"time required"}=        "~ 10 #{t 'landing_page.minutes'}"
@@ -42,4 +41,4 @@
             %li=                                    "#{t 'landing_page.free'}!"
           %p= raw t 'landing_page.mixer.explanation'
 
-    .clear
+  .clear

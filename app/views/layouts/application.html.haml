@@ -1,15 +1,23 @@
 !!! 5
 %html
   %head
-    %title= t("meta.title")
-    = stylesheet_link_tag 'application'
-    = javascript_include_tag 'application'
+    %title
+      Energy Transition Model
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
-    = render 'layouts/header'
+%body{id: "#{ controller_name }_#{ action_name }"}
 
-  %body
+  = render 'layouts/navbar'
+
+  = yield :breadcrumb
+
+  .container
+
     = yield
 
-    = render 'layouts/footer'
+  = render 'layouts/footer'
 
-    = render "layouts/ga" if Rails.env.production?
+  = render 'layouts/ga' unless Rails.env.development?

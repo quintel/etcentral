@@ -1,0 +1,24 @@
+/* using @import over //=require since this will allow other files to use the
+ * mixins that Bootstrap provides
+ */
+
+@import "compass/css3/images"
+@import "compass/css3/box-shadow"
+
+@import "quintel_theme"
+@import "bootstrap"
+
+// ------- UNRESPONSIVE ADJUSTMENTS -------------
+body
+  padding-top: $navbarHeight
+
+@import "bootstrap-responsive"
+@import "responsive"
+
+@import "font-awesome"
+@import "proxima_nova"
+@import "global_style"
+
+@import "navbar"
+@import "pages/root"
+@import "footer"

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-EtModelCom::Application.load_tasks
+ETM::Application.load_tasks

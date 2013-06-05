@@ -1,26 +1,10 @@
 require 'bundler/capistrano'
-require 'airbrake/capistrano'
-require 'hipchat/capistrano'
 
-set :hipchat_token, "49f40059d2d3f285235c32f1488a15"
-set :hipchat_room_name, "Quintel Intelligence test room"
-set :hipchat_announce, false
+load 'deploy'
 
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
-Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
-load 'lib/capistrano/unicorn'
+# we need this to precompile assets
 load 'deploy/assets'
 
+Dir['vendor/gems/*/recipes/*.rb','vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
 load 'config/deploy' # remove this line to skip loading any of the default tasks
-
-namespace :deploy do
-  task :link_configuration_files do
-    run "ln -sf #{shared_path}/config/config.yml #{release_path}/config/"
-    run "ln -sf #{shared_path}/config/database.yml #{release_path}/config/"
-  end
-end
-
-before "deploy:assets:precompile", "deploy:link_configuration_files"
-after "deploy:update_code", "deploy:link_configuration_files"
-after "deploy", "deploy:cleanup"
-
+load 'lib/capistrano/unicorn.rb'

@@ -1,0 +1,64 @@
+body#pages_root
+  background-image: image-url('pages/root/sky.png'), image-url('pages/root/sky_and_sea.png')
+  background-position: center 57px, center 361px
+
+#products
+  list-style-type: none
+  padding: 0 0 0 0
+
+  h2
+    font-size: 28px
+    text-align: center
+    border-bottom: 1px solid #333
+    margin-bottom: 10px
+    padding-bottom: 15px
+
+  .product
+    margin-top: 50px
+    padding: 18px 10px
+
+    .img-holder
+      @include background(image-url('pages/root/app_buttons.png') 3px 1px / 35px 8px no-repeat, linear-gradient(center left, #C3C3C3, #BBB))
+      @include box-shadow(rgba(white, 0.3) 0 0 4px 3px inset)
+      @include border-radius(4px)
+      width: 100%
+      max-width: 330px
+      padding-top: 11px
+      padding-bottom: 1px
+      margin: 0 auto 50px
+      border: 1px solid #ccc
+
+    img
+      display: block
+      border-top: 1px solid #999
+
+  .product > a
+    color: inherit
+    text-decoration: none
+    font-weight: 200
+
+  .product:hover, .active-product
+    background: rgba(255, 255, 255, 0.65)
+    @include border-radius(8px)
+    @include box-shadow($navbarLinkColor 0 0 20px)
+
+  .product:active
+    top: 1px
+
+  ul.specs
+    list-style-type: none
+    margin: 0 0 0 0
+    margin-bottom: 15px
+    padding: 0 0 0 0
+    font-style: italic
+
+    li
+      text-align: center
+      line-height: 2em
+
+    .time
+      background: image-url("root/clock.png") left center no-repeat
+
+    .options
+      background: image-url("root/options.png") left center no-repeat
+

@@ -1,0 +1,18 @@
+# ET-model.com
+
+Home page for the Energy Transition Model
+
+## Features
+
+* All the general information about the ETM:
+  - partners
+  - press releases
+  - general information pages, on the wiki, units used, etc.
+  - API
+  - workshops?
+* Responsive design: should look good and readable on mobile devices as well
+* (Maybe later:) A blog...?
+
+## Current status
+
+In development. Provisioned launch Summer of 2013?
