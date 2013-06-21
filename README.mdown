@@ -26,9 +26,11 @@ front-end applications.
 ## Features
 
 - Responsive design
+- Properly tested
 - No Database!
 - Support for HiDPI monitors
 - Easier sharing of content between Pro, Light and the Mixer etc.
+- `nice-to-have`: auto deploy when CI-server tests pass
 
 ## Out of scope
 
