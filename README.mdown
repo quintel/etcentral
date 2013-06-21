@@ -20,8 +20,6 @@ front-end applications.
   - workshops? `nice-to-have`
 * Links (and maybe some background information) to professional, light, mixer,
   refman, wiki
-* Responsive design: should look good and readable on mobile devices as well
-* (Maybe later:) A blog...?
 
 ## Features
 
