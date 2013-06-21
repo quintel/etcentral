@@ -15,15 +15,15 @@ class Partner < YmlReadOnlyRecord
   end
 
   def is_company?
-    self.kind == 'company'
+    kind == 'company'
   end
 
   def is_government?
-    self.kind == 'government'
+    kind == 'government'
   end
 
   def is_institute?
-    self.kind == 'institute'
+    kind == 'institute'
   end
 
 end
