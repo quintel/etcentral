@@ -1,17 +1,40 @@
 # ET-model.com
 
-Home page for the Energy Transition Model
+General information site for the Energy Transition Model.
+
+## Purpose
+
+In order to separate the information and the (model) functionality, so that
+the information can be altered/updated without possible interference with the
+front-end applications.
+
+## Featured Content
+
+* All the general information about the ETM:
+  - general information pages, units used, etc.
+  - partners
+  - press releases
+  - Prominent Users
+  - bug tracker
+  - API `nice-to-have`
+  - workshops? `nice-to-have`
+* Links (and maybe some background information) to professional, light, mixer,
+  refman, wiki
+* Responsive design: should look good and readable on mobile devices as well
+* (Maybe later:) A blog...?
 
 ## Features
 
-* All the general information about the ETM:
-  - partners
-  - press releases
-  - general information pages, on the wiki, units used, etc.
-  - API
-  - workshops?
-* Responsive design: should look good and readable on mobile devices as well
-* (Maybe later:) A blog...?
+- Responsive design
+- No Database!
+- Support for HiDPI monitors
+- Easier sharing of content between Pro, Light and the Mixer etc.
+
+## Out of scope
+
+- Refman
+- Wiki
+- Education page
 
 ## Current status
 
