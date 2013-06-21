@@ -14,8 +14,8 @@ front-end applications.
   - general information pages, units used, etc.
   - partners
   - press releases
-  - Prominent Users
   - bug tracker
+  - Prominent Users integrated with PRESETS!
   - API `nice-to-have`
   - workshops? `nice-to-have`
 * Links (and maybe some background information) to professional, light, mixer,
