@@ -6,9 +6,9 @@ gem 'haml'
 gem 'redcarpet'
 
 group :assets do
-  gem 'sass-rails',             '~> 3.2'
-  gem 'sass',                      '3.2'
-  gem 'bootstrap-sass',         '~> 2.3.2.0'
+  gem 'sass-rails'
+  gem 'sass'
+  gem 'bootstrap-sass'
   gem 'compass-rails'
   gem 'font-awesome-sass-rails'
   gem 'coffee-rails',           '~> 3.2'
