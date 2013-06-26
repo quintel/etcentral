@@ -24,4 +24,4 @@
                     %li= link_to key, value
             - else
               %li{class:('active' if request.path.delete('/') == key)}
-                = link_to key, "/#{key}"
+                = link_to key, "/#{key.downcase}"

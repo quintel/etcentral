@@ -16,7 +16,7 @@
   kind: company
 -
   name: CE Delft
-  key:  cedelft
+  key:  ce_delft
   kind: institute
 -
   name: Clingendael
@@ -112,11 +112,11 @@
   kind: government
 -
   name: Gemeente Groningen
-  key:  amsterdam
+  key:  groningen
   kind: government
 -
   name: Gemeente Ameland
-  key:  amsterdam
+  key:  ameland
   kind: government
 -
   name: EnergieNederland

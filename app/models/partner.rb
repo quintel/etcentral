@@ -26,4 +26,11 @@ class Partner < YmlReadOnlyRecord
     kind == 'institute'
   end
 
+  def logo
+    if File.exists?("./app/assets/images/partners/partners/#{self.key.downcase.gsub(" ","")}.png")
+      return "/assets/partners/partners/#{self.key.downcase.gsub(" ","")}.png"
+    else
+      return 'http://placehold.it/125x40'
+    end
+  end
 end

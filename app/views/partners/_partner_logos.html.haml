@@ -1,0 +1,8 @@
+#partner_logos
+  #phone_logos.visible-phone
+    = render partial: 'logo_row', locals: { partners: partners, row_length: 2 }
+  #phone_logos.visible-tablet
+    = render partial: 'logo_row', locals: { partners: partners, row_length: 3 }
+  #desktop_logos.visible-desktop
+    = render partial: 'logo_row', locals: { partners: partners, row_length: 6 }
+  = render partial: 'folder_content', locals: { partners: partners }

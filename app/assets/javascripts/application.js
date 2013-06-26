@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.app-folders
 //= require bootstrap
+//= require bootstrap-scrollspy
+//= require bootstrap-affix
+//= require partner
 //= require_tree .
