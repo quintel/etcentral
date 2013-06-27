@@ -1,103 +1,103 @@
 -
   name: GasTerra
   key:  gasterra
-  kind: company
+  kind: primary
 -
   name: Shell
   key:  shell
-  kind: company
+  kind: primary
 -
   name: Alliander
   key:  alliander
-  kind: company
+  kind: primary
 -
   name: AT Kearney
   key:  atkearney
-  kind: company
+  kind: knowledge
 -
   name: CE Delft
   key:  ce_delft
-  kind: institute
+  kind: knowledge
 -
   name: Clingendael
   key:  clingendael
-  kind: institute
+  kind: knowledge
 -
   name: Delta
   key:  delta
-  kind: company
+  kind: primary
 -
   name: ECN
   key:  ecn
-  kind: institute
+  kind: knowledge
 -
   name: EDI
   key:  edi
-  kind: institute
+  kind: education
 -
   name: Eneco
   key:  eneco
-  kind: company
+  kind: primary
 -
   name: Enery Valley
   key:  energyvalley
-  kind: institute
+  kind: education
 -
   name: Enexis
   key:  enexis
-  kind: company
+  kind: primary
 -
   name: InterProvinciaal Overleg (IPO)
   key:  ipo
-  kind: government
+  kind: primary
 -
   name: Jouw Energie van Morgen
   key:  jouwenergievanmorgen
-  kind: institute
+  kind: education
 -
   name: NDV KEMA
   key:  kema
-  kind: institute
+  kind: knowledge
 -
   name: Milieu Centraal
   key:  milieucentraal
-  kind: institute
+  kind: knowledge
 -
   name: Netbeheer Nederland
   key:  netbeheer
-  kind: company
+  kind: primary
 -
   name: Nyenrode
   key:  nyenrode
-  kind: institute
+  kind: education
 -
   name: Philips
   key:  philips
-  kind: company
+  kind: primary
 -
   name: Stichting Natuur en Milieu
   key:  snm
-  kind: institute
+  kind: knowledge
 -
   name: StedIn
   key:  stedin
-  kind: company
+  kind: primary
 -
   name: TenneT
   key:  tennet
-  kind: company
+  kind: primary
 -
   name: Uneto VNI
   key:  unetovni
-  kind: company
+  kind: primary
 -
   name: Vopak
   key:  vopak
-  kind: company
+  kind: primary
 -
   name: Visser & Smit Hanab
   key:  vshanab
-  kind: company
+  kind: primary
 -
   name: Brandenburg
   key:  brandenburg
@@ -105,11 +105,11 @@
 -
   name: Ministerie van Economische Zaken, Landbouw en Innovatie
   key:  mineleni
-  kind: government
+  kind: primary
 -
   name: Gemeente Amsterdam
   key:  amsterdam
-  kind: government
+  kind: primary
 -
   name: Gemeente Groningen
   key:  groningen
@@ -125,4 +125,44 @@
 -
   name: Urgenda
   key:  urgenda
-  kind: insitute
+  kind: primary
+-
+  name: e.on
+  key:  eon
+  kind: primary
+-
+  name: Logica
+  key:  logica
+  kind: primary
+-
+  name: Essent
+  key:  essent
+  kind: primary
+-
+  name: Gasunie
+  key:  gasunie
+  kind: primary
+-
+  name: Ecofys
+  key:  ecofys
+  kind: knowledge
+-
+  name: warmtepompplein.nl
+  key:  warmtepompplein
+  kind: knowledge
+-
+  name: EPN
+  key:  epn
+  kind: education
+-
+  name: Het Platform Beroepsonderwijs
+  key:  hpbodeb
+  kind: education
+-
+  name: Uitleg & Tekst
+  key:  uitlegtekst
+  kind: education
+-
+  name: Belevenisonderwijs
+  key:  belevenisonderwijs
+  kind: education

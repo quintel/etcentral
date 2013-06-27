@@ -2,28 +2,33 @@ class Partner < YmlReadOnlyRecord
 
   attr_accessor :name, :key, :kind
 
-  def self.companies
-    self.all.select(&:is_company?)
+  # Return a partner page that contains the contents bla-di-bla
+  def partner_page
+    PartnerPage.find(key, :nl)
   end
 
-  def self.institutes
-    self.all.select(&:is_institute?)
+  def self.primary
+    self.all.select(&:is_primary?)
   end
 
-  def self.governments
-    self.all.select(&:is_government?)
+  def self.knowledge
+    self.all.select(&:is_knowledge?)
   end
 
-  def is_company?
-    kind == 'company'
+  def self.education
+    self.all.select(&:is_education?)
   end
 
-  def is_government?
-    kind == 'government'
+  def is_primary?
+    kind == 'primary'
   end
 
-  def is_institute?
-    kind == 'institute'
+  def is_knowledge?
+    kind == 'knowledge'
+  end
+
+  def is_education?
+    kind == 'education'
   end
 
   def logo

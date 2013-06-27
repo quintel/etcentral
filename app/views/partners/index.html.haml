@@ -42,7 +42,7 @@
         De belangrijkste voorwaarde die Quintel aan dergelijke samenwerking verbindt, is dat het eindproduct weer gratis voor iedereen beschikbaar is. Zo ontstaat als het ware een ‘kennispool’ waar iedereen vanuit zijn eigen specialisme aan bijdraagt. 
         Partners leveren naast een financiële bijdrage vaak ook kennis voor het modelleren van een bepaald onderwerp. Quintel heeft het recht om deze gegevens te valideren met een andere partij en aan te vullen of zonodig aan te passen. Meer informatie over het proces voor kwaliteitsverbetering vindt u hier.
       %br
-      = render partial: 'partner_logos', locals: { partners: Partner.companies }
+      = render partial: 'partner_logos', locals: { partners: Partner.primary }
     %br
     %br
     #knowledge_partners{"style" => "clear: both;"}
@@ -51,7 +51,7 @@
         Deze partners delen de visie van Quintel dat onderwijs noodzakelijk is om op lange termijn de juiste beslissingen te nemen rondom energietransitie. Per project wordt op een andere manier samengewerkt. Quintel streeft ernaar om zoveel mogelijk onderwijsmateriaal gratis beschikbaar te stellen. Deze partners zijn zelden direct betrokken bij aanpassingen van het ETM.
       %br
       #logos
-        = render partial: 'partner_logos', locals: { partners: Partner.institutes }
+        = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
     %br
     #education_partners
       %h1{"style" => "margin: 20 0;"} Education Partners
@@ -61,4 +61,4 @@
         Onze kennispartners dragen ook bij door te helpen bij het zoeken naar gegevens of door gevonden gegevens te valideren.
       %br
       #logos
-        = render partial: 'partner_logos', locals: { partners: Partner.governments }
+        = render partial: 'partner_logos', locals: { partners: Partner.education }

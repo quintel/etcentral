@@ -1,0 +1,18 @@
+## Enexis
+
+[Website Enexis](http://www.enexis.nl)
+
+### Everything for a reliable grid
+
+Enexis manages the energy grid in the North, East and South of the Netherlands. In doing so we ensure that energy (gas and/or electricity) finds its way from the energy suppliers to customers without a hitch. Overall we are responsible for the connections to some 2.5 million households, businesses and official agencies. What is more, we are constantly working on creating a better, smarter and more efficient grid, ready for the future. The Enexis energy network is also one of the most reliable in the Netherlands and one of the safest in Europe. Enexis has been an independent business with more than 4,000 employees since January 2009. An extensive and dynamic organization, committed to excellent service, professionalism and innovation. Before Enexis became independent, it was called ‘Essent Netwerk’ and was a part of Essent. Our new name - Enexis - stands for everything that we are: energy, connection, future, infrastructure.
+
+### Innovation
+
+Sustainable energy sources such as wind, sun and biomass will take on a greater role in the future of energy provision. Energy-saving technologies such as combined electricity/heat production and electric vehicles are also progressing. Enexis will be making wide-ranging modifications to the gas and electricity grid in the coming decades to enable such growth to happen. If it were up to us, your car would soon run on electricity and you would fill up beneath your own carport. Where possible, we will take a leading role in implementing innovative and sustainable solutions. Enexis cannot achieve all this alone, however, and is therefore always looking to participate with governments, the market and electricity suppliers.
+
+### Smart grids
+As sustainable energy advances, some of our customers are producing more and more of their own energy by means of wind turbines, biomass installations or small-scale combined heating and power stations. Often they generate more energy than they can use and they feed that excess energy back into the energy grid. But because electricity grids were designed in the past mainly for one-way transport of energy from big power plants to consumers, this requires a smart solution. Two-way traffic must be made possible to put energy back into the energy grid, so for this reason we are converting our grids into ‘smart grids’. These are grids that are also capable of charging electric car batteries during periods when demand for electricity is low. Enexis is the initiator of this Mobile Smart Grid.
+
+### The transition
+
+Because of their monopolies within their service areas, the tariffs of grid management companies are regulated by the ‘Energiekamer’ (Chamber of Energy). It is becoming increasingly clear that the way in which this is currently done, hampers Enexis and other grid management companies in preparing energy grids for a sustainable future. This in turn is frustrating the development towards a more sustainable energy supply, because not enough transport capacity for connecting sustainable means of production can be made available on time. Enexis urges a thorough reconsideration, therefore, of the way in which grid management companies are regulated and of the possibilities they are given to facilitate the development of a more sustainable energy supply. The energy grids are a crucial link between supply and demand and are the foundation, therefore, beneath the current and future energy supply and need to be prepared for the future.
