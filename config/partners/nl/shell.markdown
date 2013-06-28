@@ -2,7 +2,7 @@
 
 [Website Shell](http://www.shell.com)
 
-The coming 50 years, governments, energy producers and energy consumers together have to do three things simultaneously: meet the demand for energy, maintain energy resources at an acceptable level and limit the consequences for the environment and society. This is no simply task. Currently, Shell already has running projects that contribute to this.
+De komende vijftig jaar moeten overheden, energieproducenten en -gebruikers gezamenlijk drie dingen tegelijk doen: voldoen aan de vraag naar energie, de voorraden op peil houden en de gevolgen daarvan op het gebied van milieu en maatschappij beperken. Dit is geen eenvoudige opgave. Nu al zijn er Shell-projecten die hieraan een bijdrage leveren.
 
-### Future & Society
-In everything we do, we have to take the economy, society and the environment into account. Shell translates this into commercial and ‘social’ investments.
+### Toekomst & Samenleving
+Bij alles wat we doen, moeten we rekening houden met de economie, de maatschappij en het milieu. Shell vertaalt dit naar commerciële en ‘sociale’ investeringen.

@@ -1,0 +1,6 @@
+## DNV KEMA
+
+[Website DNV KEMA](http://www.dnvkema.com)
+
+### Over DNV KEMA Energy & Sustainability
+Met ruim 2300 deskundigen in meer dan 30 landen wereldwijd zet DNV KEMA Energy & Sustainability zich in om de wereldwijde transitie naar een veilige, betrouwbare, efficiënte en schone energietoekomst te bevorderen. Met een geschiedenis van bijna 150 jaar, zijn wij gespecialiseerd in geavanceerde, innovatieve oplossingen op het gebied van business & technische consultancy, testen, inspecties & certificatie, risicomanagement, en verificatie. Als objectief en onpartijdig energiekennisbedrijf adviseren en ondersteunen we organisaties in de energiewaardeketen: producenten, leveranciers & eindgebruikers van energie, fabrikanten van apparatuur, overheidsinstanties, bedrijven en niet-gouvernementele organisaties. DNV KEMA Energy & Sustainability is onderdeel van DNV, een onafhankelijke, mondiale dienstverlener om risico's te beheersen. DNV heeft ruim 10,000 medewerkers in meer dan 100 landen. Ga voor meer informatie over DNV KEMA Energy & Sustainability naar [www.dnvkema.com](http://www.dnvkema.com).

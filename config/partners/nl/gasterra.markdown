@@ -2,14 +2,13 @@
 
 [Website Gasterra](http://www.gasterra.nl)
 
-### Profile
+### Profiel
 
-GasTerra is an international company trading in natural gas. It operates on the European energy market and has a significant share of the Dutch gas market. It also provides gas-related services. The company has a strong purchasing position and has over 40 years of experience in purchasing and selling natural gas.
+GasTerra is een internationaal opererende handelsonderneming in aardgas. De onderneming is werkzaam op de Europese energiemarkt en heeft een belangrijk aandeel in de Nederlandse gasvoorziening. Daarnaast biedt GasTerra aan de gashandel gerelateerde diensten aan. De onderneming heeft een sterke inkooppositie en heeft meer dan 40 jaar ervaring in de in- en verkoop van aardgas.
 
-The economic and social value of natural gas as a source of energy gives the company an important role in utilising the domestic gas reserves and in energy supply in the Netherlands and the EU. GasTerra promotes the safe and efficient consumption of natural gas and takes active steps to develop further applications. The company recognises the great importance of energy transition to sustainable energy supplies and initiates projects in that context.
+De economische waarde en het maatschappelijk belang van aardgas als energiebron geven de onderneming een belangrijke rol in de benutting van de binnenlandse gasvoorraad en de energievoorziening in Nederland en de Europese Unie (EU). GasTerra bevordert een veilige en doelmatige inzet van aardgas en is actief in de ontwikkeling van verdere toepassingen. Het bedrijf onderkent het grote belang van het transitietraject naar een duurzame energievoorziening en initieert projecten in dit kader.
 
-### Gas-related transition activities
+### Gasgerelateerde transitieactiviteiten
+Een betrouwbare energievoorziening en de zorgvuldige aanwending van aardgas als nationale bodemschat worden door de samenleving van eminent belang geacht. Een belang dat in de huidige wereld met haar klimaat- en energievraagstukken groter is dan ooit.
 
-A reliable energy supply and the careful application of natural gas as a precious national resource is seen by society as a major priority, especially in the light of current climate and energy concerns. GasTerra expanded its activities in these areas. GasTerra regards measures to assist the transition from conventional energy consumption to more renewable sources of energy as one of its duties, in line with the core activities described earlier.
-
-The underlying principles are clear: wherever natural gas can play a role in conserving energy or making it cleaner, greener or more sustainable, GasTerra will investigate the feasibility and application of such alternatives with numerous other organisations. GasTerra will also invest in the development of advanced equipment or expertise, which it will include in its policy-making on transition.
+Meewerken aan de transitie van het conventionele energiegebruik naar meer duurzame energiebronnen rekent GasTerra tot haar verantwoordelijkheid in lijn met genoemde kernactiviteiten. De uitgangspunten zijn duidelijk: waar aardgas een rol kan spelen in energiebesparing, opschoning, verduurzaming of vergroening worden samen met tal van andere organisaties studies verricht naar haalbaarheid en toepassing en investeert GasTerra in ontwikkeling van geavanceerde apparatuur of deskundigheid, ingebracht in beleidsvorming betreffende transitie.

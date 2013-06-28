@@ -2,17 +2,17 @@
 
 [Website Eneco](http://www.eneco.nl)
 
-### New energy era
+### Nieuw energietijdperk
 
-We are standing on the brink of a new energy era. Because of the climate crisis and the exhaustion of fossil fuels, the coming decades we will have to make the transition to a sustainable energy supply. The sustainable energy transition will change our society and economy in a similarly drastic way as oil and coal did more than a century ago. Our strong dependence on fossil fuels and the traditional, fossil way of thinking about energy are the greatest obstacles on the path to the new energy era.
+We staan aan de vooravond van een nieuw energietijdperk. Door het klimaatprobleem en de uitputting van fossiele brandstoffen zullen we de komende decennia de transitie naar een duurzame energievoorziening moeten gaan maken. De duurzame energietransitie zal onze samenleving en economie op dezelfde ingrijpende wijze veranderen als olie en kolen dat meer dan een eeuw geleden hebben gedaan. Onze grote afhankelijkheid van fossiele brandstoffen en het traditionele, fossiele ‘energiedenken’ zijn tegelijkertijd de grootste barrières op onze weg naar het nieuwe energietijdperk.
 
-### Sustainable strategy
+### Duurzame strategie
 
-In 2007 Eneco made the strategic choice of pursuing a sustainable course. During the coming years we will invest heavily in energy saving and both large and small scale energy production from wind, solar PV and biomass. Next to that, we will focus on flexible and efficient gas-fired power plants, underground storage of gas and combined heat and power units (CHP). Eneco considers natural gas the cleanest and most efficient fossil fuel available during the transition to a sustainable energy supply. Moreover, flexible gas-fired power plants are best suited to compensate for the fluctuating output of sustainable means of electricity producion. Eneco explicitly does not choose coal-fired or nuclear power plants.
+In 2007 heeft Eneco de strategische keuze gemaakt om een duurzame koers te gaan varen. We investeren de komende jaren fors in energiebesparing, en groot- en kleinschalige energieopwekking uit wind, zon PV en biomassa. Daarnaast zetten we in op flexibele en efficiënte gasgestookte elektriciteitscentrales, ondergrondse gasopslag en warmtekrachtinstallaties (WKK). Eneco ziet aardgas als de schoonste en efficiëntste fossiele brandstof gedurende de transitie naar een duurzame energievoorziening. Tevens zijn flexibele gascentrales het best in staat het wisselende aanbod van duurzame productiemiddelen te balanceren. Eneco kiest dus nadrukkelijk niet voor kolen- of kernenergie.
 
-### Making clear choices
-As a Dutch energy company we wish to make a substantial contribution to the Dutch energy and climate policy targets for 2020. We believe that the climate for investments in sustainable energy in the Netherlands is insufficiently stimulating, however, to be able to see these ambitions for energy and the climate fulfilled. The most important reason for this is that the Ntherlands do not make enough clear choices for both the short and long term. As a result, the Netherlands have not made enough progress towards having one of the most sustainable and efficient energy supply systems in Europe.
+### Heldere keuzes maken
+Als Nederlands energiebedrijf willen we een substantiële bijdrage leveren aan de Nederlandse energie- en klimaatdoelstellingen voor 2020. We zijn echter van mening dat het Nederlandse investeringsklimaat voor duurzame energie onvoldoende stimulerend is om deze energie- en klimaatambities te bereiken. Belangrijkste reden hiervoor is dat Nederland te weinig heldere keuzes maakt voor de zowel de korte als lange termijn. Hierdoor heeft Nederland de afgelopen jaren onvoldoende meters gemaakt om uiteindelijk in 2020 één van de duurzaamste en efficiëntste energievoorzieningen in Europa te hebben.
 
-### Common challenge
+### Gezamenlijke uitdaging
 
-Eneco considers the transition to a sustainable energy supply as a common challenge for public authorities, politicians, business, science, non-governmental organizations and consumers. The Energy Transition Model (ETM) is a practical tool for clarifying and visualizing the fundamental choices for our energy future. As such, the ETM can make an important contribution to the political and public debate about a sustainable energy future for the Netherlands and towards establishing a basis support in society for such a future.
+Eneco ziet de transitie naar een duurzame energievoorziening als een gezamenlijke uitdaging van overheid, politiek, bedrijfsleven, wetenschap, maatschappelijke organisaties én consumenten. Het Energietransitiemodel (ETM) is een praktisch instrument om de fundamentele keuzes voor onze energietoekomst helder en overzichtelijk in beeld te brengen. Daarmee kan het ETM een belangrijke bijdrage leveren aan het politiek-maatschappelijke debat over en draagvlak voor een duurzame energievoorziening in Nederland.

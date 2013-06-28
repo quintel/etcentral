@@ -1,0 +1,6 @@
+## Nyenrode Business Universiteit
+
+[Website Nyenrode Business Universiteit](http://www.nyenrode.nl/)
+
+### Nyenrode Business Universiteit en de Mini MBA Energy
+De energiesector in Nederland en zeker ook op mondiale schaal is enorm in beweging. De komende 25 jaar groeit de mondiale energievraag met meer dan 50%. Liberalisering, marktwerking en concurrentie zijn vooral in de utilities (energie-, water-, en gassenmarkt) aanleiding tot fusievorming. Er is sprake van internationale druk om CO 2 uitstoot drastisch te reduceren. Veel van de bestaande energie-infrastructuur is de komende decennia toe aan vervanging of renovatie. Daarnaast zijn omvangrijke uitbreidingsinvesteringen nodig en extra geld om energievoorziening duurzamer en efficiënter te maken. Het belang van deze energietransitie is door de overheid, burgers en bedrijven meer dan ooit beseft. De stijgende energieprijzen geven een extra stimulans om zuinig om te gaan met energie en te investeren in duurzame energie. Vanwege deze ontwikkelingen zoeken bedrijven naar mogelijkheden voor innovatie en nieuwe energieproducten en ontstaat meer vraag naar specialisten in deze richting. Tegen deze achtergrond heeft Nyenrode in samenwerking met de organisaties die participeren in de raad van advies de Energ y Mini MBA ontwikkeld.

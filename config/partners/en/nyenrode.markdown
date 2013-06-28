@@ -1,0 +1,6 @@
+## Nyenrode Business University
+
+[Website Nyenrode Business University](http://www.nyenrode.nl/)
+
+### Nyenrode Business University and the Mini-MBA Energy
+The energy sector in the Netherlands and certainly also worldwide is in turmoil. The global demand for energy is expected to grow more than 50% in the next 25 years. Liberalization, market forces and competition especially in utilities (energy, water, and gas markets) will bring about mergers. The international pressure continues to grow to drastically reduce carbon emissions. Much of the current energy infrastructure will need to be replaced or renovated in the decades to come. Additionally, substantial expansion investments are required and extra funding to make the provision of energy more sustainable and more effective. Government bodies, society at large and companies are now more than ever aware of the importance of this energy transition. Rising energy prices provide an extra stimulus to use energy (more) sparingly and to invest in sustainable forms of energy. Due to these developments companies are researching possibilities to innovate, to create new energy products and their need for more specialists in this particular field grows synchronously. In response to these challenges Nyenrode has developed the Energy Mini MBA in cooperation with the organizations participating in the Advisory Board.

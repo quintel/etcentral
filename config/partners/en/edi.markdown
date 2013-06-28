@@ -1,0 +1,6 @@
+## Energy Delta Institute
+
+[Website Energy Delta Institute](http://www.energydelta.org/)
+
+### About Energy Delta Institute
+Energy Delta Institute (EDI) is an international energy business school, with a primary focus on natural gas. EDI was founded in 2002 by N.V. Nederlandse Gasunie, GasTerra B.V., OAO Gazprom and the University of Groningen, later joined by Shell, RWE, Dong, Eneco, EBN, Taqa and Essent. The energy community has come to appreciate EDI both as a platform of knowledge exchange between partners and participants alike. The changing energy world is forcing energy companies to innovate in order to stay competitive. In addition, the energy sector is confronting the possibility of a growing shortage of qualified personnel in the coming decades. The sector has only one choice: to invest in knowledge. EDI’s main objective is to contribute to the professional development of current and future energy managers. EDI organizes training programmes and network events with a focus on the economic, management, legal and geopolitical aspects of the energy business.

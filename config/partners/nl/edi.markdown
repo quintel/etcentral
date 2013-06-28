@@ -1,0 +1,6 @@
+## Energy Delta Institute
+
+[Website Energy Delta Institute](http://www.energydelta.org/)
+
+### Over Energy Delta Institute
+Energy Delta Institute (EDI) is in 2002 opgericht als een samenwerkingsverband tussen N.V. Nederlandse Gasunie, GasTerra B.V., het Russische Gazprom en de Rijksuniversiteit Groningen, waarbij later ook Shell zich heeft aangesloten. Essent, DONG Energy, EBN, Eneco en TAQA zijn als associated partners bij EDI betrokken. Mensen en organisaties in de energiesector zijn EDI steeds meer gaan waarderen als platform voor kennisuitwisseling voor zowel partners als deelnemers. De veranderende energiewereld dwingt energiebedrijven om te blijven innoveren om concurrerend te kunnen blijven. Ook krijgt de energiesector de komende jaren mogelijk te maken met een tekort aan gekwalificeerd personeel. De sector heeft dan ook maar één optie: investeren in kennis. Het voornaamste doel van EDI is het leveren van een bijdrage aan het opleiden van energiemanagers. Om deze reden biedt EDI opleidingsprogramma’s en netwerk events aan, die met economische, managements-, wettelijke en geopolitieke aspecten van energie te maken hebben.
