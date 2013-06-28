@@ -1,0 +1,18 @@
+# Sample localization file for Dutch. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+nl:
+  menu:
+    applications: "Applicaties"
+    professional: "Professioneel"
+    light: "Licht"
+    mixer: "Mixer"
+    background_information: "Achtergrond informatie"
+    about_qi: "Over QI"
+    known_issues: "Tekortkomingen"
+    quality_control: "Kwaliteitsverbetering"
+    privacy_statement: "Privacy Statement"
+    disclaimer: "Disclaimer"
+    units: "Gebruikte eenheden"
+    partners: "Partners"
+    contact: "Contact"

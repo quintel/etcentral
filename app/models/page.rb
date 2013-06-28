@@ -4,7 +4,7 @@ class Page
 
   def initialize(key, lang)
     @key  = key
-    @lang = :nl
+    @lang = lang
   end
 
   def html_content

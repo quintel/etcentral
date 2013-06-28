@@ -17,11 +17,11 @@
             - if values.is_a?(Hash)
               %li.dropdown
                 %a.dropdown-toggle{:href => '#', :'data-toggle' => 'dropdown'}
-                  = key
+                  = I18n.t("menu.#{key.gsub(" ","_").downcase}")
                   %b.caret
                 %ul.dropdown-menu
                   - values.each do |key, value|
-                    %li= link_to key, value
+                    %li= link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), value
             - else
               %li{class:('active' if request.path.delete('/') == key)}
-                = link_to key, "/#{key.downcase}"
+                = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), "/#{key.downcase}"
