@@ -5,6 +5,8 @@ gem 'rails',       '3.2.11'
 gem 'haml'
 gem 'redcarpet'
 
+gem 'http_accept_language'
+
 group :assets do
   gem 'sass-rails'
   gem 'sass'
