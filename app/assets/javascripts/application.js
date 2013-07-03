@@ -16,5 +16,4 @@
 //= require bootstrap
 //= require bootstrap-scrollspy
 //= require bootstrap-affix
-//= require partner
 //= require_tree .

@@ -1,7 +1,4 @@
-- partners.each_slice(row_length) do |slice|
-  .jaf-row.jaf-container
-    - slice.each do |partner|
-      .folder{"id" => "#{partner.key}"}
-        %a{"href" => "#"}
-          .partner_container
-            = image_tag(partner.logo, size: "125x40", alt: "#{partner.name}")
+- partners.each do |partner|
+  %a{"href" => partner_path(partner.key)}
+    .partner_container
+      = image_tag(partner.logo, size: "125x40", alt: "#{ partner.name }")

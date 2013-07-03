@@ -1,8 +1,0 @@
-- partners.each do |partner|
-  .folderContent{"class" => "#{partner.key}", "style" => "clear: both;"}
-    .jaf-container
-      - unless page = partner.partner_page
-        %h3 #{partner.name}
-        = "Er is nog geen detailinformatie beschikbaar over #{partner.name}"
-      - else
-        = page.html_content
