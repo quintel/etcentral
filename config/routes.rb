@@ -1,4 +1,6 @@
 ETM::Application.routes.draw do
+  
+  match '/prominent_users'              => 'pages#prominent_users'
 
   resources :pages, only: [:index, :show]
 
