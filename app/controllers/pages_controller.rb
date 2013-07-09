@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   end
   
   def press_releases
-    @releases = PressRelease.all
+    @releases = PressRelease.all.sort { |x,y| y.release_date <=> x.release_date }
   end
   
 end
