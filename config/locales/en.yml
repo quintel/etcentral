@@ -2,26 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  menu:
-    applications: "Applications"
-    professional: "Professional"
-    light: "Light"
-    mixer: "Mixer"
-    background_information: "Background information"
-    about_qi: "About QI"
-    education: "Education"
-    known_issues: "Known Issues"
-    quality_control: "Quality Control"
-    privacy_statement: "Privacy Statement"
-    prominent_users: "Prominent Users"
-    press_releases: "Press Releases"
-    publications: "Publications"
-    disclaimer: "Disclaimer"
-    units: "Units"
-    partners: "Partners"
-    contact: "Contact"
-    wiki: "Wiki"
-    ago: ago
+  ago: ago
   date:
     formats:
       default: "%Y-%m-%d"
