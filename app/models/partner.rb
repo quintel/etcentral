@@ -1,6 +1,6 @@
 class Partner < YmlReadOnlyRecord
 
-  attr_accessor :name, :key, :kind
+  attr_accessor :name, :key, :kind, :lang, :path
 
   # Return a partner page that contains the contents bla-di-bla
   def partner_page
@@ -37,5 +37,18 @@ class Partner < YmlReadOnlyRecord
     else
       return 'http://placehold.it/125x40'
     end
+  end
+
+  def html_content(lang)
+    renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    renderer.render(content(lang)).html_safe
+  end
+
+  def content(lang)
+    File.read(self.class.path(key, lang))
+  end
+
+  def self.path(key, lang)
+    "#{ Rails.root }/config/partners/#{ lang }/#{ key }.markdown"
   end
 end

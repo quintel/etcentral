@@ -1,22 +1,19 @@
 .jumbotron
-  %h1 The partners of the Energy Transition Model
-  %p
-    We work closely together with companies, NGOs, and governmental
-    organizations to improve and extend the Energy Transition Model or to
-    provide other services.
+  %h1= raw t 'partners.main_title'
+  %p= raw t 'partners.sub_title'
 
 .row
   .span4
     .partners#primary_partners
-      %h2 Partners die kennis delen en het ETM <strong>financieel</strong> en in natura steunen
+      %h2{"style" => "text-align: center;"}= raw t  'partners.primary'
       = render partial: 'partner_logos', locals: { partners: Partner.primary }
 
   .span4
     .partners#knowledge_partners
-      %h2 Partners die kennis delen en het ETM in natura steunen
+      %h2{"style" => "text-align: center;"}= raw t  'partners.knowledge'
       = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
 
   .span4
     .partners#education_partners
-      %h2 Partners waarmee we samen <strong>lesmateriaal</strong> ontwikkelen
+      %h2{"style" => "text-align: center;"}= raw t  'partners.education'
       = render partial: 'partner_logos', locals: { partners: Partner.education }
