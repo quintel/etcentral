@@ -36,3 +36,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+# YmlReadOnlyRecord has to use the fixtures directory.
+YmlReadOnlyRecord::BASE_DIR = "#{ Rails.root }/spec/fixtures/"

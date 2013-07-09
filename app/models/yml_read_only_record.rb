@@ -1,5 +1,7 @@
 class YmlReadOnlyRecord
 
+  BASE_DIR = "#{ Rails.root }/config/"
+
   def initialize(attr_hash)
     attr_hash.symbolize_keys!
     attr_hash.each do |key, value|
@@ -16,7 +18,7 @@ class YmlReadOnlyRecord
   end
 
   def self.find(key)
-    self.all.select { |p| p.key == key }.first
+    self.all.select { |p| p.key.to_sym == key.to_sym }.first
   end
 
   #######
@@ -24,14 +26,14 @@ class YmlReadOnlyRecord
   #######
 
   def self.load_collective_file
-    file = "#{Rails.root}/config/#{ yml_store }.yml"
+    file = "#{ BASE_DIR }#{ yml_store }.yml"
     return false unless File.exist?(file)
     YAML.load_file(file).map { |i| self.new i }
   end
 
   def self.load_directory
     items = []
-    Dir.glob("#{Rails.root}/config/#{ yml_store }/*.yml") do |yml_file|
+    Dir.glob("#{ BASE_DIR }#{ yml_store }/*.yml") do |yml_file|
       items << self.new(YAML.load_file yml_file)
     end
     items
