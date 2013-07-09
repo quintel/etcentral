@@ -5,15 +5,18 @@
 .row
   .span4
     .partners#primary_partners
-      %h2{"style" => "text-align: center;"}= raw t  'partners.primary'
-      = render partial: 'partner_logos', locals: { partners: Partner.primary }
+      %a.category_header{"href" => "http://etcentral.dev/primary"}
+        %h2{"style" => "text-align: center;"}= raw t  'partners.primary'
+        = render partial: 'partner_logos', locals: { partners: Partner.primary }
 
   .span4
     .partners#knowledge_partners
-      %h2{"style" => "text-align: center;"}= raw t  'partners.knowledge'
-      = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
+      %a.category_header{"href" => "http://etcentral.dev/knowledge"}
+        %h2{"style" => "text-align: center;"}= raw t  'partners.knowledge'
+        = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
 
   .span4
     .partners#education_partners
-      %h2{"style" => "text-align: center;"}= raw t  'partners.education'
-      = render partial: 'partner_logos', locals: { partners: Partner.education }
+      %a.category_header{"href" => "http://etcentral.dev/education"}
+        %h2{"style" => "text-align: center;"}= raw t  'partners.education'
+        = render partial: 'partner_logos', locals: { partners: Partner.education }
