@@ -38,4 +38,5 @@ RSpec.configure do |config|
 end
 
 # YmlReadOnlyRecord has to use the fixtures directory.
+YmlReadOnlyRecord.send(:remove_const, "BASE_DIR")   # Using send as remove_const is a private method
 YmlReadOnlyRecord::BASE_DIR = "#{ Rails.root }/spec/fixtures/"
