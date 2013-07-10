@@ -1,2 +1,14 @@
-- @presets.each do |preset|
-  = preset.name
+#page_wrapper
+  %h1= t("header.prominent_users_of_etm")
+  %article#prominent_users
+    - @presets.each do |user|
+      - title = dutch? ? user.function['nl'] : user.function['en']
+      - url = user.scenario_id ? "http://www.energietransitiemodel.com/scenarios/#{user.scenario_id}?locale=#{I18n.locale}" : '#'
+      %div.user{id: user.key}
+        %div.user_shot
+          = link_to image_tag("prominent_users/#{user.key}.jpg"), url
+        %h3
+          %a.name{href:'#'}= truncate(user.name, length: 24)
+          %a.title{href: '#'}= truncate(title, length: 24)
+          %a.organization{href:'#'}= truncate(user.organization, length: 24)
+        = link_to 'Open scenario', url, method: 'get', class: 'scenario_button btn'
