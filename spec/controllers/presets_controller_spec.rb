@@ -27,7 +27,6 @@ describe PresetsController do
 
     it 'contains Frans' do
       expect(assigns(:preset)).to_not be_nil
-      # expect(assigns(:preset).name).to eq 'Frans van Camp'
     end
 
   end

@@ -18,7 +18,7 @@ class YmlReadOnlyRecord
   end
 
   def self.find(key)
-    self.all.select { |p| p.key.to_sym == key.to_sym }.first
+    self.all.select { |p| p.key == key }.first
   end
 
   #######
