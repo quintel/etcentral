@@ -5,7 +5,7 @@ module PagesHelper
     when :etflex
       make_link("light.energytransitionmodel.com")
     when :pro
-      make_link("pro.energytransitionmodel.com")
+      make_link("pro.energytransitionmodel.com/pro")
     when :mixer
       make_link('mixer.energytransitionmodel.com')
     end
