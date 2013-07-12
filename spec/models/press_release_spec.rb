@@ -4,7 +4,7 @@ describe PressRelease do
   
   describe '#find' do
     
-    let(:press_release) { PressRelease.find(1) }
+    let(:press_release) { PressRelease.all.first }
     
     it 'finds press release' do
       expect(press_release).to_not be_nil
