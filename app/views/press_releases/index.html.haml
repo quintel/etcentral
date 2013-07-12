@@ -1,12 +1,12 @@
 #page_wrapper.information_page
   %h1= t("information.in_the_news")
 
-  %h3=  t("information.overview")
+  %h3= t("information.overview")
 
   - @press_releases.each do |release|
-    %div
-      =image_tag("icons/#{ (release.release_type == 'radio' ? 'speaker.jpeg' : 'pdf.gif') }", :class =>"left", :size=>"35x40",:style =>"padding-right:10px")
-    %strong= release.medium
-    %small= l release.release_date
-    %br
-    %small= link_to(release.title ? release.title : "Open persbericht", release.link, :target => '_blank')
+    #press_release
+      = image_tag("icons/#{ (release.release_type == 'radio' ? 'speaker.jpeg' : 'pdf.gif') }", class: "left release_type", size: "35x40")
+      %strong= release.medium
+      %small= l release.release_date
+      %br
+      %small= link_to(release.title ? release.title : "Open persbericht", release.link, target: '_blank')
