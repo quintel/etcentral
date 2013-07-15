@@ -7,7 +7,7 @@
     .partners#primary_partners
       #header
         %h2= raw t  'partners.primary'
-        %a.category_header{href: "http://etcentral.dev/primary"}
+        %a.category_header{ href: "http://etcentral.dev/primary" }
           %i.icon-info-sign
       .visible-phone
         = render partial: 'partner_logos', locals: { partners: Partner.primary }
@@ -16,7 +16,7 @@
     .partners#knowledge_partners
       #header
         %h2= raw t 'partners.knowledge'
-        %a.category_header{href: "http://etcentral.dev/knowledge"}
+        %a.category_header{ href: "http://etcentral.dev/knowledge" }
           %i.icon-info-sign
       .visible-phone
         = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
@@ -25,7 +25,7 @@
     .partners#education_partners
       #header
         %h2= raw t  'partners.education'
-        %a.category_header{href: "http://etcentral.dev/education"}
+        %a.category_header{ href: "http://etcentral.dev/education" }
           %i.icon-info-sign
       .visible-phone
         = render partial: 'partner_logos', locals: { partners: Partner.education }
