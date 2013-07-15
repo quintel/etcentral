@@ -33,4 +33,6 @@ end
 
 gem 'jquery-rails'
 
+gem 'aws-sdk', '~> 1.0'
+
 # gem 'debugger'
