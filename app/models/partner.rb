@@ -32,8 +32,10 @@ class Partner < YmlReadOnlyRecord
   end
 
   def logo
-    if File.exists?("./app/assets/images/partners/partners/#{self.key.downcase.gsub(" ","")}.png")
-      return "/assets/partners/partners/#{self.key.downcase.gsub(" ","")}.png"
+    s3 = AWS::S3.new
+    obj = s3.buckets['images.etcentral.com'].objects["partners/#{self.key.downcase.gsub(' ','')}.png"]
+    if obj.exists?
+      return "http://images.etcentral.com.s3.amazonaws.com/partners/#{self.key.downcase.gsub(" ","")}.png"
     else
       return 'http://placehold.it/125x40'
     end
