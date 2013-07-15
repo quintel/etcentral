@@ -6,7 +6,7 @@
       - url = user.scenario_id ? "http://www.energietransitiemodel.com/scenarios/#{ user.scenario_id }?locale=#{ I18n.locale }" : '#'
       %div.user{id: user.key}
         %div.user_shot
-          = image_tag("http://images.etcentral.com.s3.amazonaws.com/prominent_users/#{ user.key }.jpg")
+          = image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ user.key }.jpg")
         %h3
           .info.name= truncate(user.name, length: 24)
           .info.title= truncate(title, length: 24)
