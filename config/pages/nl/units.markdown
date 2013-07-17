@@ -1,36 +1,36 @@
-# Eenheden die worden gebruikt
+# Gebruikte eenheden
 
 ## Rekenen met eenheden
 
 <table class='table table-striped'>
   <tr>
     <td>k (kilo)</td>
-    <td align='right'>1.000</td>
+    <td><div align='right'>1.000</div></td>
     <td>(duizend), oftewel 10<sup>3</sup></td>
   </tr>
   <tr>
     <td>M (mega)</td>
-    <td align='right'>1.000.000</td>
+    <td><div align='right'>1.000.000</div></td>
     <td>(miljoen), oftewel 10<sup>6</sup></td>
   </tr>
   <tr>
     <td>G (giga)</td>
-    <td align='right'>1.000.000.000</td>
+    <td><div align='right'>1.000.000.000</div></td>
     <td>(miljard), oftewel 10<sup>9</sup></td>
   </tr>
   <tr>
     <td>T (tera)</td>
-    <td align='right'>1.000.000.000.000</td>
+    <td><div align='right'>1.000.000.000.000</div></td>
     <td>(biljoen), oftewel 10<sup>12</sup></td>
   </tr>
   <tr>
     <td>P (peta)</td>
-    <td align='right'>1.000.000.000.000.000</td>
+    <td><div align='right'>1.000.000.000.000.000</div></td>
     <td>(biljard), oftewel 10<sup>15</sup></td>
   </tr>
   <tr>
     <td>E (exa)</td>
-    <td align='right'>1.000.000.000.000.000.000</td>
+    <td><div align='right'>1.000.000.000.000.000.000</div></td>
     <td>(triljoen), oftewel 10<sup>18</sup></td>
   </tr>
 </table>

@@ -1,15 +1,13 @@
-## Quality improvement and monitoring of modeling and data
+# Quality improvement and monitoring of modeling and data
 
 An English translation of this text will be made available shortly. Until then, please refer to the Dutch text.
-
-## Kwaliteitsverbetering en –bewaking van modellering en data
 
 Het Energietransitiemodel (ETM) is het resultaat van tientallen manjaren werken. Uiteraard is het model nooit 'af'. Om er toch voor te zorgen dat het ETM betrouwbaar blijft, hanteert Quintel een doorlopend proces van kwaliteitsverbetering. Daarbij betrekken wij actief de partners en gebruikers.
 
 Zoals te zien is op de pagina tekortkomingen kunnen er altijd dingen verbeterd worden aan het ETM. De volgorde waarmee dingen worden opgepakt is deels afhankelijk van de ernst van een probleem, maar ook van de prioriteiten die Quintel en haar partners hieraan geven. Voor grote verbetertrajecten is immers geld nodig.
 
 
-### Verbeterproces
+## Verbeterproces
 
 Quintel werkt voortdurend aan het onderhoud en verbetering van de data en modelleren. De beoogde uitkomst hiervan is steeds dat erkende experts tevreden zijn met de kwaliteit van data of modellering voor een bepaald onderwerp. Wij zetten ons in om dit proces in toenemende mate in de 'openbaarheid' te laten verlopen. Er is nog geen proces waarin gebruikte data of de werking van het model 'gevalideerd' worden, in de zin dat een bevoegde organisatie publiekelijk verklaart dat het ETM 'correct' werkt.
 
@@ -20,7 +18,7 @@ Zo heeft Quintel de cijfers rondom elektrische auto's met Enexis en Essent, maar
 Omdat het ETM alleen gebruik maakt van 'harde' wetten en bekende feiten, zoals de koolstofinhoud van brandstoffen of de efficiënties van centrales bijvoorbeeld, blijken verreweg de meeste onderwerpen nauwelijks controversieel te zijn. Een groter probleem voor Quintel is het feit dat niet alle benodigde data eenvoudig toegankelijk is. 
 Denk daarbij bijvoorbeeld aan commercieel gevoelige informatie als de vergoeding die elektriciteitscentrales krijgen om warmte te leveren aan een warmtenet of lastig te simlpificeren informatie als de isolatiegraad in kantoorgebouwen.
 
-### Partijen
+## Partijen
 
 Een prominente rol bij dit proces is weggelegd voor onze partners. Dankzij het netwerk van partners kunnen wij vrij eenvoudig bepalen wie over de juiste kennis en data beschikt om een verbetering door te voeren.
 

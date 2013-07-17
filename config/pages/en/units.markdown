@@ -1,4 +1,4 @@
-# Units used in the model
+# Units
 
 ## Calculations for units
 
