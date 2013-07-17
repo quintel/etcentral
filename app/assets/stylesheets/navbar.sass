@@ -25,3 +25,11 @@
     background: image-url("icons/areas/gb.png") left center no-repeat
   a.nl
     background: image-url("icons/areas/nl.png") left center no-repeat
+    
+ul.dropdown-menu > li > a
+  .icon-external-link
+    display: none
+  &[href*="http://"]:hover
+    .icon-external-link
+      color: white
+      display: inline
