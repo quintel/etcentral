@@ -1,8 +1,8 @@
-## Units used in the model
+# Units used in the model
 
-### Calculations for units
+## Calculations for units
 
-<table>
+<table class='table table-striped'>
   <tr>
     <td>k (kilo)</td>
     <td><div align='right'>1</div></td>
@@ -35,14 +35,14 @@
   </tr>
 </table>
 
-### Most relevant units for energy transition
+## Most relevant units for energy transition
 
-  <table cellspacing='0' cellpadding='0'>
+<table class='table table-striped'>
   <col width='64'>
   <col width='454'>
   <tr>
     <td width='64'>bbl </td>
-    <td width='454'>barrel – standard quantity of    oil equaling 159 liters</td>
+    <td width='454'>barrel – standard quantity of oil equaling 159 liters</td>
   </tr>
    <tr>
     <td>bcm </td>
