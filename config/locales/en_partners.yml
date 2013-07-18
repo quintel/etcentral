@@ -5,3 +5,7 @@ en:
     primary: "Partners who share knowledge and support the ETM both <strong>financially</strong> and in kind"
     knowledge: "Partners who share knowledge and support the ETM in kind"
     education: "Partners who help to develop <strong> course material</strong>"
+  breadcrumbs:
+    primary: "Funding partners"
+    knowledge: "Knowledge partners"
+    education: "Education partners"
