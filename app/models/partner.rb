@@ -2,11 +2,6 @@ class Partner < YmlReadOnlyRecord
 
   attr_accessor :name, :key, :kind, :lang, :path
 
-  # Return a partner page that contains the contents bla-di-bla
-  def partner_page
-    PartnerPage.find(key, :nl)
-  end
-
   def self.primary
     self.all.select(&:is_primary?)
   end

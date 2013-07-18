@@ -1,3 +1,0 @@
-# Partners waarmee we samenwerken om lesmateriaal te ontwikkelen
-
-Deze partners delen de visie van Quintel dat onderwijs noodzakelijk is om op lange termijn de juiste beslissingen te nemen rondom energietransitie. Per project wordt op een andere manier samengewerkt. Quintel streeft ernaar om zoveel mogelijk onderwijsmateriaal gratis beschikbaar te stellen. Deze partners zijn zelden direct betrokken bij aanpassingen van het ETM.
