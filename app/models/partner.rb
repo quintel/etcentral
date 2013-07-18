@@ -32,13 +32,7 @@ class Partner < YmlReadOnlyRecord
   end
 
   def logo
-    s3 = AWS::S3.new
-    obj = s3.buckets[BUCKET_NAME].objects["partners/#{ self.key.downcase.gsub(' ','') }.png"]
-    if obj.exists?
-      "http://#{ BUCKET_NAME }.s3.amazonaws.com/partners/#{ self.key.downcase.gsub(" ","") }.png"
-    else
-      'http://placehold.it/125x40'
-    end
+    "http://#{ BUCKET_NAME }.s3.amazonaws.com/partners/#{ self.key.downcase.gsub(" ","") }.png"
   end
 
   def html_content(lang)
