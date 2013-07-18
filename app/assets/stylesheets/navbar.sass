@@ -29,7 +29,11 @@
 ul.dropdown-menu > li > a
   .icon-external-link
     display: none
-  &[href*="http://"]:hover
+    font-size: 0.8em
+  &[href*="http://"]
     .icon-external-link
-      color: white
+      color: #888
       display: inline
+    &:hover
+      .icon-external-link
+        color: white
