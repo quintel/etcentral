@@ -9,7 +9,7 @@
       .product#etflex
         %a.etflex_link{ href:"#{ product_link(:etflex) }", target: '_blank' }
           .img-holder
-            = image_tag 'pages/root/screen_light.png'
+            = image_tag 'pages/root/screen_light.jpg'
           %h2= raw t 'landing_page.etflex.title'
           %ul.specs
             %li.time{ title:"time required" }=         "~ 5 #{ t 'landing_page.minutes' }"
@@ -21,7 +21,7 @@
       .product#etmodel
         %a.etmodel_link{ href:"#{ product_link(:pro) }", target: '_blank' }
           .img-holder
-            = image_tag 'pages/root/screen_pro.png'
+            = image_tag 'pages/root/screen_pro.jpg'
           %h2= raw t 'landing_page.etmodel.title'
           %ul.specs
             %li.time{ title: "time required" }=        "> 30 #{ t 'landing_page.minutes' }"
@@ -33,7 +33,7 @@
       .product#mixer
         %a.mixer_link{href: "#{ product_link(:mixer) }?locale=#{ I18n.locale }", target: '_blank'}
           .img-holder
-            = image_tag 'pages/root/screen_mixer.png'
+            = image_tag 'pages/root/screen_mixer.jpg'
           %h2= raw t 'landing_page.mixer.title'
           %ul.specs
             %li.time{ title:"time required" }=        "~ 10 #{ t 'landing_page.minutes' }"
