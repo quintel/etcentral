@@ -3,43 +3,19 @@
   %p= raw t 'partners.sub_title'
 
 .row
-  .span4
-    .partners#primary_partners
-      #header
-        %h2
-          = raw t  'partners.primary'
-          %small
-            %a.category_header{ href: partner_info_path(:primary) }
-              %i.icon-info-sign
-      .visible-phone
-        = render partial: 'partner_logos', locals: { partners: Partner.primary }
-
-  .span4
-    .partners#knowledge_partners
-      #header
-        %h2
-          = raw t 'partners.knowledge'
-          %small
-            %a.category_header{ href: partner_info_path(:knowledge) }
-              %i.icon-info-sign
-      .visible-phone
-        = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
-
-  .span4
-    .partners#education_partners
-      #header
-        %h2
-          = raw t  'partners.education'
-          %small
-            %a.category_header{ href: partner_info_path(:education) }
-              %i.icon-info-sign
-      .visible-phone
-        = render partial: 'partner_logos', locals: { partners: Partner.education }
+  - %w{primary knowledge education}.each do |type|
+    .span4
+      .partners{id: "#{type}_partners"}
+        #header
+          %h2
+            = raw t  "partners.#{type}"
+            %small
+              %a.category_header{ href: partner_info_path(type.to_sym) }
+                %i.icon-info-sign
+        .visible-phone
+          = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
 
 .row.hidden-phone
-  .span4
-    = render partial: 'partner_logos', locals: { partners: Partner.primary }
-  .span4
-    = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
-  .span4
-    = render partial: 'partner_logos', locals: { partners: Partner.education }
+  - %w{primary knowledge education}.each do |type|
+    .span4
+      = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
