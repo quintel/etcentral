@@ -12,6 +12,14 @@
   </tr>
 </table>
 
+### Email
+<table>
+  <tr>
+    <td>Algemeen</td>
+    <td><a href="mailtoinfo@quintel.com">info@quintel.com</a></td>
+  </tr>
+</table>
+
 ### Postadres
 ATRIUM - Strawinskylaan 3051  
 1077 ZX  Amsterdam  

@@ -12,6 +12,13 @@
   </tr>
 </table>
 
+### Email
+<table>
+  <tr>
+    <td>General</td>
+    <td><a href="mailtoinfo@quintel.com">info@quintel.com</a></td>
+  </tr>
+</table>
 
 ### Postal address
 ATRIUM - Strawinskylaan 3051  
