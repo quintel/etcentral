@@ -1,5 +1,3 @@
-## ECN
-
 [Website ECN](http://www.ecn.nl/nl/units/ps/themas/energie-en-emissiescenarios/)
 
 ### Over ECN

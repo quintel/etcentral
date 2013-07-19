@@ -1,5 +1,3 @@
-## Delta
-
 [Website Delta](http://www.delta.nl)
 
 ### Multi utility

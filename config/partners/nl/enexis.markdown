@@ -1,5 +1,3 @@
-## Enexis
-
 [Website Enexis](http://www.enexis.nl)
 
 ### Alles voor een betrouwbaar netwerk

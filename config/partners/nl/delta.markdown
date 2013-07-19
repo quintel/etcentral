@@ -1,5 +1,3 @@
-## Delta
-
 [Website Delta](http://www.delta.nl)
 
 DELTA: de Zeeuwse full service dienstverlener op het gebied van energie-, water-, infrastructuur- en milieudiensten, internet en telecom. Deze gecombineerde services resulteren in een uniek dienstverleningsconcept dat inspeelt op de behoefte aan comfort en gemak. Want voor de particuliere consument betekent DELTA: één leverancier voor alles dat via draad of leiding het huis binnenkomt. De zakelijke afnemer kan rekenen op maatwerk: diensten in elke gewenste combinatie vormen een servicepakket op maat tegen scherpe voorwaarden.

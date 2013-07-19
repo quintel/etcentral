@@ -1,3 +1,1 @@
-## EPN
-
 [Website EPN](http://www.noordhoffuitgevers.nl/wps/portal/epn/epnnl)

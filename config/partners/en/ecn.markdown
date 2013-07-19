@@ -1,5 +1,3 @@
-## ECN
-
 [Website ECN](http://www.ecn.nl/units/ps/themes/energy-and-emission-scenarios/)
 
 ### About ECN

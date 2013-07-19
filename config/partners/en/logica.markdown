@@ -1,5 +1,3 @@
-## Logica
-
 [Website Logica](http://www.logica.com)
 
 ### Smart use of ICT

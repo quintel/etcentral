@@ -1,5 +1,3 @@
-## Essent
-
 [Website Essent](http://www.essent.nl)
 
 ### Utility Firm Essent

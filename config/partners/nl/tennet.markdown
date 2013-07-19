@@ -1,5 +1,3 @@
-## TenneT
-
 [Website TenneT](http://www.tennet.org)
 
 ### Over TenneT

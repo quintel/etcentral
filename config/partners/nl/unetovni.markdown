@@ -1,5 +1,3 @@
-## Uneto VNI
-
 [Website Uneto VNI](http://www.uneto-vni.nl)
 
 UNETO-VNI is de ondernemersorganisatie voor de installatiebranche en de technische detailhandel. De vereniging vertegenwoordigt ruim 5.300 installatiebedrijven met een totale omzet van 10,5 miljard euro en 1.800 winkels met een omzet van circa 2,7 miljard euro. Voor UNETO-VNI is energiebesparing en duurzaamheid één van speerpunten van beleid.

@@ -1,5 +1,3 @@
-## Gasterra 
-
 [Website Gasterra](http://www.gasterra.nl)
 
 ### Profile

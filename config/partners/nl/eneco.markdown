@@ -1,5 +1,3 @@
-## Eneco
-
 [Website Eneco](http://www.eneco.nl)
 
 ### Nieuw energietijdperk

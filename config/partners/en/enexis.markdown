@@ -1,5 +1,3 @@
-## Enexis
-
 [Website Enexis](http://www.enexis.nl)
 
 ### Everything for a reliable grid

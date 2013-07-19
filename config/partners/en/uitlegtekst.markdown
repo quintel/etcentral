@@ -1,5 +1,3 @@
-## Uitleg & Tekst
-
 [Website Uitleg & Tekst](http://www.uitlegentekst.nl)
 
 ### About Uitleg & tekst

@@ -1,5 +1,3 @@
-## Clingendael
-
 [Website Clingendael](http://www.clingendael.nl/ciep)
 
 ### Energie-onderzoek met een globale horizon

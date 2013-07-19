@@ -1,5 +1,3 @@
-## AT Kearney
-
 [Website AT Kearney](http://www.atkearney.nl)
 
 ### About A.T. Kearney

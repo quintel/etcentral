@@ -1,5 +1,3 @@
-## Energy Delta Institute
-
 [Website Energy Delta Institute](http://www.energydelta.org/)
 
 ### About Energy Delta Institute

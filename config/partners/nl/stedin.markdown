@@ -1,5 +1,3 @@
-## Stedin
-
 [Website Stedin](http://www.stedin.nl)
 
 ### About Stedin

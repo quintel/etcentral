@@ -1,5 +1,3 @@
-## DNV KEMA
-
 [Website DNV KEMA](http://www.dnvkema.com)
 
 ### Over DNV KEMA Energy & Sustainability

@@ -1,5 +1,3 @@
-## Milieu Centraal
-
 [Website Milieu Centraal](http://www.milieucentraal.nl/)
 
 ### About Milieu Centraal

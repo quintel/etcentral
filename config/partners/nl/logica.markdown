@@ -1,5 +1,3 @@
-## Logica
-
 [Website Logica](http://www.logica.com)
 
 ### Slimme Inzet ICT

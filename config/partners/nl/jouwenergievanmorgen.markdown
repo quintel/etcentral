@@ -1,5 +1,3 @@
-## Jouw Energie van Morgen
-
 [Website Jouw Energie van Morgen](http://www.jouwenergievanmorgen.nl/)
 
 ### Over jouw toekomst... en die van jouw energie

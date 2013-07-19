@@ -1,5 +1,3 @@
-## e.on
-
 [Website e.on](http://www.eon-benelux.com)
 
 ### About E.ON Benelux

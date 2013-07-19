@@ -1,5 +1,3 @@
-## Uneto VNI
-
 [Website Uneto VNI](http://www.uneto-vni.nl)
 
 UNETO-VNI is the Dutch trade organization for entrepreneurs in installation and technical retail businesses. The association represents over 5,300 installation businesses with a turnover of 10.5 billion Euros and 1,800 stores with a turnover of 2.7 billion Euros. For UNETO-VNI energy conservation and sustainability are part of its core policy.

@@ -1,5 +1,3 @@
-## Alliander
-
 [Website Alliander](http://www.alliander.com)
 
 Alliander is the largest energy grid management company in the Netherlands, with more than 5,500 employees. Alliander consists of three divisions: Liander, Liandon and Liandyn. Grid operator Liander has 2.8 million customers and provides connection to as well as transport of gas and electricity in approximately one third of the Netherlands. Liandon offers competitive services in the field of building and maintaining complex energy infrastructures. Liandyn is specialized in public lighting, traffic control installations and camera surveillance.

@@ -1,5 +1,3 @@
-## Gemeente Amsterdam
-
 [Website Gemeente Amsterdam](http://www.amsterdam.nl)
 
 ### Ambitions

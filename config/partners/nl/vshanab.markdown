@@ -1,5 +1,3 @@
-## Visser & Smit Hanab
-
 [Website Visser & Smit Hanab](http://www.vshanab.nl)
 
 ### Wie zijn wij?

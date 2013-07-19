@@ -1,5 +1,3 @@
-## Nyenrode Business University
-
 [Website Nyenrode Business University](http://www.nyenrode.nl/)
 
 ### Nyenrode Business University and the Mini-MBA Energy

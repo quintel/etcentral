@@ -1,5 +1,3 @@
-## Clingendael
-
 [Website Clingendael](http://www.clingendael.nl/ciep)
 
 ### Energy research with a global scope

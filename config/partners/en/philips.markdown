@@ -1,3 +1,1 @@
-## Philips
-
 [Website Philips](http://www.philips.nl)
