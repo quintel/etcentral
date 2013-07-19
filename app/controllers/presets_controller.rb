@@ -1,7 +1,7 @@
 class PresetsController < ApplicationController
 
   def index
-    @presets = Preset.all
+    @presets = Preset.all.sort_by { rand }
   end
 
   def show

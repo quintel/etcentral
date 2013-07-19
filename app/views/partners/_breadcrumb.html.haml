@@ -1,0 +1,8 @@
+- content_for(:breadcrumb) do
+  %ul.breadcrumb
+    .container
+      %li
+        = link_to 'Partners', partners_path
+      %li
+        > 
+        = @partner.name

@@ -1,1 +1,8 @@
-= @page.html_content
+= render 'breadcrumb' if %w{primary knowledge education}.include?(@page.key)
+
+= render 'flash_notice'
+
+.row
+  .span10.offset1
+    .information_page
+      = @page.html_content

@@ -1,10 +1,19 @@
-.navbar
+$hover_and_active_color: #d0d0d0
+$external_link_color: #a0a0a0
+
+.navbar .nav > li > a:hover,
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover, 
+.navbar .nav > .active > a:focus,
+.navbar .nav > .dropdown.open > a.dropdown-toggle,
+  color: $hover_and_active_color
 
 .navbar .brand
+  padding-bottom: 13px
   text-indent: -9999px
   background: image_url("header/logo400@2x.png") center center no-repeat
-  background-size: 330px
-  width: 330px
+  background-size: 300px
+  width: 300px
 
 .navbar .navbar-inner
   padding-right: 0
@@ -12,3 +21,30 @@
   -webkit-border-radius: 0
   -moz-border-radius: 0
   border-radius: 0
+
+#language a
+  margin-left: 15px
+  color: #fff
+  padding-left: 20px
+  &:hover
+    color: $hover_and_active_color
+  &.en
+    background: image-url("icons/areas/gb.png") left center no-repeat
+  &.nl
+    background: image-url("icons/areas/nl.png") left center no-repeat
+    
+ul.dropdown-menu > li > a
+  .icon-external-link
+    display: none
+    font-size: 0.8em
+  &[href*="http://"]
+    .icon-external-link
+      color: $external_link_color
+      display: inline
+    &:hover
+      .icon-external-link
+        color: white
+        
+.breadcrumb li
+  font-size: 0.9em
+  display: inline-block

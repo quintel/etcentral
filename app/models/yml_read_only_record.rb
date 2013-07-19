@@ -5,7 +5,7 @@ class YmlReadOnlyRecord
   def initialize(attr_hash)
     attr_hash.symbolize_keys!
     attr_hash.each do |key, value|
-      self.send("#{key}=", value)
+      self.send("#{ key }=", value)
     end
   end
 

@@ -1,13 +1,13 @@
 ETM::Application.routes.draw do
 
-  # TODO: put in own controller
-  match '/press_releases'  => 'pages#press_releases'
+  resources :pages,           only: [:index, :show]
+  resources :partners,        only: [:index, :show]
+  resources :presets,         only: [:index, :show]
+  resources :press_releases,  only: [:index, :show]
 
-  resources :pages,    only: [:index, :show]
-  resources :partners, only: [:index, :show]
-  resources :presets,  only: [:index, :show]
+  match '/404' => 'pages#not_found'
 
-  match '/404'      => 'pages#not_found'
+  match '/partners/info/:id' => 'pages#show', as: :partner_info
 
   root :to => 'pages#root'
 
