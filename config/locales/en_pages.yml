@@ -1,4 +1,7 @@
 en:
+  footer:
+    copyright: "Copyright Quintel Intelligence BV, The Netherlands"
+    contact: "Contact us"
   pages:
     not_available_in_this_locale: "This page is not available in English. Please refer to the Dutch version below."
   presets:
