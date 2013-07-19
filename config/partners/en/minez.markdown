@@ -1,3 +1,3 @@
-## Ministerie van Economische Zaken, Landbouw en Innovatie
+## Ministry of Economic Affairs
 
-[Website Ministerie van Economische Zaken, Landbouw en Innovatie](http://www.rijksoverheid.nl/ministeries/ez)
+[Website Ministry of Economic Affairs](http://www.rijksoverheid.nl/ministeries/ez)
