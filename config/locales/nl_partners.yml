@@ -5,3 +5,7 @@ nl:
     primary: "Partners die kennis delen en het ETM <strong>financieel</strong> en in natura steunen"
     knowledge: "Partners die kennis delen en het ETM in natura steunen"
     education: "Partners waarmee we samen <strong>lesmateriaal</strong> ontwikkelen"
+  breadcrumbs:
+    primary: "Betalende partners"
+    knowledge: "Kennispartners"
+    education: "Onderwijspartners"

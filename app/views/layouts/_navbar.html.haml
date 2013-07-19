@@ -2,10 +2,10 @@
   .navbar-inner
     .container
 
-      %a.brand{href: "/"}
+      %a.brand{ href: "/" }
         Quintel Intelligence
 
-      %a.btn.btn-navbar{"data-toggle" => "collapse", "data-target" => ".nav-collapse"}
+      %a.btn.btn-navbar{ data: {toggle: "collapse", target: ".nav-collapse" } }
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
@@ -16,12 +16,23 @@
           - menu_items.each do |key, values|
             - if values.is_a?(Hash)
               %li.dropdown
-                %a.dropdown-toggle{:href => '#', :'data-toggle' => 'dropdown'}
-                  = I18n.t("menu.#{key.gsub(" ","_").downcase}")
+                %a.dropdown-toggle{ href: '#', data: { toggle: 'dropdown' } }
+                  = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
                   %b.caret
                 %ul.dropdown-menu
                   - values.each do |key, value|
-                    %li= link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), value
+                    - unless /http:\/\//.match(value)
+                      - value = "/#{ value }"
+                    %li
+                      %a{href: "#{value}"}
+                        = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
+                        %i.icon-external-link
             - else
-              %li{class:('active' if request.path.delete('/') == key)}
-                = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), "/#{key.downcase}"
+              %li{ class:('active' if request.path.delete('/') == key.downcase || request.path.delete('/') == values) }
+                - if values.blank?
+                  = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ key.downcase }"
+                - else
+                  = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ values }"
+          %li#language
+            - other_locale = english? ? "nl" : "en"
+            = link_to (t 'landing_page.other_language'), { locale: other_locale }, { class: other_locale }

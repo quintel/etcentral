@@ -3,20 +3,19 @@
   %p= raw t 'partners.sub_title'
 
 .row
-  .span4
-    .partners#primary_partners
-      %a.category_header{"href" => "http://etcentral.dev/primary"}
-        %h2{"style" => "text-align: center;"}= raw t  'partners.primary'
-        = render partial: 'partner_logos', locals: { partners: Partner.primary }
+  - %w{primary knowledge education}.each do |type|
+    .span4
+      .partners{id: "#{type}_partners"}
+        #header
+          %h2
+            = raw t  "partners.#{type}"
+            %small
+              %a.category_header{ href: partner_info_path(type.to_sym) }
+                %i.icon-info-sign
+        .visible-phone
+          = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
 
-  .span4
-    .partners#knowledge_partners
-      %a.category_header{"href" => "http://etcentral.dev/knowledge"}
-        %h2{"style" => "text-align: center;"}= raw t  'partners.knowledge'
-        = render partial: 'partner_logos', locals: { partners: Partner.knowledge }
-
-  .span4
-    .partners#education_partners
-      %a.category_header{"href" => "http://etcentral.dev/education"}
-        %h2{"style" => "text-align: center;"}= raw t  'partners.education'
-        = render partial: 'partner_logos', locals: { partners: Partner.education }
+.row.hidden-phone
+  - %w{primary knowledge education}.each do |type|
+    .span4
+      = render partial: 'partner_logos', locals: { partners: Partner.send(type) }

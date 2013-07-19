@@ -7,38 +7,38 @@
 
     %article.span4
       .product#etflex
-        %a.etflex_link{href:"#{product_link(:etflex)}", target: '_blank'}
+        %a.etflex_link{ href:"#{ product_link(:etflex) }", target: '_blank' }
           .img-holder
-            = image_tag 'pages/root/screen.png'
+            = image_tag 'pages/root/screen_light.jpg'
           %h2= raw t 'landing_page.etflex.title'
           %ul.specs
-            %li.time{title:"time required"}=         "~ 5 #{t 'landing_page.minutes'}"
-            %li.options{title:"number of options"}=  "12 #{t 'landing_page.sliders'}"
-            %li=                                     "#{t 'landing_page.free'}!"
+            %li.time{ title:"time required" }=         "~ 5 #{ t 'landing_page.minutes' }"
+            %li.options{ title:"number of options" }=  "12 #{ t 'landing_page.sliders' }"
+            %li=                                     "#{ t 'landing_page.free' }!"
           %p= raw t 'landing_page.etflex.explanation'
 
     %article.span4
       .product#etmodel
-        %a.etmodel_link{href:"#{product_link(:pro)}", target: '_blank'}
+        %a.etmodel_link{ href:"#{ product_link(:pro) }", target: '_blank' }
           .img-holder
-            = image_tag 'pages/root/screen.png'
+            = image_tag 'pages/root/screen_pro.jpg'
           %h2= raw t 'landing_page.etmodel.title'
           %ul.specs
-            %li.time{title:"time required"}=        "> 30 #{t 'landing_page.minutes'}"
-            %li.options{title:"number of options"}= "> 250 #{t 'landing_page.sliders'}"
-            %li=                                    "#{t 'landing_page.free'}!"
+            %li.time{ title: "time required" }=        "> 30 #{ t 'landing_page.minutes' }"
+            %li.options{ title: "number of options" }= "> 250 #{ t 'landing_page.sliders' }"
+            %li=                                    "#{ t 'landing_page.free' }!"
           %p= raw t 'landing_page.etmodel.explanation'
 
     %article.span4
       .product#mixer
-        %a.mixer_link{href: "#{product_link(:mixer)}?locale=#{I18n.locale}", target: '_blank'}
+        %a.mixer_link{href: "#{ product_link(:mixer) }?locale=#{ I18n.locale }", target: '_blank'}
           .img-holder
-            = image_tag 'pages/root/screen.png'
+            = image_tag 'pages/root/screen_mixer.jpg'
           %h2= raw t 'landing_page.mixer.title'
           %ul.specs
-            %li.time{title:"time required"}=        "~ 10 #{t 'landing_page.minutes'}"
-            %li.options{title:"number of options"}= "9 #{t 'landing_page.questions'}"
-            %li=                                    "#{t 'landing_page.free'}!"
+            %li.time{ title:"time required" }=        "~ 10 #{ t 'landing_page.minutes' }"
+            %li.options{ title:"number of options" }= "9 #{ t 'landing_page.questions' }"
+            %li=                                    "#{ t 'landing_page.free' }!"
           %p= raw t 'landing_page.mixer.explanation'
 
   .clear

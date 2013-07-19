@@ -2,21 +2,16 @@ class Partner < YmlReadOnlyRecord
 
   attr_accessor :name, :key, :kind, :lang, :path
 
-  # Return a partner page that contains the contents bla-di-bla
-  def partner_page
-    PartnerPage.find(key, :nl)
-  end
-
   def self.primary
-    self.all.select(&:is_primary?)
+    self.all.select(&:is_primary?).sort_by { rand }
   end
 
   def self.knowledge
-    self.all.select(&:is_knowledge?)
+    self.all.select(&:is_knowledge?).sort_by { rand }
   end
 
   def self.education
-    self.all.select(&:is_education?)
+    self.all.select(&:is_education?).sort_by { rand }
   end
 
   def is_primary?
@@ -32,11 +27,7 @@ class Partner < YmlReadOnlyRecord
   end
 
   def logo
-    if File.exists?("./app/assets/images/partners/partners/#{self.key.downcase.gsub(" ","")}.png")
-      return "/assets/partners/partners/#{self.key.downcase.gsub(" ","")}.png"
-    else
-      return 'http://placehold.it/125x40'
-    end
+    "http://#{ BUCKET_NAME }.s3.amazonaws.com/partners/#{ self.key.downcase.gsub(" ","") }.png"
   end
 
   def html_content(lang)

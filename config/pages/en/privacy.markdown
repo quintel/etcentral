@@ -1,8 +1,8 @@
-## Privacy
+# Privacy
 
 This site is governed by Dutch law and is hosted in the Netherlands. This site is property of and maintained by Quintel Intelligence B.V.. and all questions concerning privacy should in first instance be addressed to energietransitie@quintel.com.
 
-### Data collection
+## Data collection
 
 This website collects e-mail addresses for the purpose of logging into the website, so that users can load and save scenarios. Other than for this purpose, the addresses in question are stored and used exclusively to inform the users of available updates and new versions of the Energy Transition Model if the user agreed to be informed when signing up.
 
@@ -10,11 +10,11 @@ The data the Energy Transition Model sends from users' personal computers (PCs) 
 
 The server logs and databases are used for locating problems on the web server and are accessible to the police and other judicial authorities both in- and outside the Netherlands.
 
-### Cookies & Sessions
+## Cookies & Sessions
 
 This website uses cookies for storing users' settings, such as the language and for temporarily storing data during a scenario.
 
-### Objections
+## Objections
 
 For further information or objections, you can contact us via e-mail using energietransitie@quintel.com.
 

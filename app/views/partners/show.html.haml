@@ -1,3 +1,7 @@
+=render 'breadcrumb'
+
 %h1= @partner.name
 
-= @partner.html_content(I18n.locale)
+.row
+  .span10.offset1
+    = @partner.html_content(I18n.locale)

@@ -103,8 +103,8 @@
   key:  brandenburg
   kind: government
 -
-  name: Ministerie van Economische Zaken, Landbouw en Innovatie
-  key:  mineleni
+  name: Ministerie van Economische Zaken
+  key:  minez
   kind: primary
 -
   name: Gemeente Amsterdam

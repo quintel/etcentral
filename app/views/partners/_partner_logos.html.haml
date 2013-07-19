@@ -1,1 +1,4 @@
-= render partial: 'logo_row', locals: { partners: partners }
+- partners.each do |partner|
+  %a{ href: partner_path(partner.key) }
+    .partner_container
+      = image_tag(partner.logo, size: "125x40", alt: "#{ partner.name }")
