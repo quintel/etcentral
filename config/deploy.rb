@@ -3,8 +3,8 @@ set :repository,  "git@github.com:quintel/etcentral.git"
 
 set :scm, :git
 
-role :web, "et-model.com" # Your HTTP server, Apache/etc
-role :app, "et-model.com" # This may be the same as your `Web` server
+role :web, "new.et-model.com" # Your HTTP server, Apache/etc
+role :app, "new.et-model.com" # This may be the same as your `Web` server
 
 set :user, "ubuntu"
 
