@@ -33,6 +33,8 @@
                   = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ key.downcase }"
                 - else
                   = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ values }"
+
+        %ul.nav.pull-right
           %li#language
             - other_locale = english? ? "nl" : "en"
             = link_to (t 'landing_page.other_language'), { locale: other_locale }, { class: other_locale }
