@@ -1,3 +1,0 @@
-# Disclaimer
-
-Quintel Intelligence doet zijn uiterste best om ervoor te zorgen dat het Energietransitiemodel (ETM) correcte resultaten geeft. Desondanks kan op geen enkele manier gegarandeerd worden dat de uitkomsten altijd correct zijn. Daarom kunnen aan uitkomsten, aanbevelingen of opmerkingen in het ETM geen rechten worden ontleend.
