@@ -64,6 +64,18 @@ class Article
     renderer.render(content).html_safe
   end
 
+  def article_title
+    if result = /<h\d>.+<\/h\d>/.match(html_content)
+      return result[0].gsub(/<\/?h\d>/,'')
+    end
+  end
+
+  def first_paragraph
+    if result = /<p>.+<\/p>/.match(html_content)
+      return result[0].gsub(/<\/?p>/,'')
+    end
+  end
+
   def self.all
     self.load_directory
   end

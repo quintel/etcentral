@@ -1,8 +1,10 @@
 = render 'breadcrumb'
 
-= render 'flash_notice'
-
 .row
-  .span10.offset1
+  .span8.offset2
+    #article
+      #top_bar
+        = render 'search_bar'
+    = render 'flash_notice'
     .information_page
       = @article.html_content

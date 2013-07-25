@@ -1,12 +1,13 @@
 = render 'breadcrumb'
 
-- if @results.empty?
-  %h2{style: "text-align: center; color: red;"} 
-    = "Sorry, your search for '#{@q}' didn't return any articles"
-- else
-  %small= "Found #{@results.count} results for '#{@q}'"
-  %h2= "Search Results"
-  - @results.each do |result|
-    -# = result.key.humanize.capitalize
-    -# %br
-    = result.html_content
+.row
+  .span8.offset2
+    #search_results
+      = render partial: 'result_count', locals: { q: @q, results: @results }
+      - if @results.empty?
+        %h2.warning 
+          = "Sorry, your search for '#{@q}' didn't return any articles"
+      - else
+        %h2= "Search Results"
+        - @results.each do |result|
+          = render partial: 'search_result', locals: { result: result }

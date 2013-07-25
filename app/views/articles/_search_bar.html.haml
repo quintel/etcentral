@@ -1,0 +1,6 @@
+#search_bar
+  %form.pull-right{ :action => "/search", :method => :get }
+    .input-append
+      %input{ name: 'q', type: "text", placeholder: "What are you looking for?" }
+      %button.btn{ type: "submit" }
+        %i.icon-search
