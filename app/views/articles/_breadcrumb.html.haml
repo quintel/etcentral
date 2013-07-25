@@ -1,0 +1,16 @@
+- content_for(:breadcrumb) do
+  %ul.breadcrumb
+    .container
+      %li
+        = link_to 'Help', articles_path
+      %li
+        - if @article
+          - unless @article.section.blank?
+            >
+            = @article.section.capitalize
+          
+          > 
+          = @article.key.humanize.capitalize
+        - if @results
+          > Search Results
+          

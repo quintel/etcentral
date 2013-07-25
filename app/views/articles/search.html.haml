@@ -1,0 +1,12 @@
+= render 'breadcrumb'
+
+- if @results.empty?
+  %h2{style: "text-align: center; color: red;"} 
+    = "Sorry, your search for '#{@q}' didn't return any articles"
+- else
+  %small= "Found #{@results.count} results for '#{@q}'"
+  %h2= "Search Results"
+  - @results.each do |result|
+    -# = result.key.humanize.capitalize
+    -# %br
+    = result.html_content
