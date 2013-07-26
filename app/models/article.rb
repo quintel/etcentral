@@ -19,6 +19,10 @@ class Article
     @file    = file
   end
 
+  def section=(section)
+    @section = section
+  end
+  
   def html_content
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
     renderer.render(content).html_safe
@@ -26,13 +30,13 @@ class Article
 
   def article_title
     if result = /<h\d>.+<\/h\d>/.match(html_content)
-      return result[0].gsub(/<\/?h\d>/,'')
+      result[0].gsub(/<\/?h\d>/,'')
     end
   end
 
   def first_paragraph
     if result = /<p>.+<\/p>/.match(html_content)
-      return result[0].gsub(/<\/?p>/,'')
+      result[0].gsub(/<\/?p>/,'')
     end
   end
 
@@ -42,6 +46,10 @@ class Article
 
   def self.find(key, lang = 'en')
     self.all.select { |p| p.key == key && p.lang == lang }.first
+  end
+  
+  def self.find_similar(article, lang)
+    self.all.select { |p| ((/^\d+_/.match(p.section)[0] == /^\d+_/.match(article.section)[0]) && (/^\d+_/.match(p.key)[0] == /^\d+_/.match(article.key)[0]) && (p.lang == lang)) }.first
   end
 
   #######

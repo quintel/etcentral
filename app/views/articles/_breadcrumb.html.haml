@@ -2,15 +2,19 @@
   %ul.breadcrumb
     .container
       %li
-        = link_to 'Help', articles_path
+        = link_to 'Help', help_path
       %li
         - if @article
           - unless @article.section.blank?
             >
-            = @article.section.capitalize
+            - if @article.section.gsub(/^\d+_/,'') == 'faq'
+              = t 'help.faq'
+            - else
+              - section = @article.section.gsub(/^\d+_/,'')
+              = section[0].capitalize + section[1..section.length]
           
           > 
-          = @article.key.humanize.capitalize
+          = @article.article_title.capitalize
         - if @results
           > Search Results
           

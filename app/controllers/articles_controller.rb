@@ -1,15 +1,15 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all
+    @articles = Article.all.select { |article| article.lang == I18n.locale.to_s }
   end
 
   def show
     unless @article = Article.find(params[:id], I18n.locale.to_s)
       other_locale = I18n.locale.to_s == 'en' ? 'nl' : 'en'
-      unless @article = Article.find(params[:id], other_locale)
-        raise ActionController::RoutingError.new("Article '#{ params[:id] }' not found")
-      else
+      current = Article.find(params[:id], other_locale)
+      unless @article = Article.find_similar(current, I18n.locale.to_s)
+        @article = current
         flash[:notice] = I18n.t('articles.not_available_in_this_locale')
       end
     end
@@ -17,7 +17,10 @@ class ArticlesController < ApplicationController
   
   def search
     @q = params[:q]
-    @results = Article.search { |s| s.fulltext params[:q] }.results
+    @query = Article.search do
+      fulltext params[:q]
+    end
+    @results = @query.results.select { |result| result.lang == I18n.locale.to_s }
   end
 
 end

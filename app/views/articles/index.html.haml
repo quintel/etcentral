@@ -1,31 +1,30 @@
 .row
   .span8.offset2
-    %h1
-      Everybody needs a little help sometimes...
+    %h1= t 'help.title'
 %br
 .row
   .span8.offset2
-    %form{ :action => "/search", :method => :get }
+    %form{ :action => "/help/search", :method => :get }
       .input-append
-        %input.span8{ name: 'q', type: "text", placeholder: "What are you looking for?" }
+        %input.span8{ name: 'q', type: "text", placeholder: "#{t 'help.placeholder' }" }
         %button.btn{ type: "submit" }
           %i.icon-search
 .row
   .span8.offset2
     %table.span8.table.table-bordered.table-condensed.table-hover
       %thead
-        %th= "Common Issues"
+        %th= t 'help.faq'
       %tbody
-        - issues = @articles.select { |article| article.section == "common issues" }
+        - issues = @articles.select { |article| article.section.gsub(/^\d+_/,'') == "faq" }
         - issues.each do |issue|
           %tr
-            %td= link_to issue.key.humanize.capitalize, article_path(issue.key)
+            %td= link_to issue.article_title, article_path(issue.key)
 .row
   .span8.offset2
     .information_page
-      - sections = @articles.collect { |article| article.section }.uniq.delete_if { |section| section.blank? || section == "common issues"}
+      - sections = @articles.collect { |article| article.section.gsub(/^\d+_/,'') }.uniq.delete_if { |section| section.blank? || section == "faq"}
       - sections.each do |section|
-        %h3.section-header= section.titleize
-        - @articles.select { |article| article.section == section }.each do |article|
-          = link_to article.key.humanize.capitalize, article_path(article.key), class: 'article'
+        %h3.section-header= section[0].capitalize + section[1..section.length]
+        - @articles.select { |article| article.section.gsub(/^\d+_/,'') == section }.each do |article|
+          = link_to article.article_title, article_path(article.key), class: 'article'
           %br 

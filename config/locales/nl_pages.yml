@@ -11,3 +11,7 @@ nl:
     not_available_in_this_locale: "Deze pagina is niet beschikbaar in het Nederlands. Onderstaand ziet u de Engelse versie."
   presets:
     subtitle: "In voorbereiding op hun deelname aan de TV show 'Watt Nu?!' hebben verschillende prominente personen uit de energiesector, de overheid en non-profit organisaties het ETM gebruikt om hun visie op de energietoekomst te geven. Hieronder vind u een overzicht van de deelnemers, inclusief een link naar hun scenario, zodat u kunt zien hoe zij hun energiedoelstellingen denken te behalen."
+  help:
+    title: "Iedereen kan af en toe wel wat hulp gebruiken..."
+    placeholder: "Waar bent u naar op zoek?"
+    faq: "Veelgestelde vragen"

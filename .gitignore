@@ -32,3 +32,7 @@ config/config.yml
 
 # ignore .vagrant
 /.vagrant
+
+# ignore solr data and pids
+solr/data/*
+solr/pids/*
