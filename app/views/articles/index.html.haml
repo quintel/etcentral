@@ -15,16 +15,14 @@
       %thead
         %th= t 'help.faq'
       %tbody
-        - issues = @articles.select { |article| article.section.gsub(/^\d+_/,'') == "faq" }
-        - issues.each do |issue|
+        - @issues.each do |issue|
           %tr
             %td= link_to issue.article_title, article_path(issue.key)
 .row
   .span8.offset2
     .information_page
-      - sections = @articles.collect { |article| article.section.gsub(/^\d+_/,'') }.uniq.delete_if { |section| section.blank? || section == "faq"}
-      - sections.each do |section|
-        %h3.section-header= section[0].capitalize + section[1..section.length]
-        - @articles.select { |article| article.section.gsub(/^\d+_/,'') == section }.each do |article|
+      - @sections.each do |section|
+        %h3.section-header= proper_capitalization(section)
+        - @articles.select { |article| article.scrubbed_section == section }.each do |article|
           = link_to article.article_title, article_path(article.key), class: 'article'
           %br 

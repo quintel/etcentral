@@ -2,6 +2,8 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all.select { |article| article.lang == I18n.locale.to_s }
+    @issues = @articles.select { |article| article.scrubbed_section == "faq" }
+    @sections = @articles.collect { |article| article.scrubbed_section }.uniq.delete_if { |section| section.blank? || section == "faq"}
   end
 
   def show

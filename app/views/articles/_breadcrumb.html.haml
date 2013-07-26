@@ -7,14 +7,14 @@
         - if @article
           - unless @article.section.blank?
             >
-            - if @article.section.gsub(/^\d+_/,'') == 'faq'
+            - if @article.scrubbed_section == 'faq'
               = t 'help.faq'
             - else
-              - section = @article.section.gsub(/^\d+_/,'')
-              = section[0].capitalize + section[1..section.length]
+              - section = @article.scrubbed_section
+              = proper_capitalization(section)
           
           > 
-          = @article.article_title.capitalize
+          = @article.article_title
         - if @results
           > Search Results
           

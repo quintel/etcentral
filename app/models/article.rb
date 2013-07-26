@@ -23,6 +23,10 @@ class Article
     @section = section
   end
   
+  def scrubbed_section
+    section.gsub(/^\d+_/,'')
+  end
+  
   def html_content
     renderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
     renderer.render(content).html_safe
