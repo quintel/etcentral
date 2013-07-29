@@ -1,1 +1,10 @@
 %h1= @preset.name
+
+.row
+  .span2.offset1
+    - @values.each do |value|
+      %strong= value[0]
+      %br
+      %h2= value[1].round(2)
+  .span8
+    = raw @description
