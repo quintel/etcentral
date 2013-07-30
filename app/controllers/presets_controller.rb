@@ -24,12 +24,12 @@ class PresetsController < ApplicationController
     response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
     @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
     panels = [ 
-      "Energy use",
-      "CO2 emissions",
-      'Energy imports',
-      'Costs (bln)',
-      "Bio-footprint",
-      "Renewables"
+      "energy_use",
+      "co2_emissions",
+      'energy_imports',
+      'costs',
+      "bio_footprint",
+      "renewables"
     ]
     panels.each_with_index { |panel,index| @values[index] = [panel,@values[index]] }
   end
