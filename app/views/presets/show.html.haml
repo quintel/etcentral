@@ -1,10 +1,16 @@
+= render 'breadcrumb'
+
 %h1= @preset.name
 
 .row
   .span2.offset1
-    - @values.each do |value|
-      %strong= value[0]
-      %br
-      %h2= value[1].round(2)
+    #prominent-sidebar
+      .user-shot
+        = image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ @preset.key }.jpg")
+      - url = @preset.scenario_id ? "http://www.energietransitiemodel.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
+      = link_to 'Open scenario', url, target: "_blank", method: 'get', class: 'scenario_button btn btn-block'
+      #dashboard
+        - @values.each do |value|
+          = render partial: 'panel', locals: { value: value }
   .span8
     = raw @description

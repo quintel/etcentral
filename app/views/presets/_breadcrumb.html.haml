@@ -1,0 +1,8 @@
+- content_for(:breadcrumb) do
+  %ul.breadcrumb
+    .container
+      %li
+        = link_to 'Scenarios', presets_path
+      %li
+        > 
+        = @preset.name

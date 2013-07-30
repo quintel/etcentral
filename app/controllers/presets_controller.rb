@@ -21,8 +21,8 @@ class PresetsController < ApplicationController
     
     demand = response['gqueries']['dashboard_energy_demand_primary_of_final']
     energy_use = (demand['future']/demand['present']) - 1
-    response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << values['future'] }
-    @values = @values.values_at(1..-1).insert(0, energy_use)
+    response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
+    @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
     panels = [ 
       "Energy use",
       "CO2 emissions",
