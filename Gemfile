@@ -7,6 +7,7 @@ gem 'redcarpet'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 
+gem 'httparty'
 gem 'http_accept_language'
 
 group :assets do

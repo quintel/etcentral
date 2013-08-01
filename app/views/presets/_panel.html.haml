@@ -1,0 +1,16 @@
+- value.flatten!
+.panel
+  .panel-label
+    = t "presets.dashboard.#{value[0]}"
+  .value
+    - if value[2] == 'bln_euro'
+      %span>= "€"
+      = value[1].round(1)
+    - if value[2] == 'factor' && value[0] != "bio_footprint"
+      - if value[0] == "energy_use" && value[1] > 0
+        %span>= "+"
+      = (value[1]*100).round(1)
+      %span>= "%"
+    - if value[2] == 'factor' && value[0] == "bio_footprint"
+      = value[1].round(1)
+      = "x NL"
