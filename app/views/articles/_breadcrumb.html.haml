@@ -1,0 +1,20 @@
+- content_for(:breadcrumb) do
+  %ul.breadcrumb
+    .container
+      %li
+        = link_to 'Help', help_path
+      %li
+        - if @article
+          - unless @article.section.blank?
+            >
+            - if @article.scrubbed_section == 'faq'
+              = t 'help.faq'
+            - else
+              - section = @article.scrubbed_section
+              = proper_capitalization(section)
+          
+          > 
+          = @article.article_title
+        - if @results
+          > Search Results
+          

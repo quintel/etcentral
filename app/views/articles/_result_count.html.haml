@@ -1,0 +1,9 @@
+#result_count
+  %small
+    Found
+    %strong
+      = "#{@results.count}"
+      results 
+    for
+    = "'#{@q}'"
+  = render 'search_bar'

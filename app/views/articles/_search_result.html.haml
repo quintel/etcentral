@@ -1,0 +1,3 @@
+.search_result
+  %h3= link_to result.article_title, article_path(result.key)
+  %p= truncate(result.first_paragraph, length: 350)
