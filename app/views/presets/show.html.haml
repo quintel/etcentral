@@ -10,7 +10,8 @@
       - url = @preset.scenario_id ? "http://www.energietransitiemodel.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
       = link_to 'Open scenario', url, target: "_blank", method: 'get', class: 'scenario_button btn btn-block'
       #dashboard
-        - @values.each do |value|
-          = render partial: 'panel', locals: { value: value }
+        - if @values
+          - @values.each do |value|
+            = render partial: 'panel', locals: { value: value }
   .span8
     = raw @description
