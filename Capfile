@@ -2,6 +2,8 @@ require 'bundler/capistrano'
 
 load 'deploy'
 
+load 'lib/capistrano/solr'
+
 # we need this to precompile assets
 load 'deploy/assets'
 
