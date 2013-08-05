@@ -9,6 +9,7 @@ gem 'sunspot_solr'
 
 gem 'httparty'
 gem 'http_accept_language'
+gem 'nokogiri'
 
 group :assets do
   gem 'sass-rails'

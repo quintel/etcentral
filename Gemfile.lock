@@ -244,6 +244,7 @@ DEPENDENCIES
   httparty
   jquery-rails
   launchy
+  nokogiri
   rails (= 3.2.13)
   redcarpet
   rspec-rails
