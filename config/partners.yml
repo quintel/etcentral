@@ -166,3 +166,7 @@
   name: Belevenisonderwijs
   key:  belevenisonderwijs
   kind: education
+-
+  name: Energy Club Delft
+  key:  energy_club
+  kind: education
