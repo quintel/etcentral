@@ -42,7 +42,7 @@ class PresetsController < ApplicationController
   private
 
   def preset_data(preset)
-    HTTParty.put("http://etengine.dev/api/v3/scenarios/#{preset.scenario_id}/dashboard", query: { gqueries: DASHBOARD_QUERIES, detailed: true })
+    HTTParty.put("http://beta.et-engine.com/api/v3/scenarios/#{preset.scenario_id}/dashboard", body: {}, query: { gqueries: DASHBOARD_QUERIES, detailed: true })
   end
 
   def description_for_locale(response)
