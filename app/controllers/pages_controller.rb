@@ -1,5 +1,9 @@
 class PagesController < ApplicationController
 
+  def root
+    @people = Person.all.sort
+  end
+
   def show
     unless @page = Page.find(params[:id], I18n.locale)
       other_locale = I18n.locale.to_s == 'en' ? 'nl' : 'en'

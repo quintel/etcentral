@@ -1,0 +1,33 @@
+name: Frans van Camp
+
+key: frans
+
+title: Intern
+
+status: inactive
+
+social:
+  twitter: http://twitter.com/fvancamp
+  github: http://github.com/fvancamp
+  linkedin: http://www.linkedin.com/pub/frans-van-camp/0/230/141
+
+education:
+  - MBA London Business School
+  - MSc Electrical Engineering
+
+experience:
+  - Director at XS Insight
+  - Principal at Quintel Strategy Consulting (now AT Kearney)
+  - Strategy Consultant at Arthur D. Little (ADL)
+  
+questions:
+  -
+    q: What's your name?
+  
+    a:
+      Frans van Camp
+  - 
+    q: Where do you live?
+  
+    a: In a place by the sea
+

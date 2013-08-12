@@ -1,0 +1,48 @@
+name: Anthony Williams
+
+key:  antw
+
+title: Developer
+
+status: active
+
+social: 
+  github: http://github.com/antw
+
+education:
+  - BSc (Hons) Computing and Management
+
+experience:
+  - Programming for the web since 2000
+  - Ruby developer for 6 years
+
+questions:
+  - q: What motivates you in your work?
+    a: |-
+      Knowing that my work is being used to help solve real-world problems,
+      especially those so important to our future – energy transition and its
+      economic and climatic effects – is a huge motivator.
+
+  - q: Where do you see the ETM in 5 years?
+    a: |-
+      In use throughout Europe – and perhaps beyond – not only by politicians
+      and businesses, but also by "ordinary people", to understand the issues
+      using real data. Too often people can be led to a conclusion by poor
+      journalism; the ETM provides a unique opportunity to inform the public
+      using only facts and not opinion.
+
+  - q: What are your responsibilities at Quintel Intelligence?
+    a: |-
+      As one of four developers, I help write the code which calculates the
+      effects of energy transition choices on the future, and provide the
+      modellers with the tools which ensure our data is scientifically
+      accurate and up-to-date.
+
+  - q: What is the most useless piece of information you know?
+    a: |-
+      Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo is
+      gramatically correct English.
+
+  - q: What is your favourite TV show?
+    a: |-
+      "Community" is streets ahead.

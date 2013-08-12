@@ -41,4 +41,41 @@
             %li=                                    "#{ t 'landing_page.free' }!"
           %p= raw t 'landing_page.mixer.explanation'
 
+  .row#education
+    %article
+      .span2
+        %p
+          %i.icon-group
+      .span10
+        %h2 Education is our middle name
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        = link_to 'Learn more', "http://edu.quintel.com", target: "_blank"
+  .row#api
+    %article
+      .span10
+        %h2 Put our engine in your own energy model
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        = link_to 'Learn more', "api"
+      .span2
+        %p
+          %i.icon-cogs.pull-right
+  .row#wattnu
+    %article
+      .span2
+        %p
+          %i.icon-desktop
+      .span10
+        %h2 &ldquo;Look mom, we're on TV!&rdquo;
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        = link_to 'Learn more', "http://www.wattnu.nl", target: "_blank"
+  .row#quintel
+    %article
+      .span12
+        %h2
+          The Energy Transition Model is brought to you by the awesome peeps at Quintel Intelligence
+        = render partial: 'people'
+        = link_to 'Learn more', "http://www.quintel.nl", target: "_blank"
   .clear
