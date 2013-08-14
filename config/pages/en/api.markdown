@@ -4,7 +4,32 @@ Building your own energy-related model and interested to see how it affects the 
 
 Below you find information on the requests available, their format and options as well as the structure of the response message you will receive. In case of further questions regarding our API, please contact us via [info@quintel.com](mailto:info@quintel.com) and make sure you put **'ETM API'** in your mail's subject.
 
-## Area data
+<nav>
+  <table class="table table-bordered table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>Sections</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#area_data">Area data</td>
+      </tr>
+      <tr>
+        <td><a href="#scenarios">Scenarios</td>
+      </tr>
+      <tr>
+        <td><a href="#inputs">Inputs</td>
+      </tr>
+      <tr>
+        <td><a href="#converters">Converters</td>
+      </tr>
+    </tbody>
+  </table>
+</nav>  
+
+
+<h2 id="area_data">Area data</h2>
 
 The ETM currently covers three European national markets - The Netherlands, Germany and the United Kingdom (test). Two API calls are available to obtain any market-specific parameters, as used by the ETM.
 
@@ -12,7 +37,7 @@ The ETM currently covers three European national markets - The Netherlands, Germ
 
 This call provides you with all the market-specific parameters for each of the markets defined in the ETM. Apart from the three national markets currently active, this also includes all Dutch provinces.
 
-<pre class="prettyprint lang-bash">$ curl -i http://et-engine.com/api/v3/areas/</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/areas/</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -49,7 +74,7 @@ The response will be an JSON object with the following structure:
 
 To obtain these parameters for a specific national (or local) market, add the country code to the url:
 
-<pre class="prettyprint lang-bash">$ curl -i http://et-engine.com/api/v3/areas/nl</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/areas/nl</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -84,7 +109,7 @@ The response will be an JSON object with the following structure:
 }
 </pre>
 
-## Scenarios
+<h2 id="scenarios">Scenarios</h2>
 
 Using the API, one can inspect, create and change scenarios. These scenarios can be built from scratch or based on an existing scenario or template.
 
@@ -92,7 +117,7 @@ Using the API, one can inspect, create and change scenarios. These scenarios can
 
 Provided the `:id` of the scenario is known, a basic description of the scenario can be obtained.
 
-<pre class="prettyprint lang-bash">$ curl -i http://et-engine.com/api/v3/scenarios/123456</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/123456</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -115,7 +140,7 @@ HTTP/1.1 200 OK
 
 Using the `detailed=true` option, a more elaborate description is obtained, as well as an overview of all the modified inputs.
 
-<pre class="prettyprint lang-bash">$ curl -i http://et-engine.com/api/v3/scenarios/123456?detailed=true</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/123456?detailed=true</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -138,13 +163,6 @@ HTTP/1.1 200 OK
     "policy_sustainability_co2_emissions":-79.2,
     "policy_sustainability_renewable_percentage":79.6,
     "policy_dependence_max_dependence":24.1,
-    "policy_cost_total_energy_cost":400.0,
-    "policy_cost_electricity_cost":400.0,
-    "policy_area_onshore_land":211.0,
-    "policy_area_onshore_coast":21.0,
-    "policy_area_offshore":11407.0,
-    "industry_number_of_biomass_chp":218.6,
-    "households_replacement_of_existing_houses":5.0,
     ...
   }
 }
@@ -154,7 +172,7 @@ HTTP/1.1 200 OK
 
 The ETM offers a set of scenarios, so-called 'templates', which can be used to base one's scenario on. In order to get a list of these templates, including an extensive HTML description in both Dutch and English, one can use this API call:
 
-<pre class="prettyprint lang-bash">$ curl -i http://et-engine.com/api/v3/scenarios/templates</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/templates</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -220,6 +238,17 @@ HTTP/1.1 200 OK
 ### PUT /scenarios/:id
 
 Using a PUT request, one can make changes to a scenario's inputs, comparable to moving a slider in the web interface. Other options include resetting a scenario and running one or more gqueries.
+
+* `scenario`: hash with the scenario attributes. Its `user_values` are merged
+  with the existing values, because otherwise the entire input sets should be
+  resent on every request. The `user_values` must be sent as a hash; the hash
+  key is the input key. If you pass `reset` as the value for a single input then the input will be... reset.
+* `gqueries`: optional array of gqueries to run
+* `detailed`: optional boolean. If true then the `scenario` object response
+  will contain extra information such as `use_fce` and `user_values`
+* `reset`: optional boolean (default: false). If true the scenario inputs will
+  first be reset. This means that the scenario will use only the inputs we're
+  passing with the current request.
 
 #### Example 1: Changing scenario parameters
 
@@ -305,7 +334,7 @@ HTTP/1.1 200 OK
 </pre>
 
 A list of available gqueries can be found [here](#)
-## Inputs
+<h2 id="inputs">Inputs</h2>
 
 ### GET /inputs (also GET /scenarios/:scenario\_id/inputs)
 
@@ -365,7 +394,7 @@ HTTP/1.1 200 OK
 }
 </pre>
 
-## Converters
+<h2 id="converters" class="anchor">Converters</h2>
 
 The ETM peruses a complex graph to calculate energy flows. Each of the 250+ nodes of this graph is a so-called 'converter' as it converts one or more incoming flows into one or more outgoing flows. While the graph configuration itself is fixed, each of the nodes can be inspected individually. 
 
