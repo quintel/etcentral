@@ -1,25 +1,21 @@
 module PagesHelper
 
   def product_link(product)
-    case product
-    when :etflex
-      make_link("light.energytransitionmodel.com")
-    when :pro
-      make_link("pro.energytransitionmodel.com/pro")
-    when :mixer
-      make_link('mixer.energytransitionmodel.com')
-    end
+    link = "http://"
+    link += is_beta? ? 'beta.' : ''
+    link += product.to_s
+    link += dutch? ? '.energietransitiemodel.nl' : '.energytransitionmodel.com'
   end
 
-  def make_link(link)
-    "http://#{ link }"
+  def is_beta?
+    request.host_with_port =~ /beta/
   end
 
   def dutch?
-    I18n.locale.to_s == 'nl'
+    I18n.locale == :nl
   end
 
   def english?
-    I18n.locale.to_s == 'en'
+    I18n.locale == :en
   end
 end

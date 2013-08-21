@@ -31,7 +31,7 @@
 
     %article.span4
       .product#mixer
-        %a.mixer_link{href: "#{ product_link(:mixer) }?locale=#{ I18n.locale }", target: '_blank'}
+        %a.mixer_link{href: "#{ product_link(:mixer) }", target: '_blank'}
           .img-holder
             = image_tag 'pages/root/screen_mixer.jpg'
           %h2= raw t 'landing_page.mixer.title'
