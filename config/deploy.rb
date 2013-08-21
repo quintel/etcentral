@@ -3,8 +3,8 @@ set :repository,  "git@github.com:quintel/etcentral.git"
 
 set :scm, :git
 
-role :web, "new.et-model.com" # Your HTTP server, Apache/etc
-role :app, "new.et-model.com" # This may be the same as your `Web` server
+role :web, "beta.et-model.com" # Your HTTP server, Apache/etc
+role :app, "beta.et-model.com" # This may be the same as your `Web` server
 
 set :user, "ubuntu"
 
@@ -14,6 +14,23 @@ set :bundle_flags, '--deployment --quiet --binstubs --shebang ruby-local-exec'
 set :chmod755, "app config db lib public vendor script script/* public/disp*"
 ssh_options[:forward_agent] = true
 set :use_sudo, false
+
+task :staging do
+  set :branch, 'staging'
+  set :domain, 'beta.et-model.com'
+  set :rails_env, 'staging'
+  set :application_key, 'etcentral_staging'
+  server domain, :web, :app
+end
+
+task :production do
+  set :branch, 'production'
+  set :domain, 'et-model.com'
+  set :rails_env, 'production'
+  set :application_key, 'etcentral'
+  server domain, :web, :app
+end
+
 
 after "deploy:restart", "deploy:cleanup"
 
