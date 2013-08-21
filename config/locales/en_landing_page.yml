@@ -22,3 +22,11 @@ en:
     questions: "questions"
     other_language: "Nederlands"
     free: "free"
+    education: 
+      title: "Education and the Energy Transition Model"
+      text: "Samen met GasTerra en een groot aantal andere partners werkt Quintel Intelligence aan een onderwijsprogramma om kinderen en studenten zelf te laten ontdekken wat de voornaamste oorzaken en gevolgen zijn van de belangrijke ontwikkelingen in de energiewereld."
+    watt_nu:
+      title: "Watt Nu?!"
+      text: "TV show, produced in collaboration with Quintel Intelligence, the people behind the ETM. Each of the episodes of the first two seasons of the show that is broadcasted by RTL7 can be viewed at RTL XL (Dutch)."
+    quintel_intelligence:
+      title: "The Energy Transition Model is developed by the team at Quintel Intelligence" 

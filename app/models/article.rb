@@ -1,16 +1,16 @@
 class Article
-  include Sunspot::NakedModel
+  # include Sunspot::NakedModel
 
   attr_reader :lang, :section, :key, :file
 
   BASE_DIR = "#{ Rails.root }/config/"
 
-  searchable do
-    text :key
-    text :file do
-      content
-    end
-  end
+  # searchable do
+  #   text :key
+  #   text :file do
+  #     content
+  #   end
+  # end
   
   def initialize(lang, section, key, file)
     @lang    = lang
