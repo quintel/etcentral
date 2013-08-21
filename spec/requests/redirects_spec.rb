@@ -15,6 +15,7 @@ describe 'redirects' do
 
       get key
       expect(response).to redirect_to "http://pro.#{ request.host }#{ value }"
+      expect(response.status).to eq 301
 
     end
 
