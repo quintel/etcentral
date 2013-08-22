@@ -50,14 +50,14 @@
         %h2= t('landing_page.education.title')
         %p
           = t('landing_page.education.text')
-        = link_to 'Learn more', "http://edu.quintel.com", target: "_blank"
+        = link_to t('landing_page.learn_more'), "http://edu.quintel.com", target: "_blank"
   -# .row#api
   -#   %article
   -#     .span10
   -#       %h2 Put our engine in your own energy model
   -#       %p
   -#         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  -#       = link_to 'Learn more', "api"
+  -#       = link_to t('landing_page.learn_more'), "api"
   -#     .span2
   -#       %p
   -#         %i.icon-cogs.pull-right
@@ -67,7 +67,7 @@
         %h2= t('landing_page.watt_nu.title')
         %p
           = raw t('landing_page.watt_nu.text')
-        = link_to 'Learn more', "http://www.wattnu.nl", target: "_blank"
+        = link_to t('landing_page.learn_more'), "http://www.wattnu.nl", target: "_blank"
       .span2.hidden-phone
         %p
           %i.icon-desktop.pull-right
@@ -76,5 +76,5 @@
       .span12
         %h2= t('landing_page.quintel_intelligence.title')
         = render partial: 'people'
-        = link_to 'Learn more', "http://www.quintel.nl", target: "_blank"
+        = link_to t('landing_page.learn_more'), "http://www.quintel.nl", target: "_blank"
   .clear
