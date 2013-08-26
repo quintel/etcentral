@@ -11,4 +11,8 @@
           %strong= release.medium
           %small= l release.release_date
           %br
-          %small= link_to(release.title ? release.title : "Open persbericht", "http://#{ BUCKET_NAME }.s3.amazonaws.com#{ release.link }", target: '_blank')
+          - if /^http/.match(release.link)
+            - link = release.link
+          - else
+            - link = "http://#{ BUCKET_NAME }.s3.amazonaws.com#{ release.link }"
+          %small= link_to(release.title ? release.title : "Open persbericht", link , target: '_blank')

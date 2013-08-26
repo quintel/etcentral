@@ -1,6 +1,6 @@
 en:
   header:
-    prominent_users_of_etm: "Prominent users of the ETM"
+    prominent_users_of_etm: "Scenarios by prominent users of the ETM"
   landing_page:
     title: "Create your <em>own</em> Energy Future."
     explanation: "The <strong>Energy Transition Model</strong> is an independent, comprehensive and fact-based energy model that is used by governments, corporations, NGOs and <a href='http://onderwijs.quintel.nl'>educators</a> in various countries. It is backed by more than <a href='/partners'>20 partners</a>. There are three different versions of the Energy Transition Model."
@@ -14,6 +14,7 @@ en:
       title: "Energy Mixer"
       explanation: "Thousands of people in the Netherlands and Germany have already created their Energy Mixes using this <strong>questionnaire</strong>."
     go_to_wattnu: "Watch our TV show"
+    learn_more: "Learn more"
     footer:
       quintel: "The Energy Transition Model is created and maintained by <a href='http://quintel.com' target='_new'>Quintel Intelligence</a>."
     minutes: "minutes"
@@ -24,9 +25,9 @@ en:
     free: "free"
     education: 
       title: "Education and the Energy Transition Model"
-      text: "Samen met GasTerra en een groot aantal andere partners werkt Quintel Intelligence aan een onderwijsprogramma om kinderen en studenten zelf te laten ontdekken wat de voornaamste oorzaken en gevolgen zijn van de belangrijke ontwikkelingen in de energiewereld."
+      text: "Together with GasTerra and a large number of other partners, Quintel Intelligence develops an educational programme to let children and students discover the main causes and consequences of important developments in our energy system by themselves.</br></br>We currently develop educational materials for secondary school and higher vocational education, as well as for academic and post-doctoral programmes."
     watt_nu:
       title: "Watt Nu?!"
-      text: "TV show, produced in collaboration with Quintel Intelligence, the people behind the ETM. Each of the episodes of the first two seasons of the show that is broadcasted by RTL7 can be viewed at RTL XL (Dutch)."
+      text: "Fossil fuels run out, but we need ever more energy. How do we generate our electricity by 2030? Will insulation of our homes become mandatory? What is the cost of energy by 2030? Will we all drive electric vehicles? Will every home have solar panels on its roof? All in all, what will our energy future look like?</br></br>These subjects were addressed during the first two seasons of 'Watt Nu?!' a discussion programme on RTL7 about the energy future of the Netherlands, to which Quintel Intelligence contributed. EVery show, two experts joined presenter Joris Putman to discuss these issues. Politicians, captains of industry and scientists provided their vision on the Dutch energy sector by 2030. Each of the episodes of the first two seasons of the show can be viewed at <a href='http://www.rtl.nl/xl/#/a/277484/s/277485/'>RTL XL</a> (Dutch)."
     quintel_intelligence:
       title: "The Energy Transition Model is developed by the team at Quintel Intelligence" 

@@ -29,7 +29,7 @@ class Person
   end
 
   def image_path(type)
-    "people/#{key}/#{type}.jpg"
+    "http://#{ BUCKET_NAME }.s3.amazonaws.com/people/#{key}/#{type}.jpg"
   end
 
   def <=>(other_person)
@@ -39,8 +39,10 @@ class Person
   # Public: returns a string containing the path or false when the image has
   # not been found
   def has_image?(type)
-    path = "#{Rails.root}/app/assets/images/people/#{key}/#{type.to_s}.jpg"
-    FileTest.exist?(path) ? path : false
+    # Use of S3 without AWS-Ruby doesn't allow for checking whether or not image is available
+    true
+    # path = "#{Rails.root}/app/assets/images/people/#{key}/#{type.to_s}.jpg"
+    # FileTest.exist?(path) ? path : false
   end
 
   #######

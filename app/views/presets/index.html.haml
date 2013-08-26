@@ -8,7 +8,7 @@
         - title = dutch? ? user.function['nl'] : user.function['en']
         %div.user{id: user.key}
           %div.user_shot
-            = image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ user.key }.jpg")
+            = link_to image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ user.key }.jpg"), preset_path(user.key)
           %h3
             .info.name= truncate(user.name, length: 24)
             .info.title= truncate(title, length: 24)

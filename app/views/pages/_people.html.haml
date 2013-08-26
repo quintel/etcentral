@@ -4,4 +4,4 @@
       - if person.has_image?(:head_200)
         = link_to image_tag(person.image_path(:head_200)), "http://www.quintel.nl/#{person.key}", title: person.name_with_titles
       - else
-        = link_to image_tag('people/placeholder/head_200.jpg'), "#"
+        = link_to image_tag("http://#{ BUCKET_NAME }.s3.amazonaws.com/people/placeholder/head_200.jpg"), "#"
