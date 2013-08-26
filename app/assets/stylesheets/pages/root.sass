@@ -18,9 +18,13 @@ body#pages_root
     padding: 18px 10px
 
     .img-holder
-      @include background(image-url('pages/root/app_buttons.png') 3px 1px / 35px 8px no-repeat, linear-gradient(center left, #C3C3C3, #BBB))
       @include box-shadow(rgba(white, 0.3) 0 0 4px 3px inset)
       @include border-radius(4px)
+      background-image: image-url('pages/root/app_buttons.png')
+      background-position: 3px 2px
+      background-size: 35px 8px
+      background-repeat: no-repeat
+      background-color: #C3C3C3
       width: 100%
       max-width: 330px
       padding-top: 11px
@@ -66,14 +70,14 @@ body#pages_root
 .row article div[class^="span"] p
   margin-top: 20px
   i
-    font-size: 160px
+    font-size: 130px
     color: #ddd
 
 .person-small
   margin-bottom: 20px
   img
     margin-bottom: 5px
-    width: 100px
+    width: 75px
     -webkit-border-radius: 100px
     -moz-border-radius: 100px
     border-radius: 100px
@@ -82,3 +86,6 @@ body#pages_root
   .person-small
     a:hover
       img
+      
+.row:nth-child(n+4)
+  margin-top: 30px
