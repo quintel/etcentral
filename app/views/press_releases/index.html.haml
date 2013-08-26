@@ -2,9 +2,7 @@
   %h1= t("information.in_the_news")
 
   .row
-    .span6.offset3
-      -# %h3= t("information.overview")
-
+    .span8.offset2
       - @press_releases.each do |release|
         #press_release
           = image_tag("icons/#{ (release.release_type == 'radio' ? 'speaker.jpeg' : 'pdf.gif') }", class: "left release_type", size: "35x40")
