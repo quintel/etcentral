@@ -17,9 +17,6 @@
 # MACOSX files
 .DS_Store
 
-config/database.yml
-config/aws.yml
-config/config.yml
 .sass-cache/*
 .tags
 .tags_sorted_by_file
