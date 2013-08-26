@@ -7,6 +7,8 @@ gem 'redcarpet'
 # gem 'sunspot_rails'
 # gem 'sunspot_solr'
 
+gem 'airbrake'
+
 gem 'httparty'
 gem 'http_accept_language'
 gem 'nokogiri'
