@@ -20,6 +20,7 @@ task :staging do
   set :domain, 'beta.et-model.com'
   set :rails_env, 'staging'
   set :application_key, 'etcentral_staging'
+  set :airbrake_key, "64e97ea964161781f41d9d7e94c9c256"
   server domain, :web, :app
 end
 
@@ -28,6 +29,7 @@ task :production do
   set :domain, 'et-model.com'
   set :rails_env, 'production'
   set :application_key, 'etcentral'
+  set :airbrake_key, "64e97ea964161781f41d9d7e94c9c256"
   server domain, :web, :app
 end
 
