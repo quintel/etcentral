@@ -29,7 +29,7 @@ task :production do
   set :domain, 'et-model.com'
   set :rails_env, 'production'
   set :application_key, 'etcentral'
-  set :airbrake_key, "64e97ea964161781f41d9d7e94c9c256"
+  set :airbrake_key, "03bc16d0ad22cb6680c0fad7a58c4582"
   server domain, :web, :app
 end
 
