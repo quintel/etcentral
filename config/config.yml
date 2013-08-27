@@ -1,0 +1,9 @@
+development: &DEV
+    airbrake_api_key: '3ea5a72aad48a32d7bb486bc71ad4fd5'
+
+production: &PRODUCTION
+    <<: *DEV
+test:
+    <<: *DEV
+staging:
+    <<: *PRODUCTION
