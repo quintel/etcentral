@@ -19,6 +19,14 @@ $external_link_color: #a0a0a0
   background-size: 300px
   width: 300px
 
+//IE8.0 hack
+@media \0screen
+  .navbar .brand
+    padding-bottom: 13px
+    text-indent: -9999px
+    background: image_url("header/logo400.png") center center no-repeat
+    width: 300px
+
 .navbar .navbar-inner
   padding-right: 0
   padding-left: 0
