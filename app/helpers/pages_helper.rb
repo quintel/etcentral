@@ -5,6 +5,26 @@ module PagesHelper
     link += has_beta?(product) ? 'beta.' : ''
     link += product.to_s
     link += dutch? ? '.energietransitiemodel.nl' : '.energytransitionmodel.com'
+
+    # Untill we fix the DNS records for real and let it propogate...
+    if is_production?
+      case product
+      when :light
+        link = "http://etflex.et-model.com"
+      when :pro
+        link = "http://pro.et-model.com"
+      when :mixer
+        link = "http://mixer.et-model.com"
+      end
+
+      link += "?locale=#{I18n.locale}"
+    end
+
+    link
+  end
+
+  def is_production?
+    !is_beta?
   end
 
   def is_beta?
