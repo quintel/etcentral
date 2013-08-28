@@ -1,6 +1,6 @@
 ETM::Application.routes.draw do
 
-  match '/help' => 'articles#index', as: :help
+  # match '/help' => 'articles#index', as: :help
 
   resources :pages,           only: [:index, :show]
   resources :partners,        only: [:index, :show]
@@ -12,7 +12,7 @@ ETM::Application.routes.draw do
 
   match '/partners/info/:id' => 'pages#show', as: :partner_info
 
-  match '/help/search' => 'articles#search', as: :search
+  # match '/help/search' => 'articles#search', as: :search
 
   # Deprecated references to Pro ETM
   match 'scenarios/:id'  => 'redirects#forward', as: :redirect
