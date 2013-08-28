@@ -4,7 +4,7 @@ module PagesHelper
     link = "http://"
     link += has_beta?(product) ? 'beta.' : ''
     link += product.to_s
-    link += dutch? ? '.et-model.nl' : '.et-model.com'
+    link += dutch? ? '.energietransitiemodel.nl' : '.energytransitionmodel.com'
   end
 
   def is_beta?
