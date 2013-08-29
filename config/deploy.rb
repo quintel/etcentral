@@ -3,9 +3,6 @@ set :repository,  "git@github.com:quintel/etcentral.git"
 
 set :scm, :git
 
-role :web, "beta.et-model.com" # Your HTTP server, Apache/etc
-role :app, "beta.et-model.com" # This may be the same as your `Web` server
-
 set :user, "ubuntu"
 
 set :bundle_flags, '--deployment --quiet --binstubs --shebang ruby-local-exec'
