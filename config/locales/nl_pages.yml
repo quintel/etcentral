@@ -9,6 +9,9 @@ nl:
     contact: "Contact"
   pages:
     not_available_in_this_locale: "Deze pagina is niet beschikbaar in het Nederlands. Onderstaand ziet u de Engelse versie."
+    page_not_found: "Oops: pagina niet gevonden"
+    back_to_home_page: "Ga terug naar de home page"
+    send_email: "Stuur ons een email"
   articles:
     not_available_in_this_locale: "Deze pagina is niet beschikbaar in het Nederlands. Onderstaand ziet u de Engelse versie."
   presets:

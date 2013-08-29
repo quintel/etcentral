@@ -1,11 +1,11 @@
 .jumbotron
-  %h1 Oops: page not found.
+  %h1= t('pages.page_not_found')
 
 .row
   .span4
     %p
   .span4
     %p
-      =link_to 'Go back to home page', home_path
+      =link_to t('pages.back_to_home_page'), root_path
     %p
-      =link_to 'Send us an email', 'mailto:info@quintel.com'
+      =link_to t('pages.send_email'), 'mailto:info@quintel.com'

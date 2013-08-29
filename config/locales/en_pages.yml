@@ -9,6 +9,9 @@ en:
     contact: "Contact"
   pages:
     not_available_in_this_locale: "This page is not available in English. Please refer to the Dutch version below."
+    page_not_found: "Oops: page not found"
+    back_to_home_page: "Go back to home page"
+    send_email: "Send us an email"
   articles:
     not_available_in_this_locale: "This article is not available in English. Please refer to the Dutch version below."
   presets:
@@ -24,3 +27,4 @@ en:
     title: "Everybody needs a little help sometimes..."
     placeholder: "What are you looking for?"
     faq: "Frequently Asked Questions"
+  

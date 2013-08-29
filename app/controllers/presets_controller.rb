@@ -16,26 +16,31 @@ class PresetsController < ApplicationController
 
   def show
     @preset = Preset.find(params[:id])
-    response = preset_data(@preset)
     
-    if response['scenario']
-      @description = description_for_locale(response)
-    
-      demand = response['gqueries']['dashboard_energy_demand_primary_of_final']
-      energy_use = (demand['future']/demand['present']) - 1
-      response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
-      @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
-      panels = [ 
-        "energy_use",
-        "co2_emissions",
-        'energy_imports',
-        'costs',
-        "bio_footprint",
-        "renewables"
-      ]
-      panels.each_with_index { |panel,index| @values[index] = [panel,@values[index]] }
+    unless @preset
+      render 'pages/not_found'
     else
-      @description = "Oops, something went wrong..."
+      response = preset_data(@preset)
+    
+      if response['scenario']
+        @description = description_for_locale(response)
+    
+        demand = response['gqueries']['dashboard_energy_demand_primary_of_final']
+        energy_use = (demand['future']/demand['present']) - 1
+        response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
+        @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
+        panels = [ 
+          "energy_use",
+          "co2_emissions",
+          'energy_imports',
+          'costs',
+          "bio_footprint",
+          "renewables"
+        ]
+        panels.each_with_index { |panel,index| @values[index] = [panel,@values[index]] }
+      else
+        @description = "Oops, something went wrong..."
+      end
     end
   end
 
