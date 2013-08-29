@@ -28,7 +28,8 @@ describe "pages" do
     context 'when page does NOT exist' do
 
       it 'renders 404' do
-        expect { get 'dennis_for_president' }.to raise_error
+        get 'dennis_for_president'
+        expect(response.body).to match /oops/i
       end
 
     end
