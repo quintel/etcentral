@@ -170,3 +170,7 @@
   name: Energy Club Delft
   key:  energy_club
   kind: education
+-
+  name: ABN Amro
+  key:  abnamro
+  kind: primary
