@@ -1,7 +1,9 @@
 class PartnersController < ApplicationController
+  respond_to  :html, :json, only: [:index]
 
   def index
     @partners = Partner.all
+    respond_with(@partners)
   end
 
   def show
