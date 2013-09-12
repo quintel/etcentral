@@ -1,6 +1,6 @@
 # The ETM API: Our engine in your model
 
-Building your own energy-related model and interested to see how it affects the energy system in a particular market? By using the ETM API you can basically put our engine in your model. Our API is JSON-based and doesn't require any authentication. Simply send an appropriately formatted HTTP request to http://et-engine.com/api/v3/ and process the response message within your own model.
+Building your own energy-related model and interested to see how it affects the energy system in a particular market? By using the ETM API you can basically put our engine in your model. Our API is JSON-based and doesn't require any authentication. Simply send an appropriately formatted HTTP request to <code>http://et-engine.com/api/v3/</code> and process the response message within your own model.
 
 Below you find information on the requests available, their format and options as well as the structure of the response message you will receive. In case of further questions regarding our API, please contact us via [info@quintel.com](mailto:info@quintel.com) and make sure you put **'ETM API'** in your mail's subject.
 
@@ -29,7 +29,7 @@ Below you find information on the requests available, their format and options a
 </nav>  
 
 
-<h2 id="area_data">Area data</h2>
+<h2 class="anchor"><span id="area_data"></span>Area data</h2>
 
 The ETM currently covers three European national markets - The Netherlands, Germany and the United Kingdom (test). Two API calls are available to obtain any market-specific parameters, as used by the ETM.
 
@@ -109,7 +109,9 @@ The response will be an JSON object with the following structure:
 }
 </pre>
 
-<h2 id="scenarios">Scenarios</h2>
+<p class="back_to_top"><a href="#">Back to top</a></p>
+
+<h2 class="anchor"><span id="scenarios"></span>Scenarios</h2>
 
 Using the API, one can inspect, create and change scenarios. These scenarios can be built from scratch or based on an existing scenario or template.
 
@@ -334,7 +336,10 @@ HTTP/1.1 200 OK
 </pre>
 
 A list of available gqueries can be found [here](#)
-<h2 id="inputs">Inputs</h2>
+
+<p class="back_to_top"><a href="#">Back to top</a></p>
+
+<h2 class="anchor"><span id="inputs"></span>Inputs</h2>
 
 ### GET /inputs (also GET /scenarios/:scenario\_id/inputs)
 
@@ -394,7 +399,9 @@ HTTP/1.1 200 OK
 }
 </pre>
 
-<h2 id="converters" class="anchor">Converters</h2>
+<p class="back_to_top"><a href="#">Back to top</a></p>
+
+<h2 class="anchor"><span id="converters"></span>Converters</h2>
 
 The ETM peruses a complex graph to calculate energy flows. Each of the 250+ nodes of this graph is a so-called 'converter' as it converts one or more incoming flows into one or more outgoing flows. While the graph configuration itself is fixed, each of the nodes can be inspected individually. 
 
@@ -454,3 +461,5 @@ HTTP/1.1 200 OK
 Although the primary internal use of this request is to produce a visualisation of the graph, it could be used to learn the names of the 250+ converters and their interrelationships. Alternatively, you may contact us via [info@quintel.com](mailto:info@quintel.com), stating 'ETM API' in the subject line of your mail.
 
 <pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/converters/topology</pre>
+
+<p class="back_to_top"><a href="#">Back to top</a></p>
