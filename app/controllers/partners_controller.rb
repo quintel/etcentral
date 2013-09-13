@@ -1,5 +1,5 @@
 class PartnersController < ApplicationController
-  respond_to  :html, :json, only: [:index]
+  respond_to :html, :json, only: [:index]
 
   def index
     @partners = Partner.all
