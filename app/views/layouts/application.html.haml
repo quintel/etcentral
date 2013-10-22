@@ -11,6 +11,8 @@
 
 %body{id: "#{ controller_name }_#{ action_name }", data: { spy: 'scroll', target: '.sidebar' } }
 
+  = render 'layouts/open_source'
+
   = render 'layouts/navbar'
 
   = yield :breadcrumb
