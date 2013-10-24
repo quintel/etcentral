@@ -1,24 +1,20 @@
 # Open Source
 
-Het Energietransitiemodel wordt binnenkort een volledig open source project.
-Instituten, bedrijven en particulieren zullen dan in staat zijn om
-toegang te krijgen tot, te herzien en te verbeteren:
+Het Energietransitiemodel (ETM) wordt binnenkort een volledig open source project.
+Instituten, bedrijven en particulieren zullen dan:
 
 * alle **gegevens**
 * alle **berekeningen en definities**
 * alle **software**
 
-Met name adviesbureaus, universiteiten en kennisinstellingen worden uitgenodigd
-om hun eigen Energietransitiemodel voor hun regio overal in de wereld op
-basis van IEA gegevens te maken. Iedereen mag nieuwe landen en technologieën
-toe voegen aan de dataset, bestaande landen verbeteren, het creëren van nieuwe
-modules voor de ETM of zelfs de programmeercode aanpassen.
+kunnen inzien, herzien en zelfs verbeteren.
 
-Na goedkeuring door Quintel, zullen dergelijke wijzigingen deel uitmaken van
-het Energie Transitie Model en daarmee ter beschikking van de hele
-gebruikersgroep.
+Wij nodigen met name adviesbureaus, universiteiten en kennisinstellingen  uit
+om hun eigen Energietransitiemodel voor hun regio overal in de wereld te maken op basis van IEA gegevens. Iedereen heeft toestemming om nieuwe landen en technologieën toe voegen aan de dataset, bestaande landen te verbeteren,  nieuwe modules te creëren voor het ETM of zelfs de programmeercode aan te passen.
 
-Organisaties die nu inschrijven zal ondersteuning krijgen om snel aan de
+Na goedkeuring door Quintel, zullen dergelijke wijzigingen deel uitmaken van het Energietransitiemodel en daarmee ter beschikking komen van de hele gemeenschap van gebruikers.
+
+Organisaties die zich nu inschrijven krijgen ondersteuning om snel aan de
 slag te kunnen.
 
 <div class='well'>
