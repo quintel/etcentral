@@ -12,7 +12,7 @@ ssh_options[:forward_agent] = true
 set :use_sudo, false
 
 task :staging do
-  set :branch, 'staging'
+  set :branch, fetch(:branch, 'staging')
   set :domain, 'beta.et-model.com'
   set :rails_env, 'staging'
   set :application_key, 'etcentral_staging'
@@ -21,7 +21,7 @@ task :staging do
 end
 
 task :production do
-  set :branch, 'production'
+  set :branch, fetch(:branch, 'production')
   set :domain, 'et-model.com'
   set :rails_env, 'production'
   set :application_key, 'etcentral'
