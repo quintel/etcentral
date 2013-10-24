@@ -11,7 +11,8 @@ and *improve*:
 Especially consultancies, universities and knowledge institutes are invited to
 create their own Energy Transition Model for their region anywhere in the
 world based on IEA data. Anyone may add new countries and technologies to the
-dataset, improve existing ones, create new modules for the ETM or even overhaul the programming code.
+dataset, improve existing ones, create new modules for the ETM or even overhaul
+the programming code.
 
 Once approved by Quintel, such changes will become part of the Energy
 Transition Model and thereby be available to the whole Energy Transition
