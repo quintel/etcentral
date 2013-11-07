@@ -3,14 +3,4 @@
   %p= t('presets.subtitle')
 .row
   .span12
-    %article#prominent_users
-      - @presets.each do |user|
-        - title = dutch? ? user.function['nl'] : user.function['en']
-        %div.user{id: user.key}
-          %div.user_shot
-            = link_to image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ user.key }.jpg"), preset_path(user.key)
-          %h3
-            .info.name= truncate(user.name, length: 24)
-            .info.title= truncate(title, length: 24)
-            .info.organization= truncate(user.organization, length: 24)
-          = link_to 'More', preset_path(user.key), method: 'get', class: 'scenario_button btn btn-block'
+    = render 'user_thumbs'

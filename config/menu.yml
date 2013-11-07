@@ -5,7 +5,9 @@ Applications:
 
 Partners:
 
-Prominent Users: presets
+Prominent Users:
+  ec_presets: presets/event/ec2013
+  presets: presets
 
 Press Releases: press_releases
 

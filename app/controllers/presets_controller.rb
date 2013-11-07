@@ -8,28 +8,31 @@ class PresetsController < ApplicationController
     dashboard_bio_footprint
     dashboard_renewability
   }
-  
+
   def index
-    @presets = Preset.all.sort_by { rand }
-    @presets.delete_if { |preset| preset.scenario_id.blank? }
+    @presets = fetch_presets
+  end
+
+  def event
+    @presets = fetch_presets.select { |p| p.event == params[:id] }
   end
 
   def show
     @preset = Preset.find(params[:id])
-    
+
     unless @preset
       render 'pages/not_found'
     else
       response = preset_data(@preset)
-    
+
       if response['scenario']
         @description = description_for_locale(response)
-    
+
         demand = response['gqueries']['dashboard_energy_demand_primary_of_final']
         energy_use = (demand['future']/demand['present']) - 1
         response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
         @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
-        panels = [ 
+        panels = [
           "energy_use",
           "co2_emissions",
           'energy_imports',
@@ -44,7 +47,13 @@ class PresetsController < ApplicationController
     end
   end
 
+  #######
   private
+  #######
+
+  def fetch_presets
+    Preset.all.select(&:has_scenario?).shuffle
+  end
 
   def preset_data(preset)
     HTTParty.put("http://beta.et-engine.com/api/v3/scenarios/#{preset.scenario_id}/dashboard", body: {}, query: { gqueries: DASHBOARD_QUERIES, detailed: true })
