@@ -33,7 +33,7 @@ class YmlReadOnlyRecord
 
   def self.load_directory
     items = []
-    Dir.glob("#{ BASE_DIR }#{ yml_store }/*.yml") do |yml_file|
+    Dir.glob("#{ BASE_DIR }#{ yml_store }/**/*.yml") do |yml_file|
       items << self.new(YAML.load_file yml_file)
     end
     items

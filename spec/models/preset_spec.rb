@@ -18,4 +18,7 @@ describe Preset do
 
   end
 
+  describe '.all' do
+  end
+
 end
