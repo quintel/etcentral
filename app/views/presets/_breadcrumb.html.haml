@@ -2,7 +2,10 @@
   %ul.breadcrumb
     .container
       %li
-        = link_to 'Scenarios', presets_path
+        - if @preset.event.nil?
+          = link_to 'Scenarios', presets_path
+        - else
+          = link_to 'Scenarios', event_presets_path('ec2013')
       %li
         > 
         = @preset.name
