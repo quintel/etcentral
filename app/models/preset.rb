@@ -3,7 +3,7 @@ class Preset < YmlReadOnlyRecord
   attr_accessor :key, :name, :function, :organization, :scenario_id, :event
 
   def has_scenario?
-    !scenario_id.blank? || event == 'ec2013'
+    !scenario_id.blank?
   end
 
   def self.all_for_event(event)
