@@ -13,8 +13,6 @@
 
   = render 'layouts/navbar'
 
-  = render 'layouts/open_source' unless @page.try(:key) == 'open_source'
-
   = yield :breadcrumb
 
   .container
