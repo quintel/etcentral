@@ -51,12 +51,17 @@ class PresetsController < ApplicationController
   private
   #######
 
+  def server_url
+    is_beta? ? 'http://beta.et-engine.com' : 'http://et-engine.com'
+  end
+
   def fetch_presets
     Preset.all.select(&:has_scenario?).shuffle
   end
 
   def preset_data(preset)
-    HTTParty.put("http://beta.et-engine.com/api/v3/scenarios/#{preset.scenario_id}/dashboard", body: {}, query: { gqueries: DASHBOARD_QUERIES, detailed: true })
+    url = "#{ server_url }/api/v3/scenarios/#{ preset.scenario_id }/dashboard"
+    HTTParty.put(url, body: {}, query: { gqueries: DASHBOARD_QUERIES, detailed: true })
   end
 
   def description_for_locale(response)

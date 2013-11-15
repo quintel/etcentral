@@ -23,14 +23,6 @@ module PagesHelper
     link
   end
 
-  def is_production?
-    !is_beta?
-  end
-
-  def is_beta?
-    request.host_with_port =~ /beta/
-  end
-
   def has_beta?(product)
     return false unless is_beta?
 

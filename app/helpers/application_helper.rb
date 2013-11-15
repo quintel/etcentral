@@ -1,5 +1,13 @@
 module ApplicationHelper
 
+  def is_production?
+    !is_beta?
+  end
+
+  def is_beta?
+    request.host_with_port =~ /beta/
+  end
+
   def currently_at(item)
     render_partial 'navbar', locals: { current_item: item }
   end
