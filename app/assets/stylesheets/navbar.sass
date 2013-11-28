@@ -9,8 +9,19 @@ $external_link_color: #a0a0a0
 .navbar .nav > .active > a, 
 .navbar .nav > .active > a:hover, 
 .navbar .nav > .active > a:focus,
+.navbar .nav li.dropdown > a:hover,
 .navbar .nav > .dropdown.open > a.dropdown-toggle,
   color: $hover_and_active_color
+  .caret
+    border-top-color: $hover_and_active_color
+    border-bottom-color: $hover_and_active_color
+
+.navbar .nav > li > a:focus,
+.navbar .nav li.dropdown > a:focus,
+  color: $navbarLinkColor
+  .caret
+    border-top-color: $navbarLinkColor
+    border-bottom-color: $navbarLinkColor
 
 .navbar .brand
   padding-bottom: 13px
