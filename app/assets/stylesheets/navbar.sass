@@ -37,14 +37,21 @@ $external_link_color: #a0a0a0
 #language a
   margin-left: 15px
   color: #fff
-  padding-left: 20px
+  padding: 20px
   &:hover
     color: $hover_and_active_color
   &.en
     background: image-url("icons/areas/gb.png") left center no-repeat
   &.nl
     background: image-url("icons/areas/nl.png") left center no-repeat
-    
+
+// Ensure the language selection doesn't cause the header to increase in height
+// as a result of text wrapping.
+@media (min-width: 980px) and (max-width: 1199px)
+  #language a
+    font-size: 13px
+    padding: 20px 10px 18px 20px
+
 ul.dropdown-menu > li > a
   .icon-external-link
     display: none
