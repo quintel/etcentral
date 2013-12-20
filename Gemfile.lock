@@ -248,6 +248,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   nokogiri
+  pry
   rails (= 3.2.13)
   redcarpet
   rspec-rails

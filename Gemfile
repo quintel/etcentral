@@ -4,6 +4,8 @@ gem 'rails',       '3.2.13'
 
 gem 'haml'
 gem 'redcarpet'
+gem 'pry'
+
 # gem 'sunspot_rails'
 # gem 'sunspot_solr'
 
