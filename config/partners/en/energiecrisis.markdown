@@ -1,0 +1,3 @@
+[Website lesmodule De Energiecrisis](http://www.deenergiecrisis.nl)
+
+Teaching module De Energiecrisis (the Energy Crisis) is developed for high school students. In one or two days, the following question is discussed: is it possible to make The Netherlands sustainable? The module starts with an interactive presentation in which the current energy and climate science is discussed. Afterwards, students get to work with the Energy Transition Model, solar panels and a debating assignment. The project ends with a quiz and an award ceremony. Throughout the project, there is a strong focus on critical thinking. Do you want us to visit your school, or do you have any other questions, please visit our website and don't hesitate to contact us.
