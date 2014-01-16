@@ -5,7 +5,7 @@
 <table class='table table-striped'>
   <tr>
     <td>k (kilo)</td>
-    <td><div align='right'>1</div></td>
+    <td><div align='right'>1,000</div></td>
     <td>(thousand), or 10<sup>3</sup></td>
   </tr>
   <tr>
