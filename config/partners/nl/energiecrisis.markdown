@@ -1,0 +1,3 @@
+[Website lesmodule De Energiecrisis](http://www.deenergiecrisis.nl)
+
+Lesmodule De Energiecrisis is een onderwijsmodule voor het middelbaar onderwijs. In een of twee lesdagen gaan leerlingen aan de slag met de vraag of Nederland duurzaam kan. De module begint met een interactieve presentatie waarin de huidige stand van de energie- en klimaatwetenschap wordt gepresenteerd. Vervolgens gaan leerlingen zelf aan de slag met het Energietransitiemodel, zonnepanelen en een debat- opdracht. Het project wordt afgesloten met een quiz en een prijsuitreiking. Tijdens alle onderdelen wordt er aandacht besteed aan kritisch nadenken. Wilt u dat wij bij u op school langskomen, of heeft u andere vragen, bezoek dan vooral onze website en neem contact met ons op.

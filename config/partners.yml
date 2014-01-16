@@ -174,3 +174,7 @@
   name: ABN Amro
   key:  abnamro
   kind: primary
+-
+  name: Lesmodule De Energiecrisis
+  key:  energiecrisis
+  kind: education
