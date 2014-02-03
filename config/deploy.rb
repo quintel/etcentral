@@ -1,5 +1,5 @@
 set :application, "etcentral"
-set :repository,  "git@github.com:quintel/etcentral.git"
+set :repository,  "https://github.com/quintel/etcentral.git"
 
 set :scm, :git
 
