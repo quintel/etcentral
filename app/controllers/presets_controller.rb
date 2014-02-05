@@ -1,7 +1,7 @@
 class PresetsController < ApplicationController
 
   DASHBOARD_QUERIES = %w{
-    dashboard_energy_demand_primary_of_final
+    dashboard_energy_demand_primary_of_final_plus_export_losses
     dashboard_reduction_of_co2_emissions_versus_1990
     dashboard_energy_import_netto
     dashboard_total_costs
@@ -28,7 +28,7 @@ class PresetsController < ApplicationController
       if response['scenario']
         @description = description_for_locale(response)
 
-        demand = response['gqueries']['dashboard_energy_demand_primary_of_final']
+        demand = response['gqueries']['dashboard_energy_demand_primary_of_final_plus_export_losses']
         energy_use = (demand['future']/demand['present']) - 1
         response['gqueries'].each_pair { |gquery, values| @values ||= []; @values << [values['future'], values['unit']] }
         @values = @values.values_at(1..-1).insert(0, [energy_use, 'factor'])
