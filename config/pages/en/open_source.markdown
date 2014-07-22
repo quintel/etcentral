@@ -24,7 +24,7 @@ repositories are:
 
 * for data: [etsource](http://github.com/quintel/etsource)
 * for source data: [etdataset](http://github.com/quintel/etdataset)
-* for calcalution: [etengine](http://github.com/quintel/etengine)
+* for calculation: [etengine](http://github.com/quintel/etengine)
 * for the professional interface: [etmodel](http://github.com/quintel/etmodel)
 * for the energy game interface: [etflex](http://github.com/quintel/etflex)
 
@@ -38,7 +38,7 @@ questions or if you need help!
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="http://quintel.us3.list-manage.com/subscribe/post?u=89db00a7fc7c18b93278f2cf9&amp;id=784a1447f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	
+
 <div class="mc-field-group">
 	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 </label>
@@ -80,7 +80,7 @@ if (!jqueryLoaded) {
     if (script.readyState && script.onload!==null){
         script.onreadystatechange= function () {
               if (this.readyState == 'complete') mce_preload_check();
-        }    
+        }
     }
 }
 
@@ -154,7 +154,7 @@ function mce_init_form(){
                                     		this.value = '';
 									    } else {
 									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
 									        } else {
     	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
 	                                        }
@@ -180,12 +180,12 @@ function mce_init_form(){
                                     });
                             });
                         return mce_validator.form();
-                    }, 
+                    },
                     success: mce_success_cb
                 };
       $('#mc-embedded-subscribe-form').ajaxForm(options);
-      
-      
+
+
     });
 }
 function mce_success_cb(resp){
@@ -221,11 +221,11 @@ function mce_success_cb(resp){
         try{
             if (index== -1){
                 $('#mce-'+resp.result+'-response').show();
-                $('#mce-'+resp.result+'-response').html(msg);            
+                $('#mce-'+resp.result+'-response').html(msg);
             } else {
                 err_id = 'mce_tmp_error_msg';
                 html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                
+
                 var input_id = '#mc_embed_signup';
                 var f = $(input_id);
                 if (ftypes[index]=='address'){
