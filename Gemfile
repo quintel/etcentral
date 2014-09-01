@@ -32,12 +32,19 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-livereload'
-  gem 'capistrano'
 end
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # Deploy with Capistrano.
+  gem 'capistrano',             '~> 3.0',   require: false
+  gem 'capistrano-rbenv',       '~> 2.0',   require: false
+  gem 'capistrano-rails',       '~> 1.1',   require: false
+  gem 'capistrano-bundler',     '~> 1.1',   require: false
+  gem 'capistrano3-unicorn',    '~> 0.2',   require: false
+  gem 'capistrano-maintenance', '~> 0.0.4', require: false
 end
 
 group :production do
