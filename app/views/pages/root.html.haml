@@ -18,6 +18,10 @@
             %li.time{ title:"time required" }=         "~ 5 #{ t 'landing_page.minutes' }"
             %li.options{ title:"number of options" }=  "12 #{ t 'landing_page.sliders' }"
             %li=                                     "#{ t 'landing_page.free' }!"
+          %div.btn-holder
+            %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
+              Open
+              = raw t 'landing_page.etflex.title'
           %p= raw t 'landing_page.etflex.explanation'
 
     %article.span4
@@ -30,6 +34,10 @@
             %li.time{ title: "time required" }=        "> 30 #{ t 'landing_page.minutes' }"
             %li.options{ title: "number of options" }= "> 250 #{ t 'landing_page.sliders' }"
             %li=                                    "#{ t 'landing_page.free' }!"
+          %div.btn-holder
+            %a.btn.btn-primary{ href: product_link(:pro), target: '_blank' }
+              Open
+              = raw t 'landing_page.etmodel.title'
           %p= raw t 'landing_page.etmodel.explanation'
 
     %article.span4
@@ -42,6 +50,10 @@
             %li.time{ title:"time required" }=        "~ 10 #{ t 'landing_page.minutes' }"
             %li.options{ title:"number of options" }= "9 #{ t 'landing_page.questions' }"
             %li=                                    "#{ t 'landing_page.free' }!"
+          %div.btn-holder
+            %a.btn.btn-primary{ href: product_link(:mixer), target: '_blank' }
+              Open
+              = raw t 'landing_page.mixer.title'
           %p= raw t 'landing_page.mixer.explanation'
 
   .row#education
