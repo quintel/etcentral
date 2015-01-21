@@ -130,7 +130,7 @@ GEM
     kgio (2.8.0)
     launchy (2.3.0)
       addressable (~> 2.3)
-    libv8 (3.16.14.3)
+    libv8 (3.16.14.7)
     listen (1.2.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
