@@ -15,8 +15,6 @@ module PagesHelper
         link = "http://pro.et-model.com"
       when :etmoses
         link = "http://moses.et-model.com"
-      when :mixer
-        link = "http://mixer.et-model.com"
       end
 
       link += "?locale=#{I18n.locale}"

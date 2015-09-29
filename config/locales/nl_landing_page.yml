@@ -10,10 +10,6 @@ nl:
     etmodel:
       title: "Professional"
       explanation: "Bomvol gegevens over zes landen en de EU, waarmee <strong>beleidsmakers</strong> en <strong>experts</strong> energiescenario's doorrekenen."
-    mixer: "Energy Mixer"
-    mixer:
-      title: "Energy Mixer"
-      explanation: "Duizenden mensen in Nederland en Duitsland hebben met behulp van deze <strong>vragenlijst</strong> hun Energy Mix al gemaakt."
     etmoses:
       title: "ETMoses"
       explanation: "Met deze tool kun je de lokale energiesituatie voor straten, wijken, buurten, steden en gebieden op <strong>kwartierniveau</strong> doorrekenen."
