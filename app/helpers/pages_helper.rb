@@ -13,6 +13,8 @@ module PagesHelper
         link = "http://etflex.et-model.com"
       when :pro
         link = "http://pro.et-model.com"
+      when :etmoses
+        link = "http://moses.et-model.com"
       when :mixer
         link = "http://mixer.et-model.com"
       end
