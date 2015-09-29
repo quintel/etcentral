@@ -11,15 +11,11 @@
           .img-holder
             = image_tag 'pages/root/screen_light.jpg'
           %h2= raw t 'landing_page.etflex.title'
-          %ul.specs
-            %li.time{ title:"time required" }=         "~ 5 #{ t 'landing_page.minutes' }"
-            %li.options{ title:"number of options" }=  "12 #{ t 'landing_page.sliders' }"
-            %li=                                     "#{ t 'landing_page.free' }!"
+          %p= raw t 'landing_page.etflex.explanation'
           %div.btn-holder
             %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
               Open
               = raw t 'landing_page.etflex.title'
-          %p= raw t 'landing_page.etflex.explanation'
 
     %article.span4
       .product#etmodel
@@ -27,31 +23,23 @@
           .img-holder
             = image_tag 'pages/root/screen_pro.jpg'
           %h2= raw t 'landing_page.etmodel.title'
-          %ul.specs
-            %li.time{ title: "time required" }=        "> 30 #{ t 'landing_page.minutes' }"
-            %li.options{ title: "number of options" }= "> 250 #{ t 'landing_page.sliders' }"
-            %li=                                    "#{ t 'landing_page.free' }!"
+          %p= raw t 'landing_page.etmodel.explanation'
           %div.btn-holder
             %a.btn.btn-primary{ href: product_link(:pro), target: '_blank' }
               Open
               = raw t 'landing_page.etmodel.title'
-          %p= raw t 'landing_page.etmodel.explanation'
 
     %article.span4
       .product#mixer
         %a.mixer_link{href: "#{ product_link(:mixer) }", target: '_blank'}
           .img-holder
-            = image_tag 'pages/root/screen_mixer.jpg'
-          %h2= raw t 'landing_page.mixer.title'
-          %ul.specs
-            %li.time{ title:"time required" }=        "~ 10 #{ t 'landing_page.minutes' }"
-            %li.options{ title:"number of options" }= "9 #{ t 'landing_page.questions' }"
-            %li=                                    "#{ t 'landing_page.free' }!"
+            = image_tag 'pages/root/screen_etmoses.jpg'
+          %h2= raw t 'landing_page.etmoses.title'
+          %p= raw t 'landing_page.etmoses.explanation'
           %div.btn-holder
             %a.btn.btn-primary{ href: product_link(:mixer), target: '_blank' }
               Open
-              = raw t 'landing_page.mixer.title'
-          %p= raw t 'landing_page.mixer.explanation'
+              = raw t 'landing_page.etmoses.title'
 
   .row#education
     %article
@@ -63,30 +51,4 @@
         %p
           = raw t('landing_page.education.text')
         = link_to t('landing_page.learn_more_dutch_only'), "http://onderwijs.quintel.nl", target: "_blank"
-  -# .row#api
-  -#   %article
-  -#     .span10
-  -#       %h2 Put our engine in your own energy model
-  -#       %p
-  -#         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  -#       = link_to t('landing_page.learn_more'), "api"
-  -#     .span2
-  -#       %p
-  -#         %i.icon-cogs.pull-right
-  .row#wattnu
-    %article
-      .span10
-        %h2= t('landing_page.watt_nu.title')
-        %p
-          = raw t('landing_page.watt_nu.text')
-        = link_to t('landing_page.learn_more'), "http://www.wattnu.nl", target: "_blank"
-      .span2.hidden-phone
-        %p
-          %i.icon-desktop.pull-right
-  .row#quintel
-    %article
-      .span12
-        %h2= t('landing_page.quintel_intelligence.title')
-        = render partial: 'people'
-        = link_to t('landing_page.learn_more'), "http://www.quintel.nl", target: "_blank"
   .clear

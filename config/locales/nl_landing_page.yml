@@ -9,11 +9,14 @@ nl:
       explanation: "Een leuke <strong>inleiding</strong> tot de belangrijkste energiethema's. Kun jij de hoogste score halen met jouw energietoekomst?"
     etmodel:
       title: "Professional"
-      explanation: "Bomvol gegevens over verschillende landen, provincies en gemeenten, waarmee <strong>beleidsmakers</strong> en <strong>energie-experts</strong> hun energiescenario's doorrekenen."
+      explanation: "Bomvol gegevens over zes landen en de EU, waarmee <strong>beleidsmakers</strong> en <strong>experts</strong> energiescenario's doorrekenen."
     mixer: "Energy Mixer"
     mixer:
       title: "Energy Mixer"
       explanation: "Duizenden mensen in Nederland en Duitsland hebben met behulp van deze <strong>vragenlijst</strong> hun Energy Mix al gemaakt."
+    etmoses:
+      title: "ETMoses"
+      explanation: "Met deze tool kun je de lokale energiesituatie voor straten, wijken, buurten, steden en gebieden op <strong>kwartierniveau</strong> doorrekenen."
     go_to_wattnu: "Bekijk onze TV show!"
     learn_more: "Meer..."
     learn_more: "Meer..."
