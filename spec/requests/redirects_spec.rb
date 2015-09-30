@@ -25,19 +25,19 @@ describe 'redirects' do
     context 'RLI ser-scenario-2023' do
       it 'redirects to beta ETM ser scenario 2023' do
         get '/rli/ser-scenario-2023'
-        expect(response).to redirect_to "http://beta.pro.et-model.com/scenarios/193349"
+        expect(response).to redirect_to "http://pro.et-model.com/scenarios/193349"
       end
     end
     context 'RLI 80% CO2 reductie' do
       it 'redirects to beta ETM 80% CO2 reductie scenario' do
         get '/rli/80-procent-co2-reductiescenario-2050'
-        expect(response).to redirect_to "http://beta.pro.et-model.com/scenarios/423879"
+        expect(response).to redirect_to "http://pro.et-model.com/scenarios/423879"
       end
     end
     context 'RLI 95% CO2 reductie' do
       it 'redirects to beta ETM 95% CO2 reductie scenario' do
         get '/rli/95-procent-co2-reductiescenario-2050'
-        expect(response).to redirect_to "http://beta.pro.et-model.com/scenarios/423882"
+        expect(response).to redirect_to "http://pro.et-model.com/scenarios/423882"
       end
     end
   end
