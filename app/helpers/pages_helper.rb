@@ -27,8 +27,9 @@ module PagesHelper
     return false unless is_beta?
 
     case product
-    when :light then true
-    when :pro   then true
+    when :light   then true
+    when :etmoses then true
+    when :pro     then true
     else false
     end
   end
