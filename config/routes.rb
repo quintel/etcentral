@@ -1,9 +1,9 @@
 ETM::Application.routes.draw do
 
   # Temporary: Redirect RLI scenarios to beta scenarios
-  match '/rli/ser-scenario-2023'                    => redirect { 'http://beta.pro.et-model.com/scenarios/193349' }
-  match '/rli/80-procent-co2-reductiescenario-2050' => redirect { 'http://beta.pro.et-model.com/scenarios/423879' }
-  match '/rli/95-procent-co2-reductiescenario-2050' => redirect { 'http://beta.pro.et-model.com/scenarios/423882' }
+  match '/rli/ser-scenario-2023'                    => redirect { 'http://pro.et-model.com/scenarios/193349' }
+  match '/rli/80-procent-co2-reductiescenario-2050' => redirect { 'http://pro.et-model.com/scenarios/423879' }
+  match '/rli/95-procent-co2-reductiescenario-2050' => redirect { 'http://pro.et-model.com/scenarios/423882' }
 
   # match '/help' => 'articles#index', as: :help
 
