@@ -20,6 +20,13 @@ module PagesHelper
       link += "?locale=#{I18n.locale}"
     end
 
+    if is_beta?
+      case product
+      when :etmoses
+        link = 'http://beta.moses.et-model.com'
+      end
+    end
+
     link
   end
 
