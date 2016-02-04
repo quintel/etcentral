@@ -9,11 +9,14 @@
 * Geothermal heat, ambient heat (air and ground heat pumps), and solar thermal energy are not included in the primary energy calculation. The effect is that technologies using these reduce the amount of energy used. We plan to include those primary renewable carriers in the renewability calculation in order to match the international energy statistics.
 * Primary demand of carriers can differ between Sankey and overall Primary and Final energy use charts by small amounts. These discrepancies will be resolved in the next version of the ETM.
 * Currently the only power plants which can be used for co-firing of wood_pellets are the ultra-supercritical pulverized coal power plant (Pulverized coal) and the equivalent CHP plant (Central Coal CHP).
+* The full transport chain (from fuel production to utilization) of hydrogen and (bio) LNG is modeled in more detail than that of other fuels. As a result, all other fuels appear better (relative to hydrogen and (bio) LNG) than they actually are.
 
 ## Cost calculations
 
-* As yet, kerosene and heavy fuel oil have no extra refinery costs (on top of crude oil). These will be analyzed and resolved in one of the next versions.
+* As yet, gasoline, diesel, kerosene and heavy fuel oil have no extra refinery costs (on top of crude oil). These will be analyzed and resolved in one of the next versions.
+* Cars are not given investment costs as the total costs in the dashboard would be dominated by the resulting costs. Instead, it is possible to specify additional investment costs for electric vehicles (with respect to conventional internal combustion engine cars).
 * We are currently still validating costs for certain power plants (coal-fired, hydro and nuclear power plants) and household and building heating technologies. These may therefore result in incorrect costs.
+* The full transport chain (from fuel production to utilization) of hydrogen and (bio) LNG is more detailed than that of other fuels. As a result, all other fuels appear better (relative to hydrogen and (bio) LNG) than they actually are.
 
 ## Fuel chain emission calculations
 
@@ -21,7 +24,7 @@
 
 ## Employment module
 
-* Industry and agriculture are excluded from the employment calculation.
+* Industry, transport and agriculture are excluded from the employment calculation.
 * At present, geothermal heating in Households and Buildings uses employment figures from geothermal electricity production (scaled to match the capacity). This is due to the lack of literature on geothermal heating projects in the Netherlands.
 * Employment effects of district heating do not take the construction of a heat network into account. The extent and properties of such a network are too dependent on the specifics of each project, to conclude what impact the network has on employment.
 * The 'Replacement of existing houses' slider does not take into account that heating or cooling technologies need to be installed for each new house. The effect of this slider on employment is therefore unrealistically small.
