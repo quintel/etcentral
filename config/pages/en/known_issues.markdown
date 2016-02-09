@@ -6,17 +6,22 @@
 
 ## Energy calculations
 
-* Geothermal heat, ambient heat (air and ground heat pumps), and solar thermal energy are not included in the primary energy calculation. The effect is that technologies using these reduce the amount of energy used. We plan to include those primary renewable carriers in the renewability calculation in order to match the international energy statistics.
+* Geothermal heat, ambient heat (air and ground heat pumps), and solar thermal energy are not included in the primary energy calculation. The effect is that technologies using these reduce the amount of energy used. We plan to include those primary renewable carriers in the renewability calculation if international energy statistics reach a consensus on how to do this.
+* The ETM only takes into account *net* energy flows. Energy which is *transported through* a country (imported and then exported again) is not included.
 * Primary demand of carriers can differ between Sankey and overall Primary and Final energy use charts by small amounts. These discrepancies will be resolved in the next version of the ETM.
 * Currently the only power plants which can be used for co-firing of wood_pellets are the ultra-supercritical pulverized coal power plant (Pulverized coal) and the equivalent CHP plant (Central Coal CHP).
 * Hydrogen and (bio-)LNG for transport are modeled in more detail than other transport fuels; we have included realistic efficiencies for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively more efficient in the ETM than they are in reality.
 
+## CO2 calculations
+* The mix of exported electricity is taken to be the mix of domestic production. So, even if wind produces the surplus electricity peaks, coal electricity is exported as well and exported electricity has a CO<sub>2</sub>-emission associated with it. This approach is in line with EU regulations for reporting CO2.
+
 ## Cost calculations
 
-* Gasoline, diesel, kerosene and heavy fuel oil have no extra refinery costs (on top of crude oil). These need to be researched and resolved in a release of the ETM.
+* Gasoline, diesel, kerosene and heavy fuel oil have no extra refinery costs (on top of crude oil). These need to be researched and resolved in a future release of the ETM.
 * Cars are not given investment costs as the total costs in the dashboard would be dominated by the resulting costs. Instead, it is possible to specify additional investment costs for electric vehicles (with respect to conventional internal combustion engine cars).
 * We are currently still validating costs for certain power plants (coal-fired, hydro and nuclear power plants) and household and building heating technologies. These may therefore result in incorrect costs.
 * Hydrogen and (bio-)LNG for transport are modeled in more detail than other transport fuels; we have included realistic costs for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively cheaper in the ETM than they are in reality.
+* Costs for heat pumps are uncertain due to very heterogenesous data. More consisten cost and energy parameters are expected in 2016.
 
 ## Fuel chain emission calculations
 
