@@ -1,26 +1,20 @@
 ETM::Application.routes.draw do
-
-  # Temporary: Redirect RLI scenarios to beta scenarios
-  match '/rli/ser-scenario-2023'                    => redirect { 'http://pro.et-model.com/scenarios/193349' }
-  match '/rli/80-procent-co2-reductiescenario-2050' => redirect { 'http://pro.et-model.com/scenarios/423879' }
-  match '/rli/95-procent-co2-reductiescenario-2050' => redirect { 'http://pro.et-model.com/scenarios/423882' }
-
-  # match '/help' => 'articles#index', as: :help
+  REDIRECTS.each_pair do |url, scenario_id|
+    match url => redirect("http://pro.et-model.com/scenarios/#{ scenario_id }")
+  end
 
   resources :pages,           only: [:index, :show]
   resources :partners,        only: [:index, :show]
   resources :press_releases,  only: [:index, :show]
   resources :articles,        only: [:index, :show], path: '/help/articles'
+  resources :presets,         only: [:index, :show]
 
   get '/ec', to: redirect('/presets/event/ec2013')
   match 'presets/event/:id' => 'presets#event', as: :event_presets
-  resources :presets,         only: [:index, :show]
 
   match '/404' => 'pages#not_found'
 
   match '/partners/info/:id' => 'pages#show', as: :partner_info
-
-  # match '/help/search' => 'articles#search', as: :search
 
   # Deprecated references to Pro ETM
   match 'scenarios/:id'  => 'redirects#forward', as: :redirect
@@ -32,5 +26,4 @@ ETM::Application.routes.draw do
   match ':id' => 'pages#show'
 
   root :to => 'pages#root'
-
 end
