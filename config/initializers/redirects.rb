@@ -1,5 +1,5 @@
 REDIRECTS = {
-  '/rli/ser-scenario-2023'                    => 193349,
+  '/rli/ser-scenario-2023'                    => 282929,
   '/rli/80-procent-co2-reductiescenario-2050' => 423879,
   '/rli/95-procent-co2-reductiescenario-2050' => 423882,
   '/iabr/routekaartscenario-2035'             => 277819,
