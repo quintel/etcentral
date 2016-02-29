@@ -25,7 +25,7 @@ describe 'redirects' do
     context 'RLI ser-scenario-2023' do
       it 'redirects to beta ETM ser scenario 2023' do
         get '/rli/ser-scenario-2023'
-        expect(response).to redirect_to "http://pro.et-model.com/scenarios/193349"
+        expect(response).to redirect_to "http://pro.et-model.com/scenarios/282929"
       end
     end
     context 'RLI 80% CO2 reductie' do
