@@ -27,7 +27,7 @@ class Partner < YmlReadOnlyRecord
   end
 
   def logo
-    "http://#{ BUCKET_NAME }.s3.amazonaws.com/partners/#{ self.key.downcase.gsub(" ","") }.png"
+    "https://s3-eu-west-1.amazonaws.com/#{ BUCKET_NAME }/partners/#{ key.downcase.gsub(" ","") }.png"
   end
 
   def inner_logo
