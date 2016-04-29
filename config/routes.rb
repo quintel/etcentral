@@ -1,6 +1,6 @@
 ETM::Application.routes.draw do
-  REDIRECTS.each_pair do |url, scenario_id|
-    match url => redirect("http://pro.et-model.com/scenarios/#{ scenario_id }")
+  REDIRECTS.each_pair do |from, to|
+    match from => redirect(to)
   end
 
   resources :pages,           only: [:index, :show]
