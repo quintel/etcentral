@@ -32,6 +32,7 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-livereload'
+  gem 'webmock'
 end
 
 group :development do
