@@ -12,9 +12,9 @@ module PagesHelper
       when :light
         link = "http://etflex.et-model.com"
       when :pro
-        link = "http://pro.et-model.com"
+        link = "https://pro.energytransitionmodel.com/"
       when :etmoses
-        link = "http://moses.et-model.com"
+        link = "https://moses.energytransitionmodel.com"
       end
 
       link += "?locale=#{I18n.locale}"
@@ -23,7 +23,7 @@ module PagesHelper
     if is_beta?
       case product
       when :etmoses
-        link = 'http://beta.moses.et-model.com'
+        link = 'https://beta-moses.energytransitionmodel.com'
       end
     end
 

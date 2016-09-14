@@ -1,7 +1,7 @@
 Applications:
-  Professional: http://pro.et-model.com
+  Professional: https://pro.energytransitionmodel.com
   Light: http://light.et-model.com
-  ETMoses: http://beta.moses.et-model.com
+  ETMoses: https://beta-moses.energytransitionmodel.com
 
 Partners:
 
@@ -15,6 +15,6 @@ Background:
   Education: http://onderwijs.quintel.com
   Known Issues: known_issues
   Quality Control: quality_control
-  Publications: http://refman.et-model.com
+  Publications: http://refman.energytransitionmodel.com/
   Documentation: http://github.com/quintel/documentation
   Units: units
