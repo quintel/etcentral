@@ -32,7 +32,6 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-livereload'
-  gem 'webmock'
 end
 
 group :development do
@@ -46,6 +45,10 @@ group :development do
   gem 'capistrano-bundler',     '~> 1.1',   require: false
   gem 'capistrano3-unicorn',    '~> 0.2',   require: false
   gem 'capistrano-maintenance', '~> 0.0.4', require: false
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :production do
