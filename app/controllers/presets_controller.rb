@@ -52,7 +52,7 @@ class PresetsController < ApplicationController
   #######
 
   def server_url
-    is_beta? ? 'http://beta.et-engine.com' : 'http://et-engine.com'
+    is_beta? ? 'https://beta-engine.energytransitionmodel.com' : 'https://engine.energytransitionmodel.com'
   end
 
   def fetch_presets

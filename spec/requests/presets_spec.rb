@@ -18,7 +18,7 @@ describe 'presets' do
 
   describe 'one preset' do
     before do
-      stub_request(:put, "http://et-engine.com/api/v3/scenarios/1/dashboard?detailed=true&gqueries%5B0%5D=dashboard_energy_demand_primary_of_final_plus_export_losses&gqueries%5B1%5D=dashboard_reduction_of_co2_emissions_versus_1990&gqueries%5B2%5D=dashboard_energy_import_netto&gqueries%5B3%5D=dashboard_total_costs&gqueries%5B4%5D=dashboard_bio_footprint&gqueries%5B5%5D=dashboard_renewability")
+      stub_request(:put, "https://engine.energytransitionmodel.com/api/v3/scenarios/1/dashboard?detailed=true&gqueries%5B0%5D=dashboard_energy_demand_primary_of_final_plus_export_losses&gqueries%5B1%5D=dashboard_reduction_of_co2_emissions_versus_1990&gqueries%5B2%5D=dashboard_energy_import_netto&gqueries%5B3%5D=dashboard_total_costs&gqueries%5B4%5D=dashboard_bio_footprint&gqueries%5B5%5D=dashboard_renewability")
         .to_return(:status => 200, :body => "", :headers => {})
     end
 

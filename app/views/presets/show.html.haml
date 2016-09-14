@@ -7,7 +7,7 @@
     #prominent-sidebar
       .user-shot
         = image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ @preset.key }.jpg")
-      - url = @preset.scenario_id ? "http://#{ 'beta.' if is_beta? }pro.et-model.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
+      - url = @preset.scenario_id ? "https://#{ 'beta.' if is_beta? }pro.energytransitionmodel.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
       = link_to 'Open scenario', url, target: "_blank", method: 'get', class: 'scenario_button btn btn-block'
       #dashboard
         - if @values

@@ -1,6 +1,6 @@
 # The ETM API: Our engine in your model
 
-Building your own energy-related model and interested to see how it affects the energy system in a particular market? By using the ETM API you can basically put our engine in your model. Our API is JSON-based and doesn't require any authentication. Simply send an appropriately formatted HTTP request to <code>http://et-engine.com/api/v3/</code> and process the response message within your own model.
+Building your own energy-related model and interested to see how it affects the energy system in a particular market? By using the ETM API you can basically put our engine in your model. Our API is JSON-based and doesn't require any authentication. Simply send an appropriately formatted HTTP request to <code>https://engine.energytransitionmodel.com/api/v3/</code> and process the response message within your own model.
 
 Below you find information on the requests available, their format and options as well as the structure of the response message you will receive. In case of further questions regarding our API, please contact us via [info@quintel.com](mailto:info@quintel.com) and make sure you put **'ETM API'** in your mail's subject.
 
@@ -37,7 +37,7 @@ The ETM currently covers three European national markets - The Netherlands, Germ
 
 This call provides you with all the market-specific parameters for each of the markets defined in the ETM. Apart from the three national markets currently active, this also includes all Dutch provinces.
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/areas/</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/areas/</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -74,7 +74,7 @@ The response will be an JSON object with the following structure:
 
 To obtain these parameters for a specific national (or local) market, add the country code to the url:
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/areas/nl</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/areas/nl</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -119,7 +119,7 @@ Using the API, one can inspect, create and change scenarios. These scenarios can
 
 Provided the `:id` of the scenario is known, a basic description of the scenario can be obtained.
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/123456</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/scenarios/123456</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -131,7 +131,7 @@ HTTP/1.1 200 OK
   "title":"ETM API demo",
   "area_code":"nl",
   "end_year":2050,
-  "url":"http://et-engine.com/api/v3/scenarios/123456",
+  "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/123456",
   "ordering":null,
   "display_group":null,
   "source":"ETM",
@@ -142,7 +142,7 @@ HTTP/1.1 200 OK
 
 Using the `detailed=true` option, a more elaborate description is obtained, as well as an overview of all the modified inputs.
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/123456?detailed=true</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/scenarios/123456?detailed=true</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -154,7 +154,7 @@ HTTP/1.1 200 OK
   "title":"ETM API demo",
   "area_code":"nl",
   "end_year":2050,
-  "url":"http://et-engine.com/api/v3/scenarios/123456",
+  "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/123456",
   "ordering":null,
   "display_group":null,
   "source":"ETM",
@@ -174,7 +174,7 @@ HTTP/1.1 200 OK
 
 The ETM offers a set of scenarios, so-called 'templates', which can be used to base one's scenario on. In order to get a list of these templates, including an extensive HTML description in both Dutch and English, one can use this API call:
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/scenarios/templates</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/scenarios/templates</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -190,7 +190,7 @@ HTTP/1.1 200 OK
     "area_code":"nl",
     "end_year":2030,
     "description":"&lt;span class='nl'&gt;...&lt;/span&gt;&lt;span class='en'&gt;...&lt;/span&gt;",
-    "url":"http://et-engine.com/api/v3/scenarios/149765",
+    "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/149765",
     "ordering":null,
     "display_group":"Watt Nu?! 2013"
   },{
@@ -199,7 +199,7 @@ HTTP/1.1 200 OK
     "area_code":"nl",
     "end_year":2030,
     "description":"&lt;span class='nl'&gt;...&lt;/span&gt;&lt;span class='en'&gt;...&lt;/span&gt;",
-    "url":"http://et-engine.com/api/v3/scenarios/155680",
+    "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/155680",
     "ordering":null,
     "display_group":"Overig"
   }
@@ -216,7 +216,7 @@ A new scenario is created by sending a POST request, along with some optional da
 * `source`: optional (but highly recommended) string, identifying the application that makes the request
 * `scenario_id`: optional id of the scenario used as template
 
-<pre class="prettyprint lang-bash terminal">$ curl -i -X POST -H "Content-Type: application/json" -d '{"scenario": {"title": "My scenario", "end_year": "2030"}}' http://et-engine.com/api/v3/scenarios</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i -X POST -H "Content-Type: application/json" -d '{"scenario": {"title": "My scenario", "end_year": "2030"}}' https://engine.energytransitionmodel.com/api/v3/scenarios</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -228,7 +228,7 @@ HTTP/1.1 200 OK
   "title":"My scenario",
   "area_code":"nl",
   "end_year":2030,
-  "url":"http://et-engine.com/api/v3/scenarios/123456",
+  "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/123456",
   "ordering":null,
   "display_group":null,
   "source":null,
@@ -254,7 +254,7 @@ Using a PUT request, one can make changes to a scenario's inputs, comparable to 
 
 #### Example 1: Changing scenario parameters
 
-<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"scenario": {"title": "My test scenario", "end_year": "2030"}}' http://et-engine.com/api/v3/scenarios/123456</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"scenario": {"title": "My test scenario", "end_year": "2030"}}' https://engine.energytransitionmodel.com/api/v3/scenarios/123456</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -267,7 +267,7 @@ HTTP/1.1 200 OK
     "title":"My test scenario",
     "area_code":"nl",
     "end_year":2030,
-    "url":"http://et-engine.com/api/v3/scenarios/123456",
+    "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/123456",
     "ordering":null,
     "display_group":null,
     "source":null,
@@ -280,7 +280,7 @@ HTTP/1.1 200 OK
 
 #### Example 2: Setting scenario inputs
 
-<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"scenario": {"user_values": {"employment_local_fraction": 10}},"detailed": true }' http://et-engine.com/api/v3/scenarios/123456</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"scenario": {"user_values": {"employment_local_fraction": 10}},"detailed": true }' https://engine.energytransitionmodel.com/api/v3/scenarios/123456</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -293,7 +293,7 @@ HTTP/1.1 200 OK
     "title":"My test scenario",
     "area_code":"nl",
     "end_year":2030,
-    "url":"http://et-engine.com/api/v3/scenarios/123456",
+    "url":"https://engine.energytransitionmodel.com/api/v3/scenarios/123456",
     "ordering":null,
     "display_group":null,
     "source":null,
@@ -309,7 +309,7 @@ HTTP/1.1 200 OK
 
 #### Example 3: Running gqueries
 
-<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"gqueries": ["gquery_1","gquery_2"] }' http://et-engine.com/api/v3/scenarios/123456</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i -X PUT -H "Content-Type: application/json" -d '{"gqueries": ["gquery_1","gquery_2"] }' https://engine.energytransitionmodel.com/api/v3/scenarios/123456</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -345,7 +345,7 @@ A list of available gqueries can be found [here](#)
 
 To get an overview of all the inputs available in the ETM, complete with their minimum, maximum and default values and unit, one should make the following request:
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/inputs</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/inputs</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -382,7 +382,7 @@ HTTP/1.1 200 OK
 
 To inspect individual inputs and learn about the applicable unit, one simply add the input's key to the url:
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/inputs/employment_local_fraction</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/inputs/employment_local_fraction</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -409,7 +409,7 @@ The ETM peruses a complex graph to calculate energy flows. Each of the 250+ node
 
 To inspect an individual converter, one should make the following request:
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/converters/industry_chp_combined_cycle_gas_power_fuelmix</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/converters/industry_chp_combined_cycle_gas_power_fuelmix</pre>
 
 The response will be an JSON object with the following structure:
 
@@ -460,6 +460,6 @@ HTTP/1.1 200 OK
 
 Although the primary internal use of this request is to produce a visualisation of the graph, it could be used to learn the names of the 250+ converters and their interrelationships. Alternatively, you may contact us via [info@quintel.com](mailto:info@quintel.com), stating 'ETM API' in the subject line of your mail.
 
-<pre class="prettyprint lang-bash terminal">$ curl -i http://et-engine.com/api/v3/converters/topology</pre>
+<pre class="prettyprint lang-bash terminal">$ curl -i https://engine.energytransitionmodel.com/api/v3/converters/topology</pre>
 
 <p class="back_to_top"><a href="#">Back to top</a></p>

@@ -1,13 +1,13 @@
 # Kwaliteitsverbetering en –bewaking van modellering en data
 
-Het Energietransitiemodel (ETM) is het resultaat van tientallen manjaren werken. Uiteraard is het model nooit 'af'. Om er toch voor te zorgen dat het ETM betrouwbaar blijft, hanteert Quintel een doorlopend proces van kwaliteitsverbetering. Daarbij betrekken wij actief de [partners](http://energietransitiemodel.nl/partners) en gebruikers.
+Het Energietransitiemodel (ETM) is het resultaat van tientallen manjaren werken. Uiteraard is het model nooit 'af'. Om er toch voor te zorgen dat het ETM betrouwbaar blijft, hanteert Quintel een doorlopend proces van kwaliteitsverbetering. Daarbij betrekken wij actief de [partners](https://energietransitiemodel.nl/partners) en gebruikers.
 
 Zoals te zien is op de pagina [tekortkomingen](http://energietransitiemodel.nl/known_issues) kunnen er altijd dingen verbeterd worden aan het ETM. De volgorde waarmee dingen worden opgepakt is deels afhankelijk van de ernst van een probleem, maar ook van de prioriteiten die Quintel en haar partners hieraan geven. Voor grote verbetertrajecten is immers geld nodig.
 
 
 ## Verbeterproces
 
-Quintel werkt voortdurend aan het onderhoud en verbetering van de data en modelleren. De beoogde uitkomst hiervan is steeds dat erkende experts tevreden zijn met de kwaliteit van data of modellering voor een bepaald onderwerp. Wij zetten ons in om dit proces in toenemende mate in de 'openbaarheid' te laten verlopen. Er is nog geen proces waarin gebruikte data of de werking van het model 'gevalideerd' worden, in de zin dat een bevoegde organisatie publiekelijk verklaart dat het ETM 'correct' werkt. Wel is het ETM recentelijk een ['open source'](http://energietransitiemodel.nl/pages/open_source) project geworden met volledige openbaarheid van data en code tot gevolg. Een uitzondering hierop is de IEA energiebalans welke niet gratis gedeeld wordt met derden. 
+Quintel werkt voortdurend aan het onderhoud en verbetering van de data en modelleren. De beoogde uitkomst hiervan is steeds dat erkende experts tevreden zijn met de kwaliteit van data of modellering voor een bepaald onderwerp. Wij zetten ons in om dit proces in toenemende mate in de 'openbaarheid' te laten verlopen. Er is nog geen proces waarin gebruikte data of de werking van het model 'gevalideerd' worden, in de zin dat een bevoegde organisatie publiekelijk verklaart dat het ETM 'correct' werkt. Wel is het ETM recentelijk een ['open source'](https://energietransitiemodel.nl/pages/open_source) project geworden met volledige openbaarheid van data en code tot gevolg. Een uitzondering hierop is de IEA energiebalans welke niet gratis gedeeld wordt met derden. 
 
 Bij controversiële onderwerpen raadplegen wij altijd partijen met andere of zelfs tegengestelde belangen om ervoor te zorgen dat de gebruikte data objectief zijn. 
 Denk daarbij aan onderwerpen zoals bijvoorbeeld kernenergie en geassocieerde kosten, maar ook windenergie of de prestaties van brandstofauto's vergeleken met elektrische. Voor al deze onderwerpen en meer zijn organisaties geconsulteerd die juist voor- of tegenstander zijn van uitbreiding van bovengenoemde technologieën. 
