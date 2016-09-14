@@ -21,10 +21,10 @@
                   %b.caret
                 %ul.dropdown-menu
                   - values.each do |key, value|
-                    - unless /http:\/\//.match(value)
+                    - unless /https?:\/\//.match(value)
                       - value = "/#{ value }"
                     %li
-                      %a{href: "#{value}", target: "#{ /http:\/\//.match(value) ? '_blank' : '' }" }
+                      %a{href: "#{value}", target: "#{ /https?:\/\//.match(value) ? '_blank' : '' }" }
                         = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
                         %i.icon-external-link
             - else
