@@ -23,7 +23,7 @@ Al onze open source webpagina's kunnen worden gevonden op
 volgende:
 
 * voor data: [etsource](http://github.com/quintel/etsource)
-* voor brondata: [etdataset](http://github.com/quintel/etdataset)
+* voor brondata: [etdataset](http://github.com/quintel/etdataset-public)
 * voor de berekeningen: [etengine](http://github.com/quintel/etengine)
 * voor de professionele interface: [etmodel](http://github.com/quintel/etmodel)
 * voor de energy game interface: [etflex](http://github.com/quintel/etflex)
