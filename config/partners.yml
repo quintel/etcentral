@@ -131,8 +131,8 @@
   key:  eon
   kind: primary
 -
-  name: Logica
-  key:  logica
+  name: CGI
+  key:  cgi
   kind: primary
 -
   name: Essent
