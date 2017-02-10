@@ -16,7 +16,7 @@ body#pages_root
   h2
     font-size: 28px
     text-align: center
-    border-bottom: 1px solid #333
+    border-bottom: 1px solid #ddd
     margin-bottom: 10px
     padding-bottom: 15px
 
@@ -25,23 +25,21 @@ body#pages_root
     padding: 18px 10px
 
     .img-holder
-      @include box-shadow(rgba(white, 0.3) 0 0 4px 3px inset)
-      @include border-radius(4px)
-      background-image: image-url('pages/root/app_buttons.png')
-      background-position: 3px 2px
-      background-size: 35px 8px
-      background-repeat: no-repeat
-      background-color: #C3C3C3
       width: 100%
       max-width: 330px
-      padding-top: 11px
-      padding-bottom: 1px
       margin: 0 auto 50px
-      border: 1px solid #ccc
+      border-radius: 3px
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2)
+      border: 1px solid rgba(0, 0, 0, 0.2)
+      border-top: 1px solid rgba(0, 0, 0, 0.15)
+      overflow: hidden
+      background-clip: padding-box
+
+    .mobile-holder img
+      margin: 1px auto 51px
 
     img
       display: block
-      border-top: 1px solid #999
 
   .product > a
     color: inherit
@@ -107,6 +105,6 @@ body#pages_root
   .person-small
     a:hover
       img
-      
+
 .row:nth-child(n+4)
   margin-top: 30px

@@ -30,16 +30,16 @@
               = raw t 'landing_page.etmodel.title'
 
     %article.span4
-      .product#etmoses
-        %a.etmoses_link{href: "#{ product_link(:etmoses) }", target: '_blank'}
-          .img-holder
-            = image_tag 'pages/root/screen_etmoses.jpg'
-          %h2= raw t 'landing_page.etmoses.title'
-          %p= raw t 'landing_page.etmoses.explanation'
+      .product#etmobile
+        %a.etmobile_link{href: 'http://etmobile.nl', target: '_blank'}
+          .mobile-holder
+            = image_tag 'pages/root/screen_etmobile.png'
+          %h2= raw t 'landing_page.etmobile.title'
+          %p= raw t 'landing_page.etmobile.explanation'
           %div.btn-holder
-            %a.btn.btn-primary{ href: product_link(:etmoses), target: '_blank' }
+            %a.btn.btn-primary{ href: 'http://etmobile.nl', target: '_blank' }
               Open
-              = raw t 'landing_page.etmoses.title'
+              = raw t 'landing_page.etmobile.title'
 
   .row#education
     %article
