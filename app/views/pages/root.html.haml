@@ -6,16 +6,16 @@
   .row#products
 
     %article.span4
-      .product#etflex
-        %a.etflex_link{ href:"#{ product_link(:light) }", target: '_blank' }
-          .img-holder
-            = image_tag 'pages/root/screen_light.jpg'
-          %h2= raw t 'landing_page.etflex.title'
-          %p= raw t 'landing_page.etflex.explanation'
+      .product#etmobile
+        %a.etmobile_link{href: 'http://etmobile.nl', target: '_blank'}
+          .mobile-holder
+            = image_tag 'pages/root/screen_etmobile.png'
+          %h2= raw t 'landing_page.etmobile.title'
+          %p= raw t 'landing_page.etmobile.explanation'
           %div.btn-holder
-            %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
+            %a.btn.btn-primary{ href: 'http://etmobile.nl', target: '_blank' }
               Open
-              = raw t 'landing_page.etflex.title'
+              = raw t 'landing_page.etmobile.title'
 
     %article.span4
       .product#etmodel
@@ -30,16 +30,16 @@
               = raw t 'landing_page.etmodel.title'
 
     %article.span4
-      .product#etmobile
-        %a.etmobile_link{href: 'http://etmobile.nl', target: '_blank'}
-          .mobile-holder
-            = image_tag 'pages/root/screen_etmobile.png'
-          %h2= raw t 'landing_page.etmobile.title'
-          %p= raw t 'landing_page.etmobile.explanation'
+      .product#etflex
+        %a.etflex_link{ href:"#{ product_link(:light) }", target: '_blank' }
+          .img-holder
+            = image_tag 'pages/root/screen_light.jpg'
+          %h2= raw t 'landing_page.etflex.title'
+          %p= raw t 'landing_page.etflex.explanation'
           %div.btn-holder
-            %a.btn.btn-primary{ href: 'http://etmobile.nl', target: '_blank' }
+            %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
               Open
-              = raw t 'landing_page.etmobile.title'
+              = raw t 'landing_page.etflex.title'
 
   .row#education
     %article
