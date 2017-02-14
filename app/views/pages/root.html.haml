@@ -6,6 +6,30 @@
   .row#products
 
     %article.span4
+      .product#etmobile
+        %a.etmobile_link{href: 'http://etmobile.nl', target: '_blank'}
+          .mobile-holder
+            = image_tag 'pages/root/screen_etmobile.png'
+          %h2= raw t 'landing_page.etmobile.title'
+          %p= raw t 'landing_page.etmobile.explanation'
+          %div.btn-holder
+            %a.btn.btn-primary{ href: 'http://etmobile.nl', target: '_blank' }
+              Open
+              = raw t 'landing_page.etmobile.title'
+
+    %article.span4
+      .product#etmodel
+        %a.etmodel_link{ href:"#{ product_link(:pro) }", target: '_blank' }
+          .img-holder
+            = image_tag 'pages/root/screen_pro.png'
+          %h2= raw t 'landing_page.etmodel.title'
+          %p= raw t 'landing_page.etmodel.explanation'
+          %div.btn-holder
+            %a.btn.btn-primary{ href: product_link(:pro), target: '_blank' }
+              Open
+              = raw t 'landing_page.etmodel.title'
+
+    %article.span4
       .product#etflex
         %a.etflex_link{ href:"#{ product_link(:light) }", target: '_blank' }
           .img-holder
@@ -16,30 +40,6 @@
             %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
               Open
               = raw t 'landing_page.etflex.title'
-
-    %article.span4
-      .product#etmodel
-        %a.etmodel_link{ href:"#{ product_link(:pro) }", target: '_blank' }
-          .img-holder
-            = image_tag 'pages/root/screen_pro.jpg'
-          %h2= raw t 'landing_page.etmodel.title'
-          %p= raw t 'landing_page.etmodel.explanation'
-          %div.btn-holder
-            %a.btn.btn-primary{ href: product_link(:pro), target: '_blank' }
-              Open
-              = raw t 'landing_page.etmodel.title'
-
-    %article.span4
-      .product#etmoses
-        %a.etmoses_link{href: "#{ product_link(:etmoses) }", target: '_blank'}
-          .img-holder
-            = image_tag 'pages/root/screen_etmoses.jpg'
-          %h2= raw t 'landing_page.etmoses.title'
-          %p= raw t 'landing_page.etmoses.explanation'
-          %div.btn-holder
-            %a.btn.btn-primary{ href: product_link(:etmoses), target: '_blank' }
-              Open
-              = raw t 'landing_page.etmoses.title'
 
   .row#education
     %article
