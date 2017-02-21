@@ -30,9 +30,9 @@ GEM
       multi_json (~> 1.0)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    airbrake (5.7.1)
-      airbrake-ruby (~> 1.7)
-    airbrake-ruby (1.7.1)
+    airbrake (3.1.17)
+      builder
+      multi_json
     airbrussh (1.1.2)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (3.0.3)
@@ -279,7 +279,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake
+  airbrake (~> 3.1.2)
   aws-sdk (~> 1.0)
   better_errors
   binding_of_caller
@@ -314,4 +314,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.14.2
+   1.14.4

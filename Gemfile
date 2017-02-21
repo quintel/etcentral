@@ -9,7 +9,7 @@ gem 'pry-rails'
 # gem 'sunspot_rails'
 # gem 'sunspot_solr'
 
-gem 'airbrake'
+gem 'airbrake', '~> 3.1.2'
 
 gem 'httparty'
 gem 'http_accept_language'
