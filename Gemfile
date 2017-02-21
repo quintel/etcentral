@@ -18,7 +18,7 @@ gem 'nokogiri'
 group :assets do
   gem 'sass-rails'
   gem 'sass'
-  gem 'bootstrap-sass'
+  gem 'bootstrap-sass', '~> 2.3'
   gem 'compass-rails'
   gem 'font-awesome-sass-rails'
   gem 'coffee-rails',           '~> 3.2'

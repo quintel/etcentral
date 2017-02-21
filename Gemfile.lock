@@ -36,8 +36,6 @@ GEM
     airbrussh (1.1.2)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (3.0.3)
-    autoprefixer-rails (6.7.3)
-      execjs
     aws-sdk (1.66.0)
       aws-sdk-v1 (= 1.66.0)
     aws-sdk-v1 (1.66.0)
@@ -49,9 +47,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.7)
-      autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+    bootstrap-sass (2.3.2.2)
+      sass (~> 3.2)
     builder (3.0.4)
     capistrano (3.7.2)
       airbrussh (>= 1.0.0)
@@ -283,7 +280,7 @@ DEPENDENCIES
   aws-sdk (~> 1.0)
   better_errors
   binding_of_caller
-  bootstrap-sass
+  bootstrap-sass (~> 2.3)
   capistrano (~> 3.0)
   capistrano-bundler (~> 1.1)
   capistrano-maintenance (~> 0.0.4)
