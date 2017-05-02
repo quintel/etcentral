@@ -15,10 +15,6 @@
   key:  atkearney
   kind: knowledge
 -
-  name: CE Delft
-  key:  ce_delft
-  kind: knowledge
--
   name: Clingendael
   key:  clingendael
   kind: knowledge
@@ -178,3 +174,7 @@
   name: Lesmodule De Energiecrisis
   key:  energiecrisis
   kind: education
+-
+  name: Berenschot
+  key:  berenschot
+  kind: knowledge
