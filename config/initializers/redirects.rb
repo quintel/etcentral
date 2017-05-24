@@ -8,4 +8,6 @@ REDIRECTS = {
   '/ameland'                                              => 'https://pro.energytransitionmodel.com/scenarios/301900',
   '/industrie-in-transitie/100-procent-duurzaam-2030'     => 'https://pro.energytransitionmodel.com/scenarios/311918',
   '/industrie-in-transitie/80-procent-co2-reductie-2050'  => 'https://pro.energytransitionmodel.com/scenarios/309955'
+  '/urgenda'                                              => 'https://beta-pro.energytransitionmodel.com/scenarios/677057'
+  '/urgenda/bau'                                          => 'https://beta-pro.energytransitionmodel.com/scenarios/677051'
 }.freeze
