@@ -9,5 +9,5 @@ REDIRECTS = {
   '/industrie-in-transitie/100-procent-duurzaam-2030'     => 'https://pro.energytransitionmodel.com/scenarios/311918',
   '/industrie-in-transitie/80-procent-co2-reductie-2050'  => 'https://pro.energytransitionmodel.com/scenarios/309955',
   '/urgenda'                                              => 'https://pro.energytransitionmodel.com/scenarios/155680',
-  '/urgenda/bau'                                          => 'https://beta-pro.energytransitionmodel.com/scenarios/677051'
+  '/urgenda/bau'                                          => 'https://pro.energytransitionmodel.com/scenarios/325571'
 }.freeze
