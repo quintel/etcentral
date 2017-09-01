@@ -16,5 +16,9 @@ module ApplicationHelper
     YAML.load_file(File.join(Rails.root,'config','menu.yml'))
   end
 
+  def s3(path)
+    S3Helper.url(path)
+  end
+
 end
 

@@ -29,7 +29,7 @@ class Person
   end
 
   def image_path(type)
-    "http://#{ BUCKET_NAME }.s3.amazonaws.com/people/#{key}/#{type}.jpg"
+    S3Helper.url("people/#{ key }/#{ type }.jpg")
   end
 
   def <=>(other_person)

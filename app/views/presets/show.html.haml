@@ -6,8 +6,8 @@
   .span2.offset1
     #prominent-sidebar
       .user-shot
-        = image_tag("http://#{BUCKET_NAME}.s3.amazonaws.com/prominent_users/#{ @preset.key }.jpg")
-      - url = @preset.scenario_id ? "https://#{ 'beta.' if is_beta? }pro.energytransitionmodel.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
+        = image_tag(s3("prominent_users/#{ @preset.key }.jpg"))
+      - url = @preset.scenario_id ? "https://#{ 'beta-' if is_beta? }pro.energytransitionmodel.com/scenarios/#{ @preset.scenario_id }/load?locale=#{ I18n.locale }" : '#'
       = link_to 'Open scenario', url, target: "_blank", method: 'get', class: 'scenario_button btn btn-block'
       #dashboard
         - if @values

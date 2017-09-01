@@ -9,7 +9,7 @@
           - if /^http/.match(release.link)
             - link = release.link
           - else
-            - link = "http://#{ BUCKET_NAME }.s3.amazonaws.com#{ release.link }"
+            - link = s3(release.link)
 
           = image_tag("icons/#{ (release.release_type == 'radio' ? 'speaker.jpeg' : 'pdf.gif') }", class: "left release_type", size: "35x40")
           %strong= link_to(release.title ? release.title : "Open persbericht", link , target: '_blank')
