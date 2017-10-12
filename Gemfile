@@ -39,20 +39,21 @@ group :development do
   gem 'binding_of_caller'
 
   # Deploy with Capistrano.
-  gem 'capistrano',             '~> 3.0',   require: false
+  gem 'capistrano',             '~> 3.9',   require: false
   gem 'capistrano-rbenv',       '~> 2.0',   require: false
   gem 'capistrano-rails',       '~> 1.1',   require: false
   gem 'capistrano-bundler',     '~> 1.1',   require: false
-  gem 'capistrano3-unicorn',    '~> 0.2',   require: false
   gem 'capistrano-maintenance', '~> 0.0.4', require: false
+  gem 'capistrano3-puma',       '~> 3.1.1', require: false
 end
 
 group :test do
+  gem 'test-unit', '~> 3.0'
   gem 'webmock'
 end
 
 group :production do
-  gem 'unicorn'
+  gem 'puma'
 end
 
 gem 'jquery-rails'
