@@ -52,7 +52,7 @@ group :test do
   gem 'webmock'
 end
 
-group :production do
+group :production, :staging do
   gem 'puma'
 end
 
