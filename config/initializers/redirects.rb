@@ -13,5 +13,6 @@ REDIRECTS = {
   'flevoland/huidige-situatie'                           => 'https://pro.energytransitionmodel.com/scenarios/340018',
   'flevoland/nulscenario-2050'                           => 'https://pro.energytransitionmodel.com/scenarios/340019',
   'flevoland/toekomstbeeld-2050'                         => 'https://pro.energytransitionmodel.com/scenarios/340020',
-  'flevoland/toekomstbeeld-2035'                         => 'https://pro.energytransitionmodel.com/scenarios/340021'
+  'flevoland/toekomstbeeld-2035'                         => 'https://pro.energytransitionmodel.com/scenarios/340021',
+  'flevoland/toekomstbeeld-2030'                         => 'https://pro.energytransitionmodel.com/scenarios/343679'
 }.freeze
