@@ -182,3 +182,7 @@
   name: Browserstack
   key:  browserstack
   kind: knowledge
+-
+  name: Sanegeest
+  key:  sanegeest
+  kind: primary
