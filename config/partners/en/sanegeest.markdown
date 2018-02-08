@@ -1,1 +1,1 @@
-[Website Sannegeest](http://www.sanegeest.nl)
+[Website Stichting Sanegeest](http://www.sanegeest.nl)
