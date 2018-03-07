@@ -3,24 +3,16 @@
   key:  gasterra
   kind: primary
 -
-  name: Shell
-  key:  shell
-  kind: primary
--
   name: Alliander
   key:  alliander
   kind: primary
--
-  name: AT Kearney
-  key:  atkearney
-  kind: knowledge
 -
   name: Clingendael
   key:  clingendael
   kind: knowledge
 -
-  name: Delta
-  key:  delta
+  name: DNWG
+  key:  dnwg
   kind: primary
 -
   name: ECN
@@ -47,16 +39,8 @@
   key:  ipo
   kind: primary
 -
-  name: Jouw Energie van Morgen
-  key:  jouwenergievanmorgen
-  kind: education
--
   name: NDV KEMA
   key:  kema
-  kind: knowledge
--
-  name: Milieu Centraal
-  key:  milieucentraal
   kind: knowledge
 -
   name: Netbeheer Nederland
@@ -66,10 +50,6 @@
   name: Nyenrode
   key:  nyenrode
   kind: education
--
-  name: Philips
-  key:  philips
-  kind: primary
 -
   name: Stichting Natuur en Milieu
   key:  snm
@@ -83,23 +63,11 @@
   key:  tennet
   kind: primary
 -
-  name: Uneto VNI
-  key:  unetovni
-  kind: primary
--
-  name: Vopak
-  key:  vopak
-  kind: primary
--
-  name: Visser & Smit Hanab
-  key:  vshanab
-  kind: primary
--
   name: Brandenburg
   key:  brandenburg
   kind: government
 -
-  name: Ministerie van Economische Zaken
+  name: Ministerie van Economische Zaken en Klimaat
   key:  minez
   kind: primary
 -
@@ -109,7 +77,7 @@
 -
   name: Gemeente Groningen
   key:  groningen
-  kind: government
+  kind: primary
 -
   name: Gemeente Ameland
   key:  ameland
@@ -167,10 +135,6 @@
   key:  energy_club
   kind: education
 -
-  name: ABN Amro
-  key:  abnamro
-  kind: primary
--
   name: Lesmodule De Energiecrisis
   key:  energiecrisis
   kind: education
@@ -186,3 +150,47 @@
   name: Stichting Sanegeest
   key:  sanegeest
   kind: primary
+-
+  name: Provincie Gelderland
+  key:  gelderland
+  kind: primary
+-
+  name: Stad Antwerpen
+  key:  antwerpen
+  kind: primary
+-
+  name: Provincie Friesland
+  key:  friesland
+  kind: primary
+-
+  name: Provincie Flevoland
+  key:  flevoland
+  kind: primary
+-
+  name: Over Morgen
+  key:  overmorgen
+  kind: company
+-
+  name: Witteveen + Bos
+  key:  witteveen
+  kind: company
+-
+  name: E&E Advies
+  key:  eeadvies
+  kind: primary
+-
+  name: Gelders Energieakkoord
+  key:  gea
+  kind: primary
+-
+  name: Greenpeace
+  key:  greenpeace
+  kind: primary
+-
+  name: Saxion Hogeschool
+  key:  saxion
+  kind: education
+-
+  name: Provincie Groningen
+  key:  pgroningen
+  kind: government

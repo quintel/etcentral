@@ -1,1 +1,1 @@
-[Website Ministry of Economic Affairs](http://www.rijksoverheid.nl/ministeries/ez)
+[Website Ministry of Economic Affairs and Climate](https://www.rijksoverheid.nl/ministeries/ministerie-van-economische-zaken-en-klimaat)
