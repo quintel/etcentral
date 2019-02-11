@@ -26,4 +26,3 @@ repositories are:
 * for source data: [etdataset](http://github.com/quintel/etdataset-public)
 * for calculation: [etengine](http://github.com/quintel/etengine)
 * for the professional interface: [etmodel](http://github.com/quintel/etmodel)
-* for the energy game interface: [etflex](http://github.com/quintel/etflex)

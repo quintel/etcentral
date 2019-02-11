@@ -4,9 +4,9 @@ nl:
   landing_page:
     title: "Maak je <strong>eigen</strong> Energietoekomst."
     explanation: "Het <strong>Energietransitiemodel</strong> is een onafhankelijk, uitgebreid, en op feiten gebaseerd energiemodel dat wordt gebruikt door overheden, bedrijven, NGO's en <a href='http://onderwijs.quintel.nl'>onderwijsinstellingen</a> in verschillende landen. Het wordt ondersteund door meer dan <a href='/partners'>20 partners</a>. Er zijn drie verschillende versies van het Energietransitiemodel."
-    etflex:
-      title: "Energiegame"
-      explanation: "Een leuke <strong>inleiding</strong> tot de belangrijkste energiethema's. Kun jij de hoogste score halen met jouw energietoekomst?"
+    res_module:
+      title: "RES-module"
+      explanation: "Verken de Regionale Energiestrategie van jouw regio. Hoe groot is je opgave en wat kun je doen om klimaatneutraal te worden?"
     etmodel:
       title: "Energietransitiemodel"
       explanation: "Bomvol gegevens over zes landen en de EU, waarmee <strong>beleidsmakers</strong> en <strong>experts</strong> energiescenario's doorrekenen."
