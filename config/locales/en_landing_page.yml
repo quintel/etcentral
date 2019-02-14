@@ -4,9 +4,9 @@ en:
   landing_page:
     title: "Create your <strong>own</strong> Energy Future."
     explanation: "The <strong>Energy Transition Model</strong> is an independent, comprehensive and fact-based energy model that is used by governments, corporations, NGOs and <a href='http://onderwijs.quintel.nl'>educators</a> in various countries. It is backed by more than <a href='/partners'>20 partners</a>. There are three different versions of the Energy Transition Model."
-    res_module:
-      title: "RES-module"
-      explanation: "Explore the Regional Energy Strategy for your region. How big is the challenge and what steps can you take towards becoming climate neutral?"
+    etflex:
+      title: "Not available"
+      explanation: "The Energy Game is temporarily not available. Quintel is working on a simplified interface to the Energy Transition Model."
     etmodel:
       title: "Energy Transition Model"
       explanation: "Packed with information on six countries and the EU. This version is used by <strong>policy makers</strong> and <strong>experts</strong> to evaluate energy scenarios."
