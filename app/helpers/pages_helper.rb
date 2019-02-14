@@ -10,7 +10,7 @@ module PagesHelper
     if is_production?
       case product
       when :light
-        link = "https://light.energytransitionmodel.com"
+        link = "https://energytransitionmodel.com"
       when :pro
         link = "https://pro.energytransitionmodel.com"
       when :etmoses

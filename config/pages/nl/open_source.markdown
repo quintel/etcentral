@@ -26,7 +26,6 @@ volgende:
 * voor brondata: [etdataset](http://github.com/quintel/etdataset-public)
 * voor de berekeningen: [etengine](http://github.com/quintel/etengine)
 * voor de professionele interface: [etmodel](http://github.com/quintel/etmodel)
-* voor de energy game interface: [etflex](http://github.com/quintel/etflex)
 
 Hieronder kunt u zich inschrijven voor de nieuwsbrief. U ontvangt dan
 updates over de voortgang en belangrijke ontwikkelingen.
