@@ -30,16 +30,12 @@
               = raw t 'landing_page.etmodel.title'
 
     %article.span4
-      .product#res_module
-        %a.etflex_link{ href:"#{ product_link(:res_module) }", target: '_blank' }
+      .product#etflex
+        %a.etflex_link{ href:"#{ product_link(:light) }" }
           .img-holder
-            = image_tag 'pages/root/screen_res_module.jpg'
-          %h2= raw t 'landing_page.res_module.title'
-          %p= raw t 'landing_page.res_module.explanation'
-          %div.btn-holder
-            %a.btn.btn-primary{ href: product_link(:res_module), target: '_blank' }
-              Open
-              = raw t 'landing_page.res_module.title'
+            = image_tag 'pages/root/screen_light.jpg'
+          %h2= raw t 'landing_page.etflex.title'
+          %p= raw t 'landing_page.etflex.explanation'
 
   .row#education
     %article

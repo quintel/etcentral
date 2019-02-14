@@ -9,8 +9,8 @@ module PagesHelper
     # Untill we fix the DNS records for real and let it propogate...
     if is_production?
       case product
-      when :res_module
-        link = "https://pro.energytransitionmodel.com/local-global"
+      when :light
+        link = "https://energytransitionmodel.com"
       when :pro
         link = "https://pro.energytransitionmodel.com"
       when :etmoses
@@ -34,7 +34,7 @@ module PagesHelper
     return false unless is_beta?
 
     case product
-    when :res_module   then true
+    when :light   then true
     when :etmoses then true
     when :pro     then true
     else false
