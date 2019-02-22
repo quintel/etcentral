@@ -194,3 +194,7 @@
   name: Provincie Groningen
   key:  pgroningen
   kind: government
+-
+  name: TNO
+  key: tno
+  kind: primary
