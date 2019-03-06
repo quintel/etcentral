@@ -194,3 +194,11 @@
   name: Provincie Groningen
   key:  pgroningen
   kind: government
+-
+  name: TNO
+  key: tno
+  kind: primary
+-
+  name: TKI
+  key: tki_nieuw_gas
+  kind: primary
