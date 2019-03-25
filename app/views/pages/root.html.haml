@@ -31,10 +31,15 @@
 
     %article.span4
       .product#etflex
-        .img-holder
-          = image_tag 'pages/root/screen_light.jpg'
-        %h2= raw t 'landing_page.etflex.title'
-        %p= raw t 'landing_page.etflex.explanation'
+        %a.etflex_link{ href:"#{ product_link(:light) }", target: '_blank' }
+          .img-holder
+            = image_tag 'pages/root/screen_light.jpg'
+          %h2= raw t 'landing_page.etflex.title'
+          %p= raw t 'landing_page.etflex.explanation'
+          %div.btn-holder
+            %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
+              Open
+              = raw t 'landing_page.etflex.title'
 
   .row#education
     %article

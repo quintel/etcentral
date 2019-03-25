@@ -18,7 +18,7 @@ front-end applications.
   - Prominent Users integrated with PRESETS!
   - API `nice-to-have`
   - workshops? `nice-to-have`
-* Links to professional, light, mobile game,
+* Links to professional, light, etmoses,
   refman, wiki
 
 ## Features
