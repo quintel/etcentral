@@ -8,43 +8,20 @@
 
 * Geothermal heat, ambient heat (air and ground heat pumps), and solar thermal energy are not included in the primary energy calculation. The effect is that technologies using these reduce the amount of energy used. We plan to include those primary renewable carriers in the renewability calculation if international energy statistics reach a consensus on how to do this.
 * The ETM only takes into account *net* energy flows. Energy which is *transported through* a country (imported and then exported again) is not included.
-* Primary demand of carriers can differ between Sankey and overall Primary and Final energy use charts by small amounts. These discrepancies will be resolved in the next version of the ETM.
 * Currently the only power plants which can be used for co-firing of wood_pellets are the ultra-supercritical pulverized coal power plant (Pulverized coal) and the equivalent CHP plant (Central Coal CHP).
-* Hydrogen and (bio-)LNG for transport are modeled in more detail than other transport fuels; we have included realistic efficiencies for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively more efficient in the ETM than they are in reality.
+* Hydrogen and (bio-)LNG for transport are modelled in more detail than other transport fuels; we have included realistic efficiencies for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively more efficient in the ETM than they are in reality.
 
 ## CO2 calculations
-* The mix of exported electricity is taken to be the mix of domestic production. So, even if wind produces the surplus electricity peaks, coal electricity is exported as well and exported electricity has a CO<sub>2</sub>-emission associated with it. This approach is in line with EU regulations for reporting CO2.
+* CO2 emissions for electricity produced by diesel engines is currently overestimated if refineries producing diesel are present in the dataset. In that case the energy use (final demand) of the refinery sector (and associated CO2 emissions) is fully included in the final demand of the industry sector and (partially) included in the primary demand of the diesel used by diesel engines.
 
 ## Cost calculations
 
-* Gasoline, diesel, kerosene and heavy fuel oil have no extra refinery costs (on top of crude oil). These need to be researched and resolved in a future release of the ETM.
-* Cars are not given investment costs as the total costs in the dashboard would be dominated by the resulting costs. Instead, it is possible to specify additional investment costs for electric vehicles (with respect to conventional internal combustion engine cars).
-* We are currently still validating costs for certain power plants (coal-fired, hydro and nuclear power plants) and household and building heating technologies. These may therefore result in incorrect costs.
-* Hydrogen and (bio-)LNG for transport are modeled in more detail than other transport fuels; we have included realistic costs for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively cheaper in the ETM than they are in reality.
-* Costs for heat pumps are uncertain due to very heterogenesous data. More consisten cost and energy parameters are expected in 2016.
+* Cars are not given investment costs as we do not consider buying a car to be part of the energy system costs. Instead, it is possible to specify additional investment costs for electric vehicles (with respect to conventional internal combustion engine cars).
+* We are currently still validating costs for certain power plants (coal-fired, hydro and nuclear power plants) and household and building heating technologies. These may therefore result in over or underestimated costs.
 
-## Fuel chain emission calculations
-
-* Crude oil, biogas and wood pellets are currently not taken into account in the FCE calculation.
-
-## Employment module
-
-* Industry, transport and agriculture are excluded from the employment calculation.
-* At present, geothermal heating in Households and Buildings uses employment figures from geothermal electricity production (scaled to match the capacity). This is due to the lack of literature on geothermal heating projects in the Netherlands.
-* Employment effects of district heating do not take the construction of a heat network into account. The extent and properties of such a network are too dependent on the specifics of each project, to conclude what impact the network has on employment.
-* The 'Replacement of existing houses' slider does not take into account that heating or cooling technologies need to be installed for each new house. The effect of this slider on employment is therefore unrealistically small.
-* To assess the employment impact of CCS technologies we have added 30% to the impact of the 'planning', 'production', 'placement' and 'removal' stages and 70% to 'maintenance' compared to the reference non-CCS technologies.
-* The employment impact of maintenance for offshore wind turbines has been taken from onshore wind research.
-* The following technologies are not included in the employment calculation:
-  * The hydropower plants (both river and mountain)
-  * Central burners for heat generation in the Supply section (coal, gas, biomass and waste-fired)
-  * Appliances (washing machines, stereos etc.)
-  * Ventilation, recirculation en heat recovery
 
 ## Merit order module
 
-* The merit order calculation does not take import or export of electricity into account. This means that plants experience no competition from cheap electricity from abroad. In reality, North Western Europe's electricity market is coupled and such competition does exist. As a result of this simplification, the profitability of most plants is significantly overestimated. In order to see how cheap renewables or coal from e.g. Germany affect profitability, the user may consider to increase installed capacity of such plants in the Netherlands.
- 
 * The power plants in the ETM include both state-of-the-art and more conventional technologies, whose properties are chosen such as to reproduce the national energy balance correctly (both production of electricity and transformation losses). These plant types are a simplification of the real production park installed in the Netherlands. Profitability figures of the plants in the ETM should, therefore, not be translated one-on-one to plants currently exisiting in the Netherlands.
 
-* The flexibility calculation uses the physical interconnector capacity to determine how much electricity can be exported at any time. The interconnector capacity can be set using a slider, which is currently initialized at the interconnector capacity for the Netherlands. This Dutch interconnector capacity is used for all other countries as well. You can, however, set the correct interconnector capacity for these countries using the slider. The slider will be properly initialized for the other countries in a future release of the ETM.
+* The flexibility calculation uses the physical interconnector capacity to determine how much electricity can be exported at any time. The interconnector capacity can be set using a slider, which is currently initialized at the interconnector capacity for The Netherlands. This Dutch interconnector capacity is used for all other countries as well. You can, however, set the correct interconnector capacity for these countries using the slider. The slider will be properly initialized for the other countries in a future release of the ETM.
