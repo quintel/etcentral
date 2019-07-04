@@ -2,7 +2,7 @@ ruby '2.4.2'
 
 source 'https://rubygems.org'
 
-gem 'rails',       '~> 3.2'
+gem 'rails',  '~> 4.2'
 
 gem 'haml'
 gem 'redcarpet'
@@ -17,16 +17,14 @@ gem 'httparty'
 gem 'http_accept_language'
 gem 'nokogiri'
 
-group :assets do
-  gem 'sass-rails'
-  gem 'sass'
-  gem 'bootstrap-sass', '~> 2.3'
-  gem 'compass-rails'
-  gem 'font-awesome-sass-rails'
-  gem 'coffee-rails',           '~> 3.2'
-  gem 'uglifier',               '>= 1.0.3'
-  gem 'therubyracer'
-end
+gem 'sass-rails'
+gem 'sass', '< 3.5'
+gem 'bootstrap-sass', '< 3'
+gem 'compass-rails'
+gem 'font-awesome-sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
+gem 'therubyracer'
 
 group :test, :development do
   gem 'capybara'
@@ -45,7 +43,7 @@ group :development do
   gem 'capistrano-rbenv',       '~> 2.0',   require: false
   gem 'capistrano-rails',       '~> 1.1',   require: false
   gem 'capistrano-bundler',     '~> 1.1',   require: false
-  gem 'capistrano-maintenance', '~> 0.0.4', require: false
+  gem 'capistrano-maintenance', '~> 1.0',   require: false
   gem 'capistrano3-puma',       '~> 3.1.1', require: false
 end
 

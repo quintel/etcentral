@@ -1,9 +1,11 @@
 class PartnersController < ApplicationController
-  respond_to :html, :json, only: [:index]
-
   def index
     @partners = Partner.all
-    respond_with(@partners)
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @partners }
+    end
   end
 
   def show

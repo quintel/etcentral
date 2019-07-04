@@ -1,6 +1,6 @@
 ETM::Application.routes.draw do
   REDIRECTS.each_pair do |from, to|
-    match from => redirect(to)
+    get from => redirect(to)
   end
 
   resources :pages,           only: [:index, :show]
@@ -10,20 +10,20 @@ ETM::Application.routes.draw do
   resources :presets,         only: [:index, :show]
 
   get '/ec', to: redirect('/presets/event/ec2013')
-  match 'presets/event/:id' => 'presets#event', as: :event_presets
+  get 'presets/event/:id' => 'presets#event', as: :event_presets
 
-  match '/404' => 'pages#not_found'
+  get '/404' => 'pages#not_found'
 
-  match '/partners/info/:id' => 'pages#show', as: :partner_info
+  get '/partners/info/:id' => 'pages#show', as: :partner_info
 
   # Deprecated references to Pro ETM
-  match 'scenarios/:id'  => 'redirects#forward', as: :redirect
-  match 'pro'            => 'redirects#forward', as: :redirect
-  match 'scenario/*path' => 'redirects#forward', as: :redirect
-  match 'scenario'       => 'redirects#forward', as: :redirect
-  match 'login'          => 'redirects#forward', as: :redirect
+  get 'scenarios/:id'  => 'redirects#forward'
+  get 'pro'            => 'redirects#forward'
+  get 'scenario/*path' => 'redirects#forward'
+  get 'scenario'       => 'redirects#forward'
+  get 'login'          => 'redirects#forward'
 
-  match ':id' => 'pages#show'
+  get ':id' => 'pages#show'
 
   root :to => 'pages#root'
 end

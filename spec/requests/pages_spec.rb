@@ -7,19 +7,19 @@ describe "pages" do
     context 'when page exists' do
 
       it 'renders correctly for Dutch' do
-        get 'units?locale=nl'
+        get '/units?locale=nl'
         expect(response).to be_success
         expect(response.body).to match /eenheden/i
       end
 
       it 'renders correctly for English' do
-        get 'units?locale=en'
+        get '/units?locale=en'
         expect(response).to be_success
         expect(response.body).to match /calculations/i
       end
 
       it 'renders correctly for default locale' do
-        get 'units'
+        get '/units'
         expect(response).to be_success
       end
 
@@ -28,7 +28,7 @@ describe "pages" do
     context 'when page does NOT exist' do
 
       it 'renders 404' do
-        get 'dennis_for_president'
+        get '/dennis_for_president'
         expect(response.body).to match /oops/i
       end
 
