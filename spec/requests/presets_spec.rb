@@ -5,7 +5,7 @@ describe 'presets' do
     it 'shows' do
       get presets_path
 
-      expect(response).to be_success
+      expect(response).to be_successful
     end
 
     it 'displays frans and dennis' do
@@ -25,7 +25,7 @@ describe 'presets' do
     it 'shows' do
       get preset_path(:camp)
 
-      expect(response).to be_success
+      expect(response).to be_successful
       expect(response.body).to match /frans van camp/i
     end
   end
