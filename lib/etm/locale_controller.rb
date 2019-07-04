@@ -11,7 +11,7 @@ module ETM
   module LocaleController
     extend ActiveSupport::Concern
 
-    included { before_filter :set_locale }
+    included { before_action :set_locale }
 
     # Set the languages for which we have translations.
     AVAILABLE_LOCALES = %w( en nl )
