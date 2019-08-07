@@ -13,7 +13,6 @@ nl:
     known_issues: "Tekortkomingen"
     quality_control: "Kwaliteitsverbetering"
     privacy_statement: "Privacy Statement"
-    prominent_users: "Scenario's"
     press_releases: "Pers"
     publications: "Publicaties"
     disclaimer: "Disclaimer"
@@ -22,5 +21,3 @@ nl:
     contact: "Contact"
     documentation: "Documentatie"
     help: "Help"
-    presets: "Allemaal"
-    ec_presets: "Energy Convention 2013"
