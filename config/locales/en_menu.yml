@@ -13,7 +13,6 @@ en:
     known_issues: "Known Issues"
     quality_control: "Quality Control"
     privacy_statement: "Privacy Statement"
-    prominent_users: "Scenarios"
     press_releases: "Press"
     publications: "Publications"
     disclaimer: "Disclaimer"
@@ -22,5 +21,3 @@ en:
     contact: "Contact"
     documentation: "Documentation"
     help: "Help"
-    presets: "All"
-    ec_presets: "Energy Convention 2013"

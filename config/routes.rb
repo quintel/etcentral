@@ -7,10 +7,6 @@ ETM::Application.routes.draw do
   resources :partners,        only: [:index, :show]
   resources :press_releases,  only: [:index, :show]
   resources :articles,        only: [:index, :show], path: '/help/articles'
-  resources :presets,         only: [:index, :show]
-
-  get '/ec', to: redirect('/presets/event/ec2013')
-  get 'presets/event/:id' => 'presets#event', as: :event_presets
 
   get '/404' => 'pages#not_found'
 
