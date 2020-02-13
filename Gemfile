@@ -25,6 +25,8 @@ gem 'coffee-rails'
 gem 'uglifier'
 gem 'therubyracer'
 
+gem 'sentry-raven'
+
 group :test, :development do
   gem 'capybara'
   gem 'launchy'
