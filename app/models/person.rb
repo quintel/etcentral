@@ -1,6 +1,6 @@
 class Person
   attr_accessor :name, :title, :key, :status, :social, :education, :experience, :questions, :has_image, :prefix
-  
+
   def initialize(attr_hash)
     attr_hash.symbolize_keys!
     attr_hash.each do |key,value|
@@ -19,7 +19,7 @@ class Person
   def self.find(key)
     self.all.select{|p|p.key == key}.first
   end
-  
+
   def first_name
     name.split(" ").first
   end
@@ -35,7 +35,7 @@ class Person
   def <=>(other_person)
     self.name <=> other_person.name
   end
-  
+
   # Public: returns a string containing the path or false when the image has
   # not been found
   def has_image?(type)

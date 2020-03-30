@@ -26,6 +26,7 @@ gem 'uglifier'
 gem 'therubyracer'
 
 gem 'sentry-raven'
+gem 'json', '>= 2.3'
 
 group :test, :development do
   gem 'capybara'
