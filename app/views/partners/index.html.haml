@@ -11,7 +11,7 @@
             = raw t  "partners.#{type}"
             %small
               %a.category_header{ href: partner_info_path(type.to_sym) }
-                %i.icon-info-sign
+                = icon('fas', 'info-circle')
         .visible-phone
           = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
 

@@ -40,15 +40,18 @@
             %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
               Open
               = raw t 'landing_page.etflex.title'
-
-  .row#education
-    %article
-      .span2.hidden-phone
-        %p
-          %i.icon-group
-      .span10
-        %h2= t('landing_page.education.title')
-        %p
-          = raw t('landing_page.education.text')
-        = link_to t('landing_page.learn_more_dutch_only'), "http://onderwijs.quintel.nl", target: "_blank"
   .clear
+
+= content_for :pre_footer do
+  #education
+    .container
+      .row
+        %article
+          .span2
+          .content.span8
+            %h2
+              = icon('fas', 'book-reader')
+              = t('landing_page.education.title')
+            = raw t('landing_page.education.text')
+            = link_to t('landing_page.learn_more_dutch_only'), "http://onderwijs.quintel.nl", target: "_blank"
+          .span2
