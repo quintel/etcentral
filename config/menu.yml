@@ -1,7 +1,7 @@
 Applications:
-  Professional: https://pro.energytransitionmodel.com
-  Light: http://light.et-model.com
-  ETMoses: https://beta-moses.energytransitionmodel.com
+  Professional: product:pro
+  Light: product:light
+  Mobile Game: product:quest
 
 Partners:
 

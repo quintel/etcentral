@@ -21,18 +21,16 @@
                   %b.caret
                 %ul.dropdown-menu
                   - values.each do |key, value|
-                    - unless /https?:\/\//.match(value)
-                      - value = "/#{ value }"
                     %li
-                      %a{href: "#{value}", target: "#{ /https?:\/\//.match(value) ? '_blank' : '' }" }
-                        = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
+                      = link_to(navbar_link(value), navbar_link_options(value)) do
+                        = I18n.t("menu.#{key.gsub(" ","_").downcase}")
                         %i.icon-external-link
             - else
               %li{ class:('active' if request.path.delete('/') == key.downcase || request.path.delete('/') == values) }
                 - if values.blank?
-                  = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ key.downcase }"
+                  = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), "/#{ key.downcase }"
                 - else
-                  = link_to I18n.t("menu.#{ key.gsub(" ","_").downcase }"), "/#{ values }"
+                  = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), navbar_link(values)
 
         %ul.nav.pull-right
           %li#language

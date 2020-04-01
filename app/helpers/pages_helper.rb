@@ -1,42 +1,23 @@
+# frozen_string_literal: true
+
 module PagesHelper
-
   def product_link(product)
-    link = "http://"
-    link += has_beta?(product) ? 'beta.' : ''
-    link += product.to_s
-    link += dutch? ? '.energietransitiemodel.nl' : '.energytransitionmodel.com'
-
-    # Untill we fix the DNS records for real and let it propogate...
-    if is_production?
-      case product
-      when :light
-        link = "https://light.energytransitionmodel.com"
-      when :pro
-        link = "https://pro.energytransitionmodel.com"
-      when :etmoses
-        link = "https://moses.energytransitionmodel.com"
-      end
-
-      link += "?locale=#{I18n.locale}"
-    end
-
-    if is_beta?
-      case product
-      when :etmoses
-        link = 'https://beta-moses.energytransitionmodel.com'
-      end
-    end
-
-    link
+    "https://#{beta_prefix(product)}#{product}.energytransitionmodel.com"
   end
 
-  def has_beta?(product)
-    return false unless is_beta?
+  def beta_prefix(product)
+    if Rails.env.staging? && product_has_beta?(product)
+      product == :light ? 'beta.' : 'beta-'
+    else
+      ''
+    end
+  end
+
+  def product_has_beta?(product)
+    return false unless Rails.env.staging?
 
     case product
-    when :light   then true
-    when :etmoses then true
-    when :pro     then true
+    when :light, :pro then true
     else false
     end
   end
