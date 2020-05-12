@@ -1,0 +1,50 @@
+= render 'flash_notice'
+
+.row
+  .span10.offset1
+    .information_page
+      %h1= t 'contact.title'
+
+      %h2= t 'contact.feedback'
+
+      .feedback_form
+        %p= t 'contact.feedback_text'
+        = form_for :feedback, :url => send_feedback_path do |f|
+          .field
+            %label= t 'contact.name'
+            = f.text_field :name, required: true
+          .field
+            %label= t 'contact.email'
+            = f.email_field :email, required: true
+          .field__message
+            %label= t 'contact.message'
+            = f.text_area :message, required: true
+          .field
+            = f.submit t('contact.send_feedback'), class: 'btn'
+
+
+      %h2= t 'contact.contact_information'
+      %table.contact
+        %tr
+          %td= t 'contact.voice'
+          %td +31 20 301 22 69
+        %tr
+          %td Email
+          %td
+            %a{href: 'mailtoinfo@quintel.com'} info@energytransitionmodel.com
+
+      %h3= t 'contact.postal_address'
+      ATRIUM - Strawinskylaan 3051
+      %br
+      1077 ZX  Amsterdam
+      %br
+      The Netherlands
+
+      %h3= t 'contact.visiting_address'
+      Keizersgracht 639
+      %br
+      1017 DT  Amsterdam
+      %br
+      The Netherlands
+      %br
+      %a{href: 'http://goo.gl/maps/M0NPS'}= t 'contact.show_maps'

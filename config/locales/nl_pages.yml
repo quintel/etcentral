@@ -18,3 +18,17 @@ nl:
     title: "Iedereen kan af en toe wel wat hulp gebruiken..."
     placeholder: "Waar bent u naar op zoek?"
     faq: "Veelgestelde vragen"
+  contact:
+    title: 'Contact & Feedback'
+    feedback: 'Feedback'
+    name: 'Naam'
+    email: 'Emailadres'
+    message: 'Bericht'
+    send_feedback: 'Feedback verzenden'
+    feedback_text: 'Heeft u ideeën, vragen en/of opmerkingen over het Energietransitiemodel? Wij willen deze graag van u horen!'
+    feedback_confirm: 'Bedankt voor u bericht! We zullen zo spoedig mogelijk reageren!'
+    contact_information: 'Contact informatie'
+    voice: 'Telefoon'
+    postal_address: 'Postadres'
+    visiting_address: 'Bezoekadres'
+    show_maps: Bekijk op Google maps
