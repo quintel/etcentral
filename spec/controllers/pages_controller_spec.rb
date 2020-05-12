@@ -27,7 +27,7 @@ describe PagesController do
     end
 
     it 'contains a message' do
-      expect(delivered_emails.first.body.raw_source).to eq("I'll be back")
+      expect(delivered_emails.first.body.raw_source).to include("ll be back")
     end
   end
 end
