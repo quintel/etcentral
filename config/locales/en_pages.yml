@@ -28,4 +28,17 @@ en:
     title: "Everybody needs a little help sometimes..."
     placeholder: "What are you looking for?"
     faq: "Frequently Asked Questions"
-  
+  contact:
+    title: 'Contact & Feedback'
+    feedback: 'Feedback'
+    name: 'Name'
+    email: 'Email'
+    message: 'Message'
+    send_feedback: 'Send feedback'
+    feedback_text: 'Do you have any ideas, questions and/or comments about the Energy Transition Model? We would like to hear those from you!'
+    feedback_confirm: 'Thank you for your message! We will reply as soon as possible.'
+    contact_information: 'Contact information'
+    voice: 'Voice'
+    postal_address: 'Postal address'
+    visiting_address: 'Visiting address'
+    show_maps: Show in Google maps

@@ -11,6 +11,8 @@ ETM::Application.routes.draw do
   get '/404' => 'pages#not_found'
 
   get '/partners/info/:id' => 'pages#show', as: :partner_info
+  get '/contact'           => 'pages#contact'
+  post '/send_feedback'    => 'pages#send_feedback'
 
   # Deprecated references to Pro ETM
   get 'scenarios/:id'  => 'redirects#forward'

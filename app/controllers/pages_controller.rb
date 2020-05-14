@@ -16,4 +16,18 @@ class PagesController < ApplicationController
     end
   end
 
+  def contact
+  end
+
+  def send_feedback
+    FeedbackMailer.feedback_email(feedback_parameters).deliver
+    flash[:notice] = I18n.t('contact.feedback_confirm')
+    redirect_to action: 'contact'
+  end
+
+  private
+
+  def feedback_parameters
+    params.require(:feedback).permit(:name, :email, :message)
+  end
 end

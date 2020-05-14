@@ -37,24 +37,35 @@
       line-height: 2em
     tr.even
       background-color: #F0F0F0
+    &.contact
+      margin-left: 0px
+      td
+        padding-left: 0
+
+  .feedback_form
+    .field
+      &__message
+        textarea
+          width: 100%
+          min-height: 100px
 
 pre.terminal
   overflow: auto
   white-space: nowrap
   word-break: normal
   word-wrap: normal
-  
+
 h2.anchor
   position: relative
   clear: both
-  
+
   span
     position: absolute
     top: -70px
-    
+
 p.back_to_top
   text-align: right
   border-bottom: 1px dashed #CCC
-  
+
   a
     text-decoration: none
