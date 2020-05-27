@@ -25,6 +25,8 @@ gem 'coffee-rails'
 gem 'uglifier'
 gem 'therubyracer'
 
+gem 'invisible_captcha'
+
 gem 'sentry-raven'
 gem 'json', '>= 2.3'
 

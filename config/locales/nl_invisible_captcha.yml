@@ -1,0 +1,4 @@
+nl:
+  invisible_captcha:
+    sentence_for_humans: "Als je een mens bent, negeer dan dit veld"
+    timestamp_error_message: "Sorry, dat was te snel! Gelieve opnieuw in te dienen."

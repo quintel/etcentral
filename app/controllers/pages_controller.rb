@@ -1,4 +1,10 @@
 class PagesController < ApplicationController
+  invisible_captcha(
+    only: [:send_feedback],
+    scope: :feedback,
+    honeypot: :country,
+    on_spam: :send_feedback_spam
+  )
 
   def root
     @people = Person.all.sort
@@ -23,6 +29,10 @@ class PagesController < ApplicationController
     FeedbackMailer.feedback_email(feedback_parameters).deliver
     flash[:notice] = I18n.t('contact.feedback_confirm')
     redirect_to action: 'contact'
+  end
+
+  def send_feedback_spam
+    redirect_to contact_url
   end
 
   private
