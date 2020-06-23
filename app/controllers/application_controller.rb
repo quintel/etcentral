@@ -5,4 +5,7 @@ class ApplicationController < ActionController::Base
 
   include ApplicationHelper
 
+  rescue_from ActionController::UnknownFormat do
+    head :not_acceptable
+  end
 end
