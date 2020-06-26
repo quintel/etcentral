@@ -29,6 +29,6 @@ nl:
     feedback_confirm: 'Bedankt voor u bericht! We zullen zo spoedig mogelijk reageren!'
     contact_information: 'Contact informatie'
     voice: 'Telefoon'
-    postal_address: 'Postadres'
-    visiting_address: 'Bezoekadres'
+    address: 'Adres'
+    netherlands: 'Nederland'
     show_maps: Bekijk op Google maps

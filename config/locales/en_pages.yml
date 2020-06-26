@@ -39,6 +39,6 @@ en:
     feedback_confirm: 'Thank you for your message! We will reply as soon as possible.'
     contact_information: 'Contact information'
     voice: 'Voice'
-    postal_address: 'Postal address'
-    visiting_address: 'Visiting address'
+    address: 'Address'
+    netherlands: 'The Netherlands'
     show_maps: Show in Google maps
