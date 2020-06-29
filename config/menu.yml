@@ -5,12 +5,9 @@ Applications:
 
 Partners:
 
-Press Releases: press_releases
-
 Background:
   Open Source: open_source
   API: api
-  Education: http://onderwijs.quintel.com
   Known Issues: known_issues
   Quality Control: quality_control
   Publications: http://refman.energytransitionmodel.com/
