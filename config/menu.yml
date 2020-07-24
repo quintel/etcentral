@@ -10,6 +10,7 @@ Background:
   API: api
   Known Issues: known_issues
   Quality Control: quality_control
+  Education: https://edu.quintel.com/
   Publications: http://refman.energytransitionmodel.com/
   Documentation: http://github.com/quintel/documentation
   Units: units
