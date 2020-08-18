@@ -1,9 +1,9 @@
-
-.row
-  .span10.offset1
-    .information_page
-      %h1= t 'contact.title'
-
+#feedback.container-md.py-6
+  .row
+    .col
+      %h1.mb-4= t 'contact.title'
+  .row.justify-content-between
+    .col-md-8.pr-md-5
       %h2= t 'contact.feedback'
 
       .feedback_form
@@ -12,34 +12,40 @@
         = form_for :feedback, :url => send_feedback_path do |f|
           = f.invisible_captcha :country
 
-          .field
-            %label= t 'contact.name'
-            = f.text_field :name, required: true
-          .field
-            %label= t 'contact.email'
-            = f.email_field :email, required: true
-          .field__message
-            %label= t 'contact.message'
-            = f.text_area :message, required: true
-          .field
-            = f.submit t('contact.send_feedback'), class: 'btn'
+          .form-group
+            %label{ for: 'feedback_name' }= t 'contact.name'
+            = f.text_field :name, required: true, class: 'form-control'
 
+          .form-group
+            %label{ for: 'feedback_email' }= t 'contact.email'
+            = f.email_field :email, required: true, class: 'form-control', 'aria-describedby' => 'email-help'
 
-      %h2= t 'contact.contact_information'
-      %table.contact
-        %tr
-          %td= t 'contact.voice'
-          %td +31 20 301 22 69
-        %tr
-          %td Email
-          %td
-            %a{href: 'mailtoinfo@quintel.com'} info@energytransitionmodel.com
+          .form-group
+            %label{ for: 'feedback_message' }= t 'contact.message'
+            = f.text_area :message, required: true, class: 'form-control'
 
+          = f.submit t('contact.send_feedback'), class: 'btn btn-primary'
+
+    .col-md-4.pl-md-5.mt-5.mt-md-0
       %h2= t 'contact.address'
-      Keizersgracht 639
-      %br
-      1017 DT  Amsterdam
-      %br
-      = t('contact.netherlands')
-      %br
-      %a{href: 'http://goo.gl/maps/M0NPS'}= t 'contact.show_maps'
+      %address
+        Quintel Intelligence
+        %br
+        Keizersgracht 639
+        %br
+        1017 DT  Amsterdam
+        %br
+        = t('contact.netherlands')
+      %p
+        %small.text-success
+          = icon('fas', 'map')
+          %a.text-success{ href: 'http://goo.gl/maps/M0NPS', target: '_blank', rel: 'noreferrer noopener' }
+            = t 'contact.show_maps'
+
+      %h2.mt-5= t 'contact.contact_information'
+      %dl
+        %dt= t 'contact.voice'
+        %dd +31 20 301 22 69
+        %dt E-mail
+        %dd
+          %a{ href: 'mailto:info@energytransitionmodel.com' } info@energytransitionmodel.com

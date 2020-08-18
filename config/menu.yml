@@ -3,8 +3,6 @@ Applications:
   Light: product:light
   Mobile Game: product:quest
 
-Partners:
-
 Background:
   Open Source: open_source
   API: api
@@ -14,3 +12,5 @@ Background:
   Publications: http://refman.energytransitionmodel.com/
   Documentation: https://docs.energytransitionmodel.com/
   Units: units
+
+Partners:

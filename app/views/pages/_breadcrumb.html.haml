@@ -1,8 +1,9 @@
 - content_for(:breadcrumb) do
-  %ul.breadcrumb
-    .container
-      %li
-        = link_to 'Partners', partners_path
-      %li
-        > 
-        = t "breadcrumbs.#{@page.key}"
+  #breadcrumb
+    %nav{ 'aria-label' => 'breadcrumb' }
+      .container
+        %ol.breadcrumb
+          %li.breadcrumb-item
+            = link_to 'Partners', partners_path
+          %li.breadcrumb-item.active
+            = t "breadcrumbs.#{@page.key}"

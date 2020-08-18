@@ -22,9 +22,9 @@ module ApplicationHelper
 
   def navbar_link_options(url)
     if url.start_with?('https://', 'http://')
-      { target: '_blank', rel: 'noreferrer noopener ' }
+      { class: 'dropdown-item', target: '_blank', rel: 'noreferrer noopener' }
     else
-      {}
+      { class: 'dropdown-item' }
     end
   end
 

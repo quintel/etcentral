@@ -18,12 +18,11 @@ gem 'nokogiri'
 
 gem 'sass-rails'
 gem 'sass', '< 3.5'
-gem 'bootstrap-sass', '< 3'
-gem 'compass-rails'
+gem 'bootstrap'
 gem 'font-awesome-sass'
 gem 'coffee-rails'
 gem 'uglifier'
-gem 'therubyracer'
+gem 'mini_racer'
 
 gem 'invisible_captcha'
 
