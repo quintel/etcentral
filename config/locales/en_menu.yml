@@ -1,10 +1,9 @@
 en:
   menu:
     applications: "Applications"
-    professional: "Professional"
-    light: "Light"
-    mixer: "Mixer"
-    mobile_game: "Mobile game"
+    professional: "Energy Transition Model"
+    light: "Energy Game"
+    mobile_game: "Mobile Game"
     background: "Information"
     about_quintel: "About Quintel"
     open_source: "Open Source"

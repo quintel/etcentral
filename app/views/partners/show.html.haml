@@ -1,7 +1,8 @@
-=render 'breadcrumb'
+= render 'breadcrumb'
 
-%h1= @partner.name
-
-.row
-  .span10.offset1
-    = @partner.html_content(I18n.locale)
+.container-lg.pb-6
+  .row
+    .col-lg-3
+      %h1= @partner.name
+    .col-lg-8.pt-3
+      = @partner.html_content(I18n.locale)

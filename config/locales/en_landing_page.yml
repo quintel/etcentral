@@ -1,19 +1,31 @@
 en:
   landing_page:
-    title: "Create your <strong>own</strong> Energy Future."
-    explanation: "The <strong>Energy Transition Model</strong> is an independent, comprehensive and fact-based energy model that is used by governments, corporations, NGOs and <a href='https://edu.quintel.com/'>educators</a> in various countries. It is backed by more than <a href='/partners'>20 partners</a>. There are three different versions of the Energy Transition Model."
-    etflex:
-      title: "Energy Game"
-      explanation: "A fun <strong>introduction</strong> to the most important energy themes. Will your energy future get the highest score?"
+    title: "Create your <strong>own</strong> energy future"
+    explanation: "The <strong>Energy Transition Model</strong> is an independent, comprehensive and fact-based energy model that is used by governments, corporations, NGOs and <a href='https://edu.quintel.com/'>educators</a> in various countries. It is backed by more than <a href='/partners'>twenty partners</a>."
+    about_us:
+      title: "About Us"
+      text: |
+        <p>
+          Quintel aims to accelerate energy transition, and we believe that this requires a profound
+          understanding of the energy system.
+        </p>
+        <p>
+          For this reason we have developed – and have kept improving – the Energy Transition Model
+          since 2010. We also facilitate fact-based discussions, give workshops, and contribute to
+          various education projects. The ETM code and data is open-source.
+        </p>
+      open_quintel: "Learn about Quintel"
+      open_docs: "Documentation"
+      open_code: "Our code"
+    games:
+      title: "Games"
+      explanation: "Can you create a clean energy future for 2030 and keep the lights from going out when there is no wind or sunshine? Can you reduce greenhouse gas emissions and keep global warming in check? Can you do all that at the lowest possible costs?"
+      open_etflex: "Open Energy Game"
+      open_etmobile: "Open Mobile Game"
     etmodel:
+      open: "Open Energy Transition Model"
       title: "Energy Transition Model"
-      explanation: "Packed with information on six countries and the EU. This version is used by <strong>policy makers</strong> and <strong>experts</strong> to evaluate energy scenarios."
-    etmoses:
-      title: "ETMoses"
-      explanation: "With this tool, you can create local energy situations for neighbourhoods, cities and regions with a time resolution of <strong>15 minutes</strong>."
-    etmobile:
-      title: "Mobile Game"
-      explanation: "Challenge yourself and others to see how many questions you can answer correctly! Can you beat the expert mode?"
+      explanation: "Packed with information on many countries and regions, the model is used by <strong>policy makers</strong>, <strong>experts</strong>, and <strong>educators</strong> to evaluate energy scenarios."
     go_to_wattnu: "Watch our TV show"
     learn_more: "Learn more"
     learn_more_dutch_only: "Learn more (Dutch only)"
@@ -26,7 +38,7 @@ en:
     other_language: "Nederlands"
     free: "free"
     education:
-      title: "Education and the Energy Transition Model"
+      title: "Education"
       text: "<p>Together with GasTerra and a large number of other partners, Quintel Intelligence develops an educational programme to let children and students discover the main causes and consequences of important developments in our energy system by themselves.</p><p>We currently develop educational materials for secondary school and higher vocational education, as well as for academic and post-doctoral programmes.</p>"
     watt_nu:
       title: "Watt Nu?!"

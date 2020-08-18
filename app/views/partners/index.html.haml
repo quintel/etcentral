@@ -1,21 +1,24 @@
-.jumbotron
-  %h1= raw t 'partners.main_title'
-  %p= raw t 'partners.sub_title'
+.container
+  .row.justify-content-md-center
+    .col-9
+      .text-center.pt-6.pb-3
+        %h1= raw t 'partners.main_title'
+        %p= raw t 'partners.sub_title'
 
-.row
-  - %w{primary knowledge education}.each do |type|
-    .span4
-      .partners{id: "#{type}_partners"}
-        #header
-          %h2
-            = raw t  "partners.#{type}"
-            %small
-              %a.category_header{ href: partner_info_path(type.to_sym) }
-                = icon('fas', 'info-circle')
-        .visible-phone
-          = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
+  .row.pb-6
+    - %w{primary knowledge education}.each do |type|
+      .col-4
+        .partners{id: "#{type}_partners"}
+          #header
+            %h4.text-center
+              = raw t  "partners.#{type}"
+              %small
+                %a.category_header{ href: partner_info_path(type.to_sym) }
+                  = icon('fas', 'info-circle')
+          .visible-phone
+            = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
 
-.row.hidden-phone
-  - %w{primary knowledge education}.each do |type|
-    .span4
-      = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
+  -# .row.hidden-phone
+  -#   - %w{primary knowledge education}.each do |type|
+  -#     .span4
+  -#       = render partial: 'partner_logos', locals: { partners: Partner.send(type) }

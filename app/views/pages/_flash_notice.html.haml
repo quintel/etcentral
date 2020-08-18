@@ -1,7 +1,11 @@
 - if flash[:notice]
-  %p.notice= flash[:notice]
-  - flash[:notice] = nil
+  .row.justify-content-md-center
+    .col.mx-lg-6
+      %p.alert.alert-warning= flash[:notice]
+      - flash[:notice] = nil
 
 - if flash[:error]
-  %p.error= flash[:error]
-  - flash[:error] = nil
+  .row.justify-content-md-center
+    .col.mx-lg-6
+      %p.alert.alert-danger= flash[:error]
+      - flash[:error] = nil

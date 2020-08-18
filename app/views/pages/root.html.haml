@@ -1,57 +1,67 @@
 %section#main
+  .etm-hero
+    .container-md
+      .row.justify-content-between.py-3.py-lg-5
+        .col-md-7.pr-lg-5
+          %h1.my-4= raw t 'landing_page.title'
+          %p.my-4=  raw t 'landing_page.explanation'
+          %p.my-4=  raw t 'landing_page.etmodel.explanation'
+          %p.my-4
+            %a.btn.btn-lg.btn-primary{ href: product_link(:pro), target: '_blank' }
+              = raw t 'landing_page.etmodel.open'
+              →
+        .col-md-5.d-none.d-md-block
+          .img
+            = image_tag 'pages/root/screen_pro.png', class: 'product-image mt-md-5'
 
-  %h1= raw t 'landing_page.title'
-  %p=  raw t 'landing_page.explanation'
-
-  .row#products
-
-    %article.span4
-      .product#etmobile
-        %a.etmobile_link{ href: product_link(:quest), target: '_blank' }
-          .mobile-holder
-            = image_tag 'pages/root/screen_etmobile.png'
-          %h2= raw t 'landing_page.etmobile.title'
-          %p= raw t 'landing_page.etmobile.explanation'
-          .btn-holder
-            %a.btn.btn-primary{ href: product_link(:quest), target: '_blank' }
-              Open
-              = raw t 'landing_page.etmobile.title'
-
-    %article.span4
-      .product#etmodel
-        %a.etmodel_link{ href: product_link(:pro), target: '_blank' }
-          .img-holder
-            = image_tag 'pages/root/screen_pro.png'
-          %h2= raw t 'landing_page.etmodel.title'
-          %p= raw t 'landing_page.etmodel.explanation'
-          .btn-holder
-            %a.btn.btn-primary{ href: product_link(:pro), target: '_blank' }
-              Open
-              = raw t 'landing_page.etmodel.title'
-
-    %article.span4
-      .product#etflex
-        %a.etflex_link{ href: product_link(:light), target: '_blank' }
-          .img-holder
-            = image_tag 'pages/root/screen_light.jpg'
-          %h2= raw t 'landing_page.etflex.title'
-          %p= raw t 'landing_page.etflex.explanation'
-          .btn-holder
-            %a.btn.btn-primary{ href: product_link(:light), target: '_blank' }
-              Open
-              = raw t 'landing_page.etflex.title'
-  .clear
-
-= content_for :pre_footer do
-  #education
-    .container
+  #games.border-bottom
+    .container-md.py-5.py-md-6
       .row
-        %article
-          .span2
-          .content.span8
-            %h2
-              = icon('fas', 'book-reader')
-              = t('landing_page.education.title')
+        .col-md-4
+          = image_tag 'pages/root/screen_light.png', class: 'product-image img-fluid d-none d-md-block'
+        .col-md-8.pl-md-5
+          %h2= t 'landing_page.games.title'
+          %p
+            = raw t 'landing_page.games.explanation'
+          %div
+            %a.plain-link.text-success.d-block.d-lg-inline{ href: product_link(:light), target: '_blank' }
+              = icon('fas', 'trophy')
+              %span<
+                = raw t 'landing_page.games.open_etflex'
+              →
+            %a.plain-link.text-success.ml-lg-3.d-block.d-lg-inline{ href: product_link(:quest), target: '_blank' }
+              = icon('fas', 'mobile-alt')
+              %span<
+                = raw t 'landing_page.games.open_etmobile'
+              →
+  #other
+    .container-md
+      .row
+        .col-md-6.pt-5.pb-5.pr-md-6.border-right
+          .feature-icon= icon('fas', 'book-reader')
+          %h4= t('landing_page.education.title')
+          .text-muted
             = raw t('landing_page.education.text')
-            = link_to t('landing_page.learn_more_dutch_only'), "https://edu.quintel.com/", target: "_blank"
-          .span2
+            %p
+              %a.plain-link{ href: 'https://edu.quintel.com/', target: "_blank" }
+                %span<
+                  = t('landing_page.learn_more_dutch_only')
+                →
+        .col-md-6.pt-md-5.pb-5.pl-md-6
+          .feature-icon= icon('fas', 'users')
+          %h4= t('landing_page.about_us.title')
+          .text-muted
+            = raw t('landing_page.about_us.text')
+            %p
+              %a.plain-link.d-block.d-xl-inline{ href: 'https://quintel.com/', target: "_blank" }
+                %span<
+                  = t('landing_page.about_us.open_quintel')
+                →
+              %a.plain-link.ml-xl-3.d-block.d-xl-inline{ href: 'https://docs.energytransitionmodel.com/', target: "_blank" }
+                %span<
+                  = t('landing_page.about_us.open_docs')
+                →
+              %a.plain-link.ml-xl-3.d-block.d-xl-inline{ href: 'https://github.com/quintel', target: "_blank" }
+                %span<
+                  = t('landing_page.about_us.open_code')
+                →
