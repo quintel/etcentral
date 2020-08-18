@@ -14,11 +14,7 @@
   = render 'layouts/navbar'
 
   = yield :breadcrumb
+  = yield
 
-  .container
-    = yield
-
-  = yield :pre_footer
   = render 'layouts/footer'
-
   = render 'layouts/ga' unless Rails.env.development?

@@ -1,38 +1,30 @@
-.navbar.navbar-fixed-top
-  .navbar-inner
-    .container
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+  .container-md
+    %a.navbar-brand{ href: "/" }
+      = t('landing_page.etmodel.title')
 
-      %a.brand{ href: "/" }
-        Quintel Intelligence
+    %button.navbar-toggler{ type: 'button', data: { toggle: 'collapse', target: '#main-navbar-content' } }
+      %span.navbar-toggler-icon
 
-      %a.btn.btn-navbar{ data: {toggle: "collapse", target: ".nav-collapse" } }
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
+    #main-navbar-content.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        - menu_items.each do |key, values|
+          - if values.is_a?(Hash)
+            %li.nav-item.dropdown
+              %a.nav-link.dropdown-toggle{ id: "main-navbar-#{key}", href: '#', data: { toggle: 'dropdown' } }
+                = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
+              .dropdown-menu.shadow{ 'aria-labelledby' => "main-navbar-#{key}"}
+                - values.each do |key, value|
+                  = link_to(navbar_link(value), navbar_link_options(value)) do
+                    = I18n.t("menu.#{key.gsub(" ","_").downcase}")
+                    = icon('fas', 'external-link-alt')
+          - else
+            %li.nav-item{ class:('navbar-active' if request.path.delete('/') == key.downcase || request.path.delete('/') == values) }
+              - if values.blank?
+                = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), "/#{ key.downcase }", class: 'nav-link'
+              - else
+                = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), navbar_link(values), class: 'nav-link'
 
-      .nav-collapse.collapse
-        %ul.nav
-          %li.divider-vertical
-          - menu_items.each do |key, values|
-            - if values.is_a?(Hash)
-              %li.dropdown
-                %a.dropdown-toggle{ href: '#', data: { toggle: 'dropdown' } }
-                  = I18n.t("menu.#{ key.gsub(" ","_").downcase }")
-                  %b.caret
-                %ul.dropdown-menu
-                  - values.each do |key, value|
-                    %li
-                      = link_to(navbar_link(value), navbar_link_options(value)) do
-                        = I18n.t("menu.#{key.gsub(" ","_").downcase}")
-                        = icon('fas', 'external-link-alt')
-            - else
-              %li{ class:('active' if request.path.delete('/') == key.downcase || request.path.delete('/') == values) }
-                - if values.blank?
-                  = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), "/#{ key.downcase }"
-                - else
-                  = link_to I18n.t("menu.#{key.gsub(" ","_").downcase}"), navbar_link(values)
-
-        %ul.nav.pull-right
-          %li#language
-            - other_locale = english? ? "nl" : "en"
-            = link_to (t 'landing_page.other_language'), { locale: other_locale }, { class: other_locale }
+      %span.navbar-text#language
+        - other_locale = english? ? "nl" : "en"
+        %small= link_to (t 'landing_page.other_language'), { locale: other_locale }, { class: other_locale }

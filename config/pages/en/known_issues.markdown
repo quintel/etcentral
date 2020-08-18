@@ -7,7 +7,7 @@
 ## Energy calculations
 
 * Geothermal heat, ambient heat (air and ground heat pumps), and solar thermal energy are not included in the primary energy calculation. The effect is that technologies using these reduce the amount of energy used. We plan to include those primary renewable carriers in the renewability calculation if international energy statistics reach a consensus on how to do this.
-* The ETM only takes into account *net* energy flows. Energy which is *transported through* a country (imported and then exported again) is not included.
+* The ETM only takes into account net energy flows. Energy which is transported through a country (imported and then exported again) is not included.
 * Currently the only power plants which can be used for co-firing of wood_pellets are the ultra-supercritical pulverized coal power plant (Pulverized coal) and the equivalent CHP plant (Central Coal CHP).
 * Hydrogen and (bio-)LNG for transport are modelled in more detail than other transport fuels; we have included realistic efficiencies for the full transport chain (from fuel production to utilization) for hydrogen and (bio) LNG, but still need to include those for the other fuels. As a result, transport technologies running on these other fuels appear relatively more efficient in the ETM than they are in reality.
 

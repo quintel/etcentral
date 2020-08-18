@@ -1,8 +1,8 @@
 # Open Source
 
 The Energy Transition Model is a fully **open source project**.
-Institutes, companies and individuals are be able to *access*, *review*
-and *improve*:
+Institutes, companies and individuals are be able to access, review
+and improve:
 
 * all **data**
 * all **calculations and definitions**

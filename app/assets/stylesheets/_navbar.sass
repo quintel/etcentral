@@ -1,0 +1,35 @@
+.navbar .navbar-brand
+  padding-bottom: 13px
+  text-indent: -9999px
+  background: url(/assets/header/logo300.png) center center no-repeat
+  background-size: 300px
+  width: 300px
+
+#language a
+  padding-left: 20px
+  &.en
+    background: image-url("icons/areas/gb.png") left center no-repeat
+  &.nl
+    background: image-url("icons/areas/nl.png") left center no-repeat
+
+.navbar.navbar-dark
+  background: linear-gradient(to bottom, #5597d2, #2c75b5)
+  border-bottom: 1px solid #215e94
+  .nav-link, a.nl
+    color: rgba(255, 255, 255, 0.7)
+    &:hover
+      color: rgba(255, 255, 255, 0.9)
+
+.navbar .navbar-nav
+  margin-left: 1rem
+  .nav-item
+    margin-right: 0.5rem
+  .fa-external-link-alt
+    color: $gray-500
+    font-size: 80%
+    margin-left: 0.25rem
+
+
+@media only screen and (min-device-pixel-ratio: 1.5)
+  .navbar .navbar-brand
+    background: image_url("header/logo300@2x.png") center center no-repeat
