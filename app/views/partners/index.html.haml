@@ -1,24 +1,18 @@
 .container
-  .row.justify-content-md-center
-    .col-9
-      .text-center.pt-6.pb-3
+  .row
+    .col
+      .text-center.pt-6.pb-3.py-5
         %h1= raw t 'partners.main_title'
-        %p= raw t 'partners.sub_title'
+        %p.subtitle= raw t 'partners.sub_title'
 
-  .row.pb-6
-    - %w{primary knowledge education}.each do |type|
-      .col-4
+  - %w{primary knowledge education}.each do |type|
+    .row.pb-6
+      .col.text-center
         .partners{id: "#{type}_partners"}
           #header
-            %h4.text-center
+            %h4.mb-4
               = raw t  "partners.#{type}"
               %small
                 %a.category_header{ href: partner_info_path(type.to_sym) }
                   = icon('fas', 'info-circle')
-          .visible-phone
-            = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
-
-  -# .row.hidden-phone
-  -#   - %w{primary knowledge education}.each do |type|
-  -#     .span4
-  -#       = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
+          = render partial: 'partner_logos', locals: { partners: Partner.send(type) }
