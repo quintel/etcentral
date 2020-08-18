@@ -3,15 +3,15 @@ class Partner < YmlReadOnlyRecord
   attr_accessor :name, :key, :kind, :lang, :path
 
   def self.primary
-    self.all.select(&:is_primary?).sort_by { rand }
+    self.all.select(&:is_primary?).sort_by { |p| p.name.downcase }
   end
 
   def self.knowledge
-    self.all.select(&:is_knowledge?).sort_by { rand }
+    self.all.select(&:is_knowledge?).sort_by { |p| p.name.downcase }
   end
 
   def self.education
-    self.all.select(&:is_education?).sort_by { rand }
+    self.all.select(&:is_education?).sort_by { |p| p.name.downcase }
   end
 
   def is_primary?
