@@ -22,10 +22,9 @@ nl:
       title: "Energietransitiemodel"
       explanation: "Bomvol gegevens over zes landen en de EU, waarmee <strong>beleidsmakers</strong> en <strong>experts</strong> energiescenario's doorrekenen."
     games:
-      title: Games
+      title: Game
       explanation: "Kun je een schone energietoekomst bouwen voor 2030 zonder dat het licht uitgaat als de zon niet schijnt en de wind niet waait? Kun je zorgen dat de aarde minder opwarmt door het terugdringen van de CO2 uitstoot? En dat allemaal tegen de laagst mogelijke prijs?"
       open_etflex: "Open Energiegame"
-      open_etmobile: "Open Mobile Game"
     go_to_wattnu: "Bekijk onze TV show!"
     learn_more_dutch_only: "Leer meer"
     footer:

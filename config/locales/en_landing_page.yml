@@ -18,10 +18,9 @@ en:
       open_docs: "Documentation"
       open_code: "Our code"
     games:
-      title: "Games"
+      title: "Game"
       explanation: "Can you create a clean energy future for 2030 and keep the lights from going out when there is no wind or sunshine? Can you reduce greenhouse gas emissions and keep global warming in check? Can you do all that at the lowest possible costs?"
       open_etflex: "Open Energy Game"
-      open_etmobile: "Open Mobile Game"
     etmodel:
       open: "Open Energy Transition Model"
       title: "Energy Transition Model"
