@@ -1,12 +1,10 @@
 Applications:
   Professional: product:pro
   Light: product:light
-  Mobile Game: product:quest
 
 Background:
   Open Source: open_source
   API: api
-  Known Issues: known_issues
   Quality Control: quality_control
   Education: https://edu.quintel.com/
   Publications: http://refman.energytransitionmodel.com/
