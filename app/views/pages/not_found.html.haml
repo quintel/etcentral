@@ -1,11 +1,10 @@
-.jumbotron
-  %h1= t('pages.page_not_found')
+.container.mt-6.pb-3
+  .jumbotron
+    %h1= t('pages.page_not_found')
 
-.row
-  .span4
-    %p
-  .span4
-    %p
-      =link_to t('pages.back_to_home_page'), root_path
-    %p
-      =link_to t('pages.send_email'), 'mailto:info@quintel.com'
+  .row
+    .col.mx-lg-6
+      %p
+        =link_to t('pages.back_to_home_page'), root_path
+      %p
+        =link_to t('pages.send_email'), 'mailto:info@quintel.com'
