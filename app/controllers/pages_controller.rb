@@ -26,7 +26,10 @@ class PagesController < ApplicationController
   end
 
   def send_feedback
-    FeedbackMailer.feedback_email(feedback_parameters).deliver
+    if FeedbackMailer.allowed_message?(feedback_parameters[:message])
+      FeedbackMailer.feedback_email(feedback_parameters).deliver
+    end
+
     flash[:notice] = I18n.t('contact.feedback_confirm')
     redirect_to action: 'contact'
   end
