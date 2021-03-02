@@ -14,6 +14,7 @@ class FeedbackMailer < ActionMailer::Base
 
     mail to: 'info@energytransitionmodel.com',
          from: options[:email],
+         reply_to: options[:email],
          subject: 'ETM Feedback'
   end
 end
