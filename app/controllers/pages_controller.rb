@@ -26,7 +26,7 @@ class PagesController < ApplicationController
   end
 
   def send_feedback
-    if FeedbackMailer.allowed_message?(feedback_parameters[:message])
+    if FeedbackMailer.allowed?(feedback_parameters)
       FeedbackMailer.feedback_email(feedback_parameters).deliver
     end
 

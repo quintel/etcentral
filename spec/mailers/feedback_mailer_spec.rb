@@ -24,4 +24,18 @@ RSpec.describe FeedbackMailer do
       expect(described_class.allowed_message?('RENEW your domain')).to be(false)
     end
   end
+
+  describe '.allowed_sender?' do
+    it 'rejects "info@energytransitionmodel.com"' do
+      expect(described_class.allowed_sender?('info@energytransitionmodel.com')).to be(false)
+    end
+
+    it 'allows ""' do
+      expect(described_class.allowed_sender?('')).to be(true)
+    end
+
+    it 'allows "me@example.com"' do
+      expect(described_class.allowed_sender?('me@example.com')).to be(true)
+    end
+  end
 end
