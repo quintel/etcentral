@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+    environment:
+      SECRET_KEY_BASE: 5f40250cdf48eaa4df62147a886414b4
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app:cached
+      - bundle:/usr/local/bundle
+      - rails_cache:/usr/src/app/tmp/cache
+    tmpfs:
+      - /tmp
+
+volumes:
+  bundle:
+  rails_cache:
