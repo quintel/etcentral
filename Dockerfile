@@ -1,12 +1,13 @@
 ARG RUBY_VERSION
-FROM ruby:2.6.6-alpine
+FROM ruby:2.6.6-slim
 
 LABEL maintainer="dev@quintel.com"
 
-RUN apk update && apk --update add \
- build-base \
- nodejs \
- tzdata
+RUN apt-get update -yqq && \
+  DEBIAN_FRONTEND=noninteractive apt-get install -yqq --no-install-recommends \
+    automake \
+    autoconf \
+    build-essential
 
 # Throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
