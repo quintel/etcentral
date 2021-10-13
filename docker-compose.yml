@@ -9,9 +9,9 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - .:/usr/src/app:cached
+      - .:/app:cached
       - bundle:/usr/local/bundle
-      - rails_cache:/usr/src/app/tmp/cache
+      - rails_cache:/app/tmp/cache
     tmpfs:
       - /tmp
 
