@@ -14,7 +14,7 @@ RUN bundle config --global frozen 1
 
 COPY Gemfile* /usr/src/app/
 WORKDIR /usr/src/app
-RUN bundle install --jobs=4 --retry=3
+RUN bundle install --jobs=4 --retry=3 --without="development test" --deployment
 
 COPY . /usr/src/app/
 
