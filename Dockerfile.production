@@ -21,4 +21,4 @@ COPY . /usr/src/app/
 RUN cp config/email.sample.yml config/email.yml
 RUN RAILS_ENV=production bundle exec rails assets:precompile
 
-CMD ["bundle" "exec" "--keep-file-descriptors", "puma", "-C", "config/puma.rb"]
+CMD ["bundle", "exec", "--keep-file-descriptors", "puma", "-C", "config/puma.rb"]
