@@ -1,4 +1,3 @@
-ARG RUBY_VERSION
 FROM ruby:2.6.6-slim
 
 LABEL maintainer="dev@quintel.com"
