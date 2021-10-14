@@ -1,4 +1,4 @@
-FROM ruby:2.6.6-slim
+FROM ruby:2.7-slim
 
 LABEL maintainer="dev@quintel.com"
 
