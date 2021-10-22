@@ -8,6 +8,8 @@ RUN apt-get update -yqq && \
     autoconf \
     build-essential
 
+RUN gem install bundler:1.17.3
+
 # Throw errors if Gemfile has been modified since Gemfile.lock
 RUN bundle config --global frozen 1
 
