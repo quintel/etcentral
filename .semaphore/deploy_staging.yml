@@ -8,7 +8,7 @@ blocks:
   - name: Docker
     task:
       jobs:
-        - name: Build and publish
+        - name: Build, publish, deploy
           commands:
             - checkout
             - echo $DOCKERHUB_PASSWORD | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
@@ -16,13 +16,8 @@ blocks:
             - 'docker tag etcentral:latest quintel/etcentral:beta'
             - 'docker push quintel/etcentral:beta'
             - docker images
+            - echo 'Deploy...'
       secrets:
         - name: Docker Hub Credentials
     run:
       when: branch = 'docker'
-  - name: Deploy
-    task:
-      jobs:
-        - name: Deploy
-          commands:
-            - echo "Done"
