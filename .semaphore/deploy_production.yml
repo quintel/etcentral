@@ -18,6 +18,7 @@ blocks:
             - docker images
             - echo 'Deploy...'
       secrets:
-        - name: Docker Hub Credentials
+        - name: Deploy key
+        - name: Docker Hub credentials
     run:
       when: branch = 'production'
