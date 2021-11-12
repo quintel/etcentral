@@ -5,11 +5,28 @@ set :log_level, 'info'
 set :application, 'etcentral'
 set :repo_url, 'git@github.com:quintel/etcentral.git'
 
-# Set up rbenv
-set :rbenv_type, :user
-set :rbenv_ruby, '2.6.6'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w{rake gem bundle ruby rails}
+# rbenv Options
+# =============
+
+set :rbenv_type, :system
+set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_prefix, "#{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_map_bins, %w[bundle gem rails rake ruby]
+
+
+# Puma Options
+# ============
+#
+# If these are changed, be sure to then run `cap $stage puma:config`; the config
+# on the server is not automatically updated when deploying.
+
+set :puma_init_active_record, true
+set :puma_preload_app, true
+set :puma_systemctl_user, :user
+set :puma_service_unit_env_vars, ["RBENV_ROOT=#{fetch(:rbenv_path)}"]
+
+# Bundler Options
+# ===============
 
 set :bundle_binstubs, (-> { shared_path.join('sbin') })
 
@@ -35,8 +52,7 @@ set :bundle_binstubs, (-> { shared_path.join('sbin') })
 set :linked_files, %w[config/secrets.yml config/email.yml]
 
 # Default value for linked_dirs is []
-set :linked_dirs,
-  %w{sbin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w[sbin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system]
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -56,11 +72,3 @@ namespace :deploy do
     end
   end
 end
-
-# Puma Options
-# ============
-# If these are changed, be sure to then run `cap $stage puma:config`; the config
-# on the server is not automatically updated when deploying.
-
-set :puma_init_active_record, true
-set :puma_preload_app, true

@@ -1,9 +1,10 @@
-ruby '2.6.6'
+ruby '2.7.4'
 
 source 'https://rubygems.org'
 
 gem 'rails', '~> 5.2'
 gem 'bootsnap'
+gem 'puma', '< 5'
 
 gem 'haml'
 gem 'redcarpet'
@@ -56,10 +57,6 @@ group :test do
   gem 'test-unit', '~> 3.0'
   gem 'webmock'
   gem 'rails-controller-testing'
-end
-
-group :production, :staging do
-  gem 'puma', '< 5'
 end
 
 gem 'jquery-rails'

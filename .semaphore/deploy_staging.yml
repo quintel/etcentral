@@ -1,0 +1,24 @@
+version: v1.0
+name: Deploy to staging
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Docker
+    task:
+      jobs:
+        - name: Build, publish, deploy
+          commands:
+            - checkout
+            - echo $DOCKERHUB_PASSWORD | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
+            - 'docker build -f Dockerfile.production -t etcentral:beta .'
+            - 'docker tag etcentral:beta quintel/etcentral:beta'
+            - 'docker push quintel/etcentral:beta'
+            - docker images
+            - echo 'Deploy...'
+      secrets:
+        - name: Deploy key
+        - name: Docker Hub credentials
+    run:
+      when: branch = 'docker'

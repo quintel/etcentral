@@ -1,0 +1,29 @@
+version: v1.0
+name: Test ETCentral
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: RSpec
+    task:
+      env_vars:
+        - name: RAILS_ENV
+          value: test
+      jobs:
+        - name: Test
+          commands:
+            - checkout
+            - 'if [[ $(head -n 3 Gemfile) =~ ([[:digit:]].[[:digit:]].[[:digit:]](-p[[:digit:]]+)?) ]]; then echo "Setting Ruby to ${BASH_REMATCH[1]}" && sem-version ruby ${BASH_REMATCH[1]}; else echo "Unable to parse ruby version from Gemfile"; fi'
+            - cache restore
+            - 'gem install bundler:1.17.3'
+            - bundle install --deployment --path vendor/bundle
+            - cache store
+            - bundle exec rspec
+promotions:
+  - name: Deploy to staging
+    pipeline_file: deploy_staging.yml
+    auto_promote:
+      when: "result = 'passed' and branch = 'docker'"
+  - name: Deploy to production
+    pipeline_file: deploy_production.yml
