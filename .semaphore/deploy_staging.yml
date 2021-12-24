@@ -15,10 +15,10 @@ blocks:
             - 'docker build -f Dockerfile.production -t etcentral:beta .'
             - 'docker tag etcentral:beta quintel/etcentral:beta'
             - 'docker push quintel/etcentral:beta'
-            - docker images
-            - echo 'Deploy...'
+            - echo $SSH_FINGERPRINT >> ~/.ssh/known_hosts
+            - ssh -i ~/.ssh/id_deploy "${SSH_USER}@${SSH_HOST}" -p $SSH_PORT "cd /var/www/etcentral && ./deploy.sh"
       secrets:
-        - name: Deploy key
         - name: Docker Hub credentials
+        - name: Staging SSH settings
     run:
       when: branch = 'docker'

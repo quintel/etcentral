@@ -23,7 +23,7 @@ gem 'bootstrap'
 gem 'font-awesome-sass'
 gem 'coffee-rails'
 gem 'uglifier'
-gem 'mini_racer'
+gem 'mini_racer', '~> 0.4.0'
 
 gem 'invisible_captcha'
 
@@ -51,6 +51,9 @@ group :development do
   gem 'capistrano-bundler',     '~> 1.1',   require: false
   gem 'capistrano-maintenance', '~> 1.0',   require: false
   gem 'capistrano3-puma',       '~> 5.0.4', require: false
+
+  gem 'ed25519',                            require: false
+  gem 'bcrypt_pbkdf',                       require: false
 end
 
 group :test do
