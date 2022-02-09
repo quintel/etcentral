@@ -21,6 +21,8 @@ ETM::Application.routes.draw do
   get 'scenario'       => 'redirects#forward'
   get 'login'          => 'redirects#forward'
 
+  get 'api', to: redirect('https://docs.energytransitionmodel.com/api')
+
   get ':id' => 'pages#show'
 
   root :to => 'pages#root'

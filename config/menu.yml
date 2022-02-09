@@ -4,7 +4,7 @@ Applications:
 
 Background:
   Open Source: open_source
-  API: api
+  API: https://docs.energytransitionmodel.com/api
   Quality Control: quality_control
   Education: https://edu.quintel.com/
   Publications: http://refman.energytransitionmodel.com/
