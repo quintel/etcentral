@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.2'
 gem 'bootsnap'
-gem 'puma', '< 5'
+gem 'puma', '< 6'
 
 gem 'haml'
 gem 'redcarpet'
