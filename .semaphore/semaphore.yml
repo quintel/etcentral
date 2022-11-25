@@ -20,10 +20,6 @@ blocks:
             - cache store
             - bundle exec rspec
 promotions:
-  - name: Deploy to staging
-    pipeline_file: deploy_staging.yml
-    auto_promote:
-      when: "result = 'passed' and branch = 'master'"
   - name: Deploy to production
     pipeline_file: deploy_production.yml
     auto_promote:
